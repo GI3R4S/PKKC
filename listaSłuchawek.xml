@@ -1,10 +1,23 @@
-<?xml version="1.0" encoding="utf-8" ?>
-<listaSłuchawek>
+<?xml version="1.0" encoding="UTF-8"?> 
+<?xml-stylesheet type="text/css" href="style.css"?>
+
+<zawartość>
+	<daneDokumentu>
+		<opisDokumentu>
+			Dokument ten zawiera podstawowe informacje na temat 29 najpopularniejszych zestawów słuchawkowych dostępnych w sklepie x-kom
+		</opisDokumentu>
+		<autorzy>
+			<autor1>Dawid Gierowski</autor1>
+			<autor2>Marcin Kwapisz</autor2>
+		</autorzy>
+		<dataUtworzenia>08.03.2019</dataUtworzenia>
+		<dataModyfikacji>10.03.2019</dataModyfikacji>
+	</daneDokumentu>
 	<przedmiot>
 		<nazwa>Razer Kraken Essential</nazwa>
 		<cena>199,00 zł</cena>
 		<typKonstrukcji>Nauszne półotwarte</typKonstrukcji>
-		<średnicaMembrany> </średnicaMembrany>
+		<średnicaMembrany>32</średnicaMembrany>
 		<pasmoPrzenoszeniaSłuchawek>
 			<minimum>20</minimum>
 			<maximum>20000 </maximum>
@@ -29,21 +42,6 @@
 		<wbudowanyMikrofon>Nie</wbudowanyMikrofon>
 		<kolor>Czarno-złoty</kolor>
 		<długośćKabla>1,5</długośćKabla>
-	</przedmiot>
-	<przedmiot>
-		<nazwa>Corsair HS50 Stereo Gaming Headset</nazwa>
-		<cena>199,00 zł</cena>
-		<typKonstrukcji>Nauszne półotwarte</typKonstrukcji>
-		<średnicaMembrany>50</średnicaMembrany>
-		<pasmoPrzenoszeniaSłuchawek>
-			<minimum>20 </minimum>
-			<maximum>20000</maximum>
-		</pasmoPrzenoszeniaSłuchawek>
-		<impedancjaSłuchawek>32</impedancjaSłuchawek>
-		<czułośćSłuchawek>111</czułośćSłuchawek>
-		<wbudowanyMikrofon>Tak</wbudowanyMikrofon>
-		<kolor>Czarny</kolor>
-		<długośćKabla>1,8</długośćKabla>
 	</przedmiot>
 	<przedmiot>
 		<nazwa>SteelSeries Arctis 5 </nazwa>
@@ -164,21 +162,6 @@
 		<wbudowanyMikrofon>Tak</wbudowanyMikrofon>
 		<kolor>Czarno-niebieski</kolor>
 		<długośćKabla>1,8</długośćKabla>
-	</przedmiot>
-	<przedmiot>
-		<nazwa></nazwa>
-		<cena></cena>
-		<typKonstrukcji></typKonstrukcji>
-		<średnicaMembrany></średnicaMembrany>
-		<pasmoPrzenoszeniaSłuchawek>
-			<minimum></minimum>
-			<maximum></maximum>
-		</pasmoPrzenoszeniaSłuchawek>
-		<impedancjaSłuchawek></impedancjaSłuchawek>
-		<czułośćSłuchawek></czułośćSłuchawek>
-		<wbudowanyMikrofon></wbudowanyMikrofon>
-		<kolor> </kolor>
-		<długośćKabla></długośćKabla>
 	</przedmiot>
 	<przedmiot>
 		<nazwa>Lioncast LX20</nazwa>
@@ -435,7 +418,4 @@
 		<kolor>Czarno-niebieski</kolor>
 		<długośćKabla>2,3</długośćKabla>
 	</przedmiot>
-	
-	
-	
-</listaSłuchawek>
+</zawartość>

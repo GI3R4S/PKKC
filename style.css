@@ -1,0 +1,265 @@
+zawartość
+{
+	background-color: #172e54;
+}
+
+daneDokumentu
+{
+	font-size: 20px;
+	color: #9e999e;	
+	display: block;
+	background-color: black;
+	margin-bottom: 20px;
+	margin-left: 20px;
+	margin-right: 20px;
+	border-color: yellow;
+	border-width: 6px;
+	border-style: solid;
+}
+
+opisDokumentu
+{
+	border-bottom-color: yellow;
+	border-bottom-width: 6px;
+	border-bottom-style: double;
+	padding-top:5px;
+	padding-bottom:5px;
+	text-align: center;
+	display: block;
+}
+
+opisDokumentu::before
+{
+	font-size: 28px;
+	white-space: pre;
+	content: 'Opis dokumentu\a';
+}
+
+autorzy
+{
+	border-bottom-color: yellow;
+	border-bottom-width: 6px;
+	border-bottom-style: double;
+	padding-top:5px;
+	padding-bottom:5px;
+	text-align: center;
+	display: block;
+}
+
+
+autor1, autor2
+{
+	margin-left: 25px;
+	text-align:left;
+	display: list-item;
+	align: left;
+	list-style-type: square;
+}
+
+autorzy::before
+{
+	font-size: 28px;
+	white-space: pre;
+	content: "Autorzy";
+}
+
+dataUtworzenia
+{
+	border-bottom-color: yellow;
+	border-bottom-width: 6px;
+	border-bottom-style: double;
+	padding-top:5px;
+	padding-bottom:5px;
+	text-align: center;
+	display: block;
+}
+
+dataUtworzenia::before
+{
+	font-size: 28px;
+	white-space: pre;
+	content: "Data utworzenia\a";
+}
+
+dataModyfikacji
+{
+	padding-top:5px;
+	padding-bottom:5px;
+	text-align: center;
+	display: block;
+}
+
+dataModyfikacji::before
+{
+	font-size: 28px;
+	white-space: pre;
+	content: "Data modyfikacji\a";
+}
+
+przedmiot
+{
+	font-size:20px;
+	display: block;
+	background-color: black;
+	margin-bottom: 20px;
+	margin-left: 20px;
+	margin-right: 20px;
+	border-color: #9e999e;
+	border-width: 4px;
+	border-style: solid;
+}
+
+nazwa
+{
+	color: #d30202;
+	text-align: center;
+	font-weight:bolder;
+	font-size:30px;
+	display: block;
+	border-bottom-color: #9e999e;
+	border-bottom-width: 4px;
+	border-bottom-style: solid;
+}
+
+cena, typKonstrukcji, średnicaMembrany, pasmoPrzenoszeniaSłuchawek, minimum, maximum, impedancjaSłuchawek, czułośćSłuchawek, wbudowanyMikrofon, kolor, długośćKabla
+{
+	font-style:italic;
+	color: #9e999e;
+	padding-top: 2px;
+	padding-bottom:2px;
+	padding-left: 10px;
+	padding-right: 10px;
+	display: block;
+	text-align:center;
+}
+
+cena, średnicaMembrany, impedancjaSłuchawek, wbudowanyMikrofon, długośćKabla
+{
+	display:block;
+	background-color: #111111;
+}
+
+cena::before
+{
+	position:absolute;
+	left:4%;
+	font-style: normal;
+	font-weight: bold;
+	content: "Cena ";
+}
+
+typKonstrukcji::before
+{
+	position:absolute;
+	left:4%;
+	font-style: normal;
+	font-weight: bold;
+	content: "Typ konstrukcji "
+}
+
+średnicaMembrany::before
+{
+	display:block;
+	position:absolute;
+	left:4%;
+	font-style: normal;
+	font-weight: bold;
+	content: "Średnica membrany ";
+}
+
+średnicaMembrany::after
+{
+	font-style: italic;
+	content: " mm";
+}
+
+minimum::before
+{
+	display:block;
+	position:absolute;
+	left:4%;
+	font-style: normal;
+	font-weight: bold;
+	content: "Pasmo przenoszenia min ";
+}
+
+minimum::after
+{
+	font-style: italic;
+	content: " kHz";
+}
+maximum::before
+{
+	display:block;
+	position:absolute;
+	left:4%;
+	font-style: normal;
+	font-weight: bold;
+	content: "Pasmo przenoszenia max ";
+}
+
+maximum::after
+{
+	font-style: italic;
+	content: " kHz";
+}
+
+impedancjaSłuchawek::before
+{
+	position:absolute;
+	left:4%;
+	font-style: normal;
+	font-weight: bold;
+	content: "Impedancja ";
+}
+
+impedancjaSłuchawek::after
+{
+	content: " Ω";
+}
+
+czułośćSłuchawek::before
+{
+	position:absolute;
+	left:4%;
+	font-style: normal;
+	font-weight: bold;
+	content: "Czułość ";
+}
+
+czułośćSłuchawek::after
+{
+	content: " dB";
+}
+
+wbudowanyMikrofon::before
+{
+	position:absolute;
+	left:4%;
+	font-style: normal;
+	font-weight: bold;
+	content: "Wbudowany mikrofon ";
+}
+
+kolor::before
+{
+	position:absolute;
+	left:4%;
+	font-style: normal;
+	font-weight: bold;
+	content: "Kolor ";
+}
+
+długośćKabla::before
+{
+	position:absolute;
+	left:4%;
+	font-style: normal;
+	font-weight: bold;
+	content: "Długość kabla ";
+}
+
+długośćKabla::after
+{
+	content: " m";
+}
