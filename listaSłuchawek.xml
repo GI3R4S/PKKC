@@ -1,447 +1,424 @@
-<?xml version="1.0" encoding="UTF-8"?> 
+<?xml version="1.0" encoding="utf-8"?>
 <?xml-stylesheet type="text/css" href="style.css"?>
 
-<!DOCTYPE zawartość [
-<!ELEMENT zawartość (daneDokumentu,listaPrzedmiotów)>
-<!ELEMENT daneDokumentu (opisDokumentu,autorzy,dataUtworzenia,dataModyfikacji)>
-<!ELEMENT opisDokumentu (#PCDATA)>
-<!ELEMENT dataUtworzenia (#PCDATA)>
-<!ELEMENT dataModyfikacji (#PCDATA)>
-<!ELEMENT autorzy (autor+)>
-<!ELEMENT autor (#PCDATA)>
-<!ELEMENT listaPrzedmiotów (przedmiot+)>
-<!ELEMENT przedmiot (nazwa,cena,typKonstrukcji,średnicaMembrany,pasmoPrzenoszeniaSłuchawek,impedancjaSłuchawek,czułośćSłuchawek,wbudowanyMikrofon,kolor,długośćKabla)>
-<!ELEMENT nazwa (#PCDATA)>
-<!ELEMENT cena (#PCDATA)>
-<!ELEMENT typKonstrukcji (#PCDATA)>
-<!ELEMENT średnicaMembrany (#PCDATA)>
-<!ELEMENT impedancjaSłuchawek (#PCDATA)>
-<!ELEMENT czułośćSłuchawek (#PCDATA)>
-<!ELEMENT wbudowanyMikrofon (#PCDATA)>
-<!ELEMENT kolor (#PCDATA)>
-<!ELEMENT długośćKabla (#PCDATA)>
-<!ELEMENT pasmoPrzenoszeniaSłuchawek (minimum,maximum)>
-<!ELEMENT minimum (#PCDATA)>
-<!ELEMENT maximum (#PCDATA)>
-]>		
-
-<zawartość>
-	<daneDokumentu>
-		<opisDokumentu>
-			Dokument ten zawiera podstawowe informacje na temat 29 najpopularniejszych zestawów słuchawkowych dostępnych w sklepie x-kom
-		</opisDokumentu>
-		<autorzy>
-			<autor>Dawid Gierowski</autor>
-			<autor>Marcin Kwapisz</autor>
-		</autorzy>
-		<dataUtworzenia>08.03.2019</dataUtworzenia>
-		<dataModyfikacji>10.03.2019</dataModyfikacji>
-	</daneDokumentu>
-	<listaPrzedmiotów>
-		<przedmiot>
-			<nazwa>Razer Kraken Essential</nazwa>
-			<cena>199,00 zł</cena>
-			<typKonstrukcji>Nauszne półotwarte</typKonstrukcji>
-			<średnicaMembrany>32</średnicaMembrany>
-			<pasmoPrzenoszeniaSłuchawek>
-				<minimum>20</minimum>
-				<maximum>20000 </maximum>
-			</pasmoPrzenoszeniaSłuchawek>
-			<impedancjaSłuchawek>24</impedancjaSłuchawek>
-			<czułośćSłuchawek>105 </czułośćSłuchawek>
-			<wbudowanyMikrofon>Tak</wbudowanyMikrofon>
-			<kolor>Czarny</kolor>
-			<długośćKabla>1,3</długośćKabla>
-		</przedmiot>
-		<przedmiot>
-			<nazwa>ISK HD9999</nazwa>
-			<cena>274,00 zł</cena>
-			<typKonstrukcji>Nauszne zamknięte</typKonstrukcji>
-			<średnicaMembrany>50</średnicaMembrany>
-			<pasmoPrzenoszeniaSłuchawek>
-				<minimum>8</minimum>
-				<maximum>30000</maximum>
-			</pasmoPrzenoszeniaSłuchawek>
-			<impedancjaSłuchawek>32</impedancjaSłuchawek>
-			<czułośćSłuchawek>96</czułośćSłuchawek>
-			<wbudowanyMikrofon>Nie</wbudowanyMikrofon>
-			<kolor>Czarno-złoty</kolor>
-			<długośćKabla>1,5</długośćKabla>
-		</przedmiot>
-		<przedmiot>
-			<nazwa>SteelSeries Arctis 5 </nazwa>
-			<cena>359,00 zł</cena>
-			<typKonstrukcji>Nauszne zamknięte</typKonstrukcji>
-			<średnicaMembrany>40</średnicaMembrany>
-			<pasmoPrzenoszeniaSłuchawek>
-				<minimum>20 </minimum>
-				<maximum>22000 </maximum>
-			</pasmoPrzenoszeniaSłuchawek>
-			<impedancjaSłuchawek>32</impedancjaSłuchawek>
-			<czułośćSłuchawek>98</czułośćSłuchawek>
-			<wbudowanyMikrofon>Tak</wbudowanyMikrofon>
-			<kolor>Czarny</kolor>
-			<długośćKabla>3,0</długośćKabla>
-		</przedmiot>
-		<przedmiot>
-			<nazwa>SteelSeries Arctis 3</nazwa>
-			<cena>259,00 zł</cena>
-			<typKonstrukcji>Nauszne zamknięte</typKonstrukcji>
-			<średnicaMembrany>40</średnicaMembrany>
-			<pasmoPrzenoszeniaSłuchawek>
-				<minimum>20</minimum>
-				<maximum>22000 </maximum>
-			</pasmoPrzenoszeniaSłuchawek>
-			<impedancjaSłuchawek>32</impedancjaSłuchawek>
-			<czułośćSłuchawek>98</czułośćSłuchawek>
-			<wbudowanyMikrofon>Tak</wbudowanyMikrofon>
-			<kolor>Czarny</kolor>
-			<długośćKabla>3,0</długośćKabla>
-		</przedmiot>
-		<przedmiot>
-			<nazwa>Creative Sound Blaster Blaze</nazwa>
-			<cena>99,00 zł</cena>
-			<typKonstrukcji>Nauszne zamknięte</typKonstrukcji>
-			<średnicaMembrany>40 </średnicaMembrany>
-			<pasmoPrzenoszeniaSłuchawek>
-				<minimum>20 </minimum>
-				<maximum>20000 </maximum>
-			</pasmoPrzenoszeniaSłuchawek>
-			<impedancjaSłuchawek>32</impedancjaSłuchawek>
-			<czułośćSłuchawek>105</czułośćSłuchawek>
-			<wbudowanyMikrofon>Tak</wbudowanyMikrofon>
-			<kolor>Czarny</kolor>
-			<długośćKabla>2,5</długośćKabla>
-		</przedmiot>
-		<przedmiot>
-			<nazwa>Creative Aurvana Live!</nazwa>
-			<cena>199,00 zł</cena>
-			<typKonstrukcji>Nauszne zamknięte</typKonstrukcji>
-			<średnicaMembrany>40</średnicaMembrany>
-			<pasmoPrzenoszeniaSłuchawek>
-				<minimum>10</minimum>
-				<maximum>30000 </maximum>
-			</pasmoPrzenoszeniaSłuchawek>
-			<impedancjaSłuchawek>32</impedancjaSłuchawek>
-			<czułośćSłuchawek>103</czułośćSłuchawek>
-			<wbudowanyMikrofon>Nie</wbudowanyMikrofon>
-			<kolor>Czarny</kolor>
-			<długośćKabla>1,2</długośćKabla>
-		</przedmiot>
-		<przedmiot>
-			<nazwa>SteelSeries Arctis 3</nazwa>
-			<cena>259,00 zł</cena>
-			<typKonstrukcji>Nauszne zamknięte</typKonstrukcji>
-			<średnicaMembrany>40</średnicaMembrany>
-			<pasmoPrzenoszeniaSłuchawek>
-				<minimum>20</minimum>
-				<maximum>22000</maximum>
-			</pasmoPrzenoszeniaSłuchawek>
-			<impedancjaSłuchawek>32</impedancjaSłuchawek>
-			<czułośćSłuchawek>98</czułośćSłuchawek>
-			<wbudowanyMikrofon>Tak</wbudowanyMikrofon>
-			<kolor>Biały</kolor>
-			<długośćKabla>3,0</długośćKabla>
-		</przedmiot>
-		<przedmiot>
-			<nazwa>HyperX Cloud Alpha</nazwa>
-			<cena>349,00 zł</cena>
-			<typKonstrukcji>Nauszne zamknięte</typKonstrukcji>
-			<średnicaMembrany>50</średnicaMembrany>
-			<pasmoPrzenoszeniaSłuchawek>
-				<minimum>13</minimum>
-				<maximum>27000</maximum>
-			</pasmoPrzenoszeniaSłuchawek>
-			<impedancjaSłuchawek>65</impedancjaSłuchawek>
-			<czułośćSłuchawek>98</czułośćSłuchawek>
-			<wbudowanyMikrofon>Tak</wbudowanyMikrofon>
-			<kolor>Czarno-czerwony</kolor>
-			<długośćKabla>1,3</długośćKabla>
-		</przedmiot>
-		<przedmiot>
-			<nazwa>SteelSeries Arctis 3</nazwa>
-			<cena>259,00 zł</cena>
-			<typKonstrukcji>Nauszne zamknięte</typKonstrukcji>
-			<średnicaMembrany>40</średnicaMembrany>
-			<pasmoPrzenoszeniaSłuchawek>
-				<minimum>20</minimum>
-				<maximum>22000</maximum>
-			</pasmoPrzenoszeniaSłuchawek>
-			<impedancjaSłuchawek>32</impedancjaSłuchawek>
-			<czułośćSłuchawek>98</czułośćSłuchawek>
-			<wbudowanyMikrofon>Tak</wbudowanyMikrofon>
-			<kolor>Niebieski</kolor>
-			<długośćKabla>3,0</długośćKabla>
-		</przedmiot>
-		<przedmiot>
-			<nazwa>Corsair HS50 Stereo Gaming Headset</nazwa>
-			<cena>249,00 zł</cena>
-			<typKonstrukcji>Nauszne półotwarte</typKonstrukcji>
-			<średnicaMembrany>50</średnicaMembrany>
-			<pasmoPrzenoszeniaSłuchawek>
-				<minimum>20</minimum>
-				<maximum>20000</maximum>
-			</pasmoPrzenoszeniaSłuchawek>
-			<impedancjaSłuchawek>32</impedancjaSłuchawek>
-			<czułośćSłuchawek>111</czułośćSłuchawek>
-			<wbudowanyMikrofon>Tak</wbudowanyMikrofon>
-			<kolor>Czarno-niebieski</kolor>
-			<długośćKabla>1,8</długośćKabla>
-		</przedmiot>
-		<przedmiot>
-			<nazwa>Lioncast LX20</nazwa>
-			<cena>109,00 zł</cena>
-			<typKonstrukcji>Nauszne zamknięte</typKonstrukcji>
-			<średnicaMembrany>50</średnicaMembrany>
-			<pasmoPrzenoszeniaSłuchawek>
-				<minimum>20</minimum>
-				<maximum>20000</maximum>
-			</pasmoPrzenoszeniaSłuchawek>
-			<impedancjaSłuchawek>32</impedancjaSłuchawek>
-			<czułośćSłuchawek>105</czułośćSłuchawek>
-			<wbudowanyMikrofon>Tak</wbudowanyMikrofon>
-			<kolor>Czarny</kolor>
-			<długośćKabla>1,35</długośćKabla>
-		</przedmiot>
-		<przedmiot>
-			<nazwa>Superlux HD669</nazwa>
-			<cena>129,00 zł</cena>
-			<typKonstrukcji>Nauszne zamknięte</typKonstrukcji>
-			<średnicaMembrany>50</średnicaMembrany>
-			<pasmoPrzenoszeniaSłuchawek>
-				<minimum>10</minimum>
-				<maximum>30000</maximum>
-			</pasmoPrzenoszeniaSłuchawek>
-			<impedancjaSłuchawek>56</impedancjaSłuchawek>
-			<czułośćSłuchawek>98</czułośćSłuchawek>
-			<wbudowanyMikrofon>Nie</wbudowanyMikrofon>
-			<kolor>Czarny</kolor>
-			<długośćKabla>3,0</długośćKabla>
-		</przedmiot>
-		<przedmiot>
-			<nazwa>Superlux HD681</nazwa>
-			<cena>89,00 zł</cena>
-			<typKonstrukcji>Nauszne półotwarte</typKonstrukcji>
-			<średnicaMembrany>40</średnicaMembrany>
-			<pasmoPrzenoszeniaSłuchawek>
-				<minimum>10</minimum>
-				<maximum>30000</maximum>
-			</pasmoPrzenoszeniaSłuchawek>
-			<impedancjaSłuchawek>32</impedancjaSłuchawek>
-			<czułośćSłuchawek>98</czułośćSłuchawek>
-			<wbudowanyMikrofon>Nie</wbudowanyMikrofon>
-			<kolor>Czarno-czerwony</kolor>
-			<długośćKabla>2,5</długośćKabla>
-		</przedmiot>
-		<przedmiot>
-			<nazwa>Philips SHP2500/10</nazwa>
-			<cena>69,00 zł</cena>
-			<typKonstrukcji>Nauszne zamknięte</typKonstrukcji>
-			<średnicaMembrany>40</średnicaMembrany>
-			<pasmoPrzenoszeniaSłuchawek>
-				<minimum>9</minimum>
-				<maximum>23000</maximum>
-			</pasmoPrzenoszeniaSłuchawek>
-			<impedancjaSłuchawek>32</impedancjaSłuchawek>
-			<czułośćSłuchawek>95</czułośćSłuchawek>
-			<wbudowanyMikrofon>Nie</wbudowanyMikrofon>
-			<kolor>Srebrny</kolor>
-			<długośćKabla>6,0</długośćKabla>
-		</przedmiot>
-		<przedmiot>
-			<nazwa>JBL T500</nazwa>
-			<cena>109,00 zł</cena>
-			<typKonstrukcji>Nauszne zamknięte</typKonstrukcji>
-			<średnicaMembrany>32</średnicaMembrany>
-			<pasmoPrzenoszeniaSłuchawek>
-				<minimum>20</minimum>
-				<maximum>20000</maximum>
-			</pasmoPrzenoszeniaSłuchawek>
-			<impedancjaSłuchawek>32</impedancjaSłuchawek>
-			<czułośćSłuchawek>91</czułośćSłuchawek>
-			<wbudowanyMikrofon>Tak</wbudowanyMikrofon>
-			<kolor>Czarny</kolor>
-			<długośćKabla>1,19</długośćKabla>
-		</przedmiot>
-		<przedmiot>
-			<nazwa>Pioneer SE-M521</nazwa>
-			<cena>109,00 zł</cena>
-			<typKonstrukcji>Nauszne zamknięte</typKonstrukcji>
-			<średnicaMembrany>40</średnicaMembrany>
-			<pasmoPrzenoszeniaSłuchawek>
-				<minimum>10</minimum>
-				<maximum>40000</maximum>
-			</pasmoPrzenoszeniaSłuchawek>
-			<impedancjaSłuchawek>32</impedancjaSłuchawek>
-			<czułośćSłuchawek>97</czułośćSłuchawek>
-			<wbudowanyMikrofon>Nie</wbudowanyMikrofon>
-			<kolor>Czarny</kolor>
-			<długośćKabla>3,5</długośćKabla>
-		</przedmiot>
-		<przedmiot>
-			<nazwa>HyperX Cloud II</nazwa>
-			<cena>359,00 zł</cena>
-			<typKonstrukcji>Nauszne zamknięte</typKonstrukcji>
-			<średnicaMembrany>53</średnicaMembrany>
-			<pasmoPrzenoszeniaSłuchawek>
-				<minimum>15</minimum>
-				<maximum>25000</maximum>
-			</pasmoPrzenoszeniaSłuchawek>
-			<impedancjaSłuchawek>60</impedancjaSłuchawek>
-			<czułośćSłuchawek>98</czułośćSłuchawek>
-			<wbudowanyMikrofon>Tak</wbudowanyMikrofon>
-			<kolor>Czarno-czerwony</kolor>
-			<długośćKabla>1,0</długośćKabla>
-		</przedmiot>
-		<przedmiot>
-			<nazwa>HyperX Cloud Stinger Core</nazwa>
-			<cena>169,00 zł</cena>
-			<typKonstrukcji>Nauszne zamknięte</typKonstrukcji>
-			<średnicaMembrany>40</średnicaMembrany>
-			<pasmoPrzenoszeniaSłuchawek>
-				<minimum>20</minimum>
-				<maximum>20000</maximum>
-			</pasmoPrzenoszeniaSłuchawek>
-			<impedancjaSłuchawek>16</impedancjaSłuchawek>
-			<czułośćSłuchawek>99</czułośćSłuchawek>
-			<wbudowanyMikrofon>Tak</wbudowanyMikrofon>
-			<kolor>Czarny</kolor>
-			<długośćKabla>1,3</długośćKabla>
-		</przedmiot>
-		<przedmiot>
-			<nazwa>SpeedLink MAXTER Gaming Headset</nazwa>
-			<cena>99,00 zł</cena>
-			<typKonstrukcji>Nauszne zamknięte</typKonstrukcji>
-			<średnicaMembrany>50</średnicaMembrany>
-			<pasmoPrzenoszeniaSłuchawek>
-				<minimum>20</minimum>
-				<maximum>20000</maximum>
-			</pasmoPrzenoszeniaSłuchawek>
-			<impedancjaSłuchawek>32</impedancjaSłuchawek>
-			<czułośćSłuchawek>110</czułośćSłuchawek>
-			<wbudowanyMikrofon>Tak</wbudowanyMikrofon>
-			<kolor>Czarny</kolor>
-			<długośćKabla>2,2</długośćKabla>
-		</przedmiot>
-		<przedmiot>
-			<nazwa>HP Omen 800</nazwa>
-			<cena>299,00 zł</cena>
-			<typKonstrukcji>Nauszne zamknięte</typKonstrukcji>
-			<średnicaMembrany>53</średnicaMembrany>
-			<pasmoPrzenoszeniaSłuchawek>
-				<minimum>20</minimum>
-				<maximum>20000</maximum>
-			</pasmoPrzenoszeniaSłuchawek>
-			<impedancjaSłuchawek>32</impedancjaSłuchawek>
-			<czułośćSłuchawek>95</czułośćSłuchawek>
-			<wbudowanyMikrofon>Tak</wbudowanyMikrofon>
-			<kolor>Czarny</kolor>
-			<długośćKabla>1,7</długośćKabla>
-		</przedmiot>
-		<przedmiot>
-			<nazwa>Creative Sound BlasterX H3</nazwa>
-			<cena>149,00 zł</cena>
-			<typKonstrukcji>Nauszne zamknięte</typKonstrukcji>
-			<średnicaMembrany>40</średnicaMembrany>
-			<pasmoPrzenoszeniaSłuchawek>
-				<minimum>20</minimum>
-				<maximum>20000</maximum>
-			</pasmoPrzenoszeniaSłuchawek>
-			<impedancjaSłuchawek>32</impedancjaSłuchawek>
-			<czułośćSłuchawek>118</czułośćSłuchawek>
-			<wbudowanyMikrofon>Tak</wbudowanyMikrofon>
-			<kolor>Czarny</kolor>
-			<długośćKabla>1,2</długośćKabla>
-		</przedmiot>
-		<przedmiot>
-			<nazwa>Superlux HD681 EVO MKII</nazwa>
-			<cena>129,00 zł</cena>
-			<typKonstrukcji>Nauszne półotwarte</typKonstrukcji>
-			<średnicaMembrany>50</średnicaMembrany>
-			<pasmoPrzenoszeniaSłuchawek>
-				<minimum>10</minimum>
-				<maximum>30000</maximum>
-			</pasmoPrzenoszeniaSłuchawek>
-			<impedancjaSłuchawek>32</impedancjaSłuchawek>
-			<czułośćSłuchawek>98</czułośćSłuchawek>
-			<wbudowanyMikrofon>Nie</wbudowanyMikrofon>
-			<kolor>Czarny</kolor>
-			<długośćKabla>1,0</długośćKabla>
-		</przedmiot>
-		<przedmiot>
-			<nazwa>Audio-Technica ATH-M40X</nazwa>
-			<cena>369,00 zł</cena>
-			<typKonstrukcji>Nauszne zamknięte</typKonstrukcji>
-			<średnicaMembrany>40</średnicaMembrany>
-			<pasmoPrzenoszeniaSłuchawek>
-				<minimum>15</minimum>
-				<maximum>24000</maximum>
-			</pasmoPrzenoszeniaSłuchawek>
-			<impedancjaSłuchawek>35</impedancjaSłuchawek>
-			<czułośćSłuchawek>98</czułośćSłuchawek>
-			<wbudowanyMikrofon>Nie</wbudowanyMikrofon>
-			<kolor>Czarny</kolor>
-			<długośćKabla>1,2</długośćKabla>
-		</przedmiot>
-		<przedmiot>
-			<nazwa>Razer Electra V2</nazwa>
-			<cena>239,00 zł</cena>
-			<typKonstrukcji>Nauszne zamknięte</typKonstrukcji>
-			<średnicaMembrany>40</średnicaMembrany>
-			<pasmoPrzenoszeniaSłuchawek>
-				<minimum>20</minimum>
-				<maximum>20000</maximum>
-			</pasmoPrzenoszeniaSłuchawek>
-			<impedancjaSłuchawek>32</impedancjaSłuchawek>
-			<czułośćSłuchawek>105</czułośćSłuchawek>
-			<wbudowanyMikrofon>Tak</wbudowanyMikrofon>
-			<kolor>Czarny</kolor>
-			<długośćKabla>1,3</długośćKabla>
-		</przedmiot>
-		<przedmiot>
-			<nazwa>Patriot Viper V360 Virtual 7.1</nazwa>
-			<cena>119,00 zł</cena>
-			<typKonstrukcji>Nauszne półotwarte</typKonstrukcji>
-			<średnicaMembrany>40</średnicaMembrany>
-			<pasmoPrzenoszeniaSłuchawek>
-				<minimum>20</minimum>
-				<maximum>20000</maximum>
-			</pasmoPrzenoszeniaSłuchawek>
-			<impedancjaSłuchawek>32</impedancjaSłuchawek>
-			<czułośćSłuchawek>97</czułośćSłuchawek>
-			<wbudowanyMikrofon>Tak</wbudowanyMikrofon>
-			<kolor>Czarny</kolor>
-			<długośćKabla>2,2</długośćKabla>
-		</przedmiot>
-		<przedmiot>
-			<nazwa>Marshall Major III</nazwa>
-			<cena>249,00 zł</cena>
-			<typKonstrukcji>Nauszne zamknięte</typKonstrukcji>
-			<średnicaMembrany>40</średnicaMembrany>
-			<pasmoPrzenoszeniaSłuchawek>
-				<minimum>20</minimum>
-				<maximum>20000</maximum>
-			</pasmoPrzenoszeniaSłuchawek>
-			<impedancjaSłuchawek>32</impedancjaSłuchawek>
-			<czułośćSłuchawek>99</czułośćSłuchawek>
-			<wbudowanyMikrofon>Tak</wbudowanyMikrofon>
-			<kolor>Brązowy</kolor>
-			<długośćKabla>0</długośćKabla>
-		</przedmiot>
-		<przedmiot>
-			<nazwa>Logitech G430 Surround Sound Gaming Headset</nazwa>
-			<cena>295,00 zł</cena>
-			<typKonstrukcji>Nauszne zamknięte</typKonstrukcji>
-			<średnicaMembrany>40</średnicaMembrany>
-			<pasmoPrzenoszeniaSłuchawek>
-				<minimum>20</minimum>
-				<maximum>20000</maximum>
-			</pasmoPrzenoszeniaSłuchawek>
-			<impedancjaSłuchawek>32</impedancjaSłuchawek>
-			<czułośćSłuchawek>90</czułośćSłuchawek>
-			<wbudowanyMikrofon>Tak</wbudowanyMikrofon>
-			<kolor>Czarno-niebieski</kolor>
-			<długośćKabla>2,3</długośćKabla>
-		</przedmiot>
-	</listaPrzedmiotów>
+<zawartość jezyk="PL">
+    <daneDokumentu>
+        <opisDokumentu>
+            Dokument ten zawiera podstawowe informacje na temat 29 najpopularniejszych zestawów słuchawkowych dostępnych
+            w sklepie x-kom
+        </opisDokumentu>
+        <autorzy>
+            <autor>Dawid Gierowski</autor>
+            <autor>Marcin Kwapisz</autor>
+        </autorzy>
+        <dataUtworzenia>2019-03-08</dataUtworzenia>
+        <dataModyfikacji>2019-03-10</dataModyfikacji>
+    </daneDokumentu>
+    <listaPrzedmiotów>
+        <przedmiot>
+            <nazwa>Razer Kraken Essential</nazwa>
+            <cena>199.00</cena>
+            <typKonstrukcji>Nauszne półotwarte</typKonstrukcji>
+            <średnicaMembrany>32</średnicaMembrany>
+            <pasmoPrzenoszeniaSłuchawek>
+                <minimum>20</minimum>
+                <maximum>20000</maximum>
+            </pasmoPrzenoszeniaSłuchawek>
+            <impedancjaSłuchawek>24</impedancjaSłuchawek>
+            <czułośćSłuchawek>105</czułośćSłuchawek>
+            <wbudowanyMikrofon>Tak</wbudowanyMikrofon>
+            <kolor>Czarny</kolor>
+            <długośćKabla>1.3</długośćKabla>
+        </przedmiot>
+        <przedmiot>
+            <nazwa>ISK HD9999</nazwa>
+            <cena>274.00</cena>
+            <typKonstrukcji>Nauszne zamknięte</typKonstrukcji>
+            <średnicaMembrany>50</średnicaMembrany>
+            <pasmoPrzenoszeniaSłuchawek>
+                <minimum>8</minimum>
+                <maximum>30000</maximum>
+            </pasmoPrzenoszeniaSłuchawek>
+            <impedancjaSłuchawek>32</impedancjaSłuchawek>
+            <czułośćSłuchawek>96</czułośćSłuchawek>
+            <wbudowanyMikrofon>Nie</wbudowanyMikrofon>
+            <kolor>Czarno-złoty</kolor>
+            <długośćKabla>1.5</długośćKabla>
+        </przedmiot>
+        <przedmiot>
+            <nazwa>SteelSeries Arctis 5</nazwa>
+            <cena>359.00</cena>
+            <typKonstrukcji>Nauszne zamknięte</typKonstrukcji>
+            <średnicaMembrany>40</średnicaMembrany>
+            <pasmoPrzenoszeniaSłuchawek>
+                <minimum>20</minimum>
+                <maximum>22000</maximum>
+            </pasmoPrzenoszeniaSłuchawek>
+            <impedancjaSłuchawek>32</impedancjaSłuchawek>
+            <czułośćSłuchawek>98</czułośćSłuchawek>
+            <wbudowanyMikrofon>Tak</wbudowanyMikrofon>
+            <kolor>Czarny</kolor>
+            <długośćKabla>3.0</długośćKabla>
+        </przedmiot>
+        <przedmiot>
+            <nazwa>SteelSeries Arctis 3</nazwa>
+            <cena>259.00</cena>
+            <typKonstrukcji>Nauszne zamknięte</typKonstrukcji>
+            <średnicaMembrany>40</średnicaMembrany>
+            <pasmoPrzenoszeniaSłuchawek>
+                <minimum>20</minimum>
+                <maximum>22000</maximum>
+            </pasmoPrzenoszeniaSłuchawek>
+            <impedancjaSłuchawek>32</impedancjaSłuchawek>
+            <czułośćSłuchawek>98</czułośćSłuchawek>
+            <wbudowanyMikrofon>Tak</wbudowanyMikrofon>
+            <kolor>Czarny</kolor>
+            <długośćKabla>3.0</długośćKabla>
+        </przedmiot>
+        <przedmiot>
+            <nazwa>Creative Sound Blaster Blaze</nazwa>
+            <cena>99.00</cena>
+            <typKonstrukcji>Nauszne zamknięte</typKonstrukcji>
+            <średnicaMembrany>40</średnicaMembrany>
+            <pasmoPrzenoszeniaSłuchawek>
+                <minimum>20</minimum>
+                <maximum>20000</maximum>
+            </pasmoPrzenoszeniaSłuchawek>
+            <impedancjaSłuchawek>32</impedancjaSłuchawek>
+            <czułośćSłuchawek>105</czułośćSłuchawek>
+            <wbudowanyMikrofon>Tak</wbudowanyMikrofon>
+            <kolor>Czarny</kolor>
+            <długośćKabla>2.5</długośćKabla>
+        </przedmiot>
+        <przedmiot>
+            <nazwa>Creative Aurvana Live!</nazwa>
+            <cena>199.00</cena>
+            <typKonstrukcji>Nauszne zamknięte</typKonstrukcji>
+            <średnicaMembrany>40</średnicaMembrany>
+            <pasmoPrzenoszeniaSłuchawek>
+                <minimum>10</minimum>
+                <maximum>30000</maximum>
+            </pasmoPrzenoszeniaSłuchawek>
+            <impedancjaSłuchawek>32</impedancjaSłuchawek>
+            <czułośćSłuchawek>103</czułośćSłuchawek>
+            <wbudowanyMikrofon>Nie</wbudowanyMikrofon>
+            <kolor>Czarny</kolor>
+            <długośćKabla>1.2</długośćKabla>
+        </przedmiot>
+        <przedmiot>
+            <nazwa>SteelSeries Arctis 3</nazwa>
+            <cena>259.00</cena>
+            <typKonstrukcji>Nauszne zamknięte</typKonstrukcji>
+            <średnicaMembrany>40</średnicaMembrany>
+            <pasmoPrzenoszeniaSłuchawek>
+                <minimum>20</minimum>
+                <maximum>22000</maximum>
+            </pasmoPrzenoszeniaSłuchawek>
+            <impedancjaSłuchawek>32</impedancjaSłuchawek>
+            <czułośćSłuchawek>98</czułośćSłuchawek>
+            <wbudowanyMikrofon>Tak</wbudowanyMikrofon>
+            <kolor>Biały</kolor>
+            <długośćKabla>3.0</długośćKabla>
+        </przedmiot>
+        <przedmiot>
+            <nazwa>HyperX Cloud Alpha</nazwa>
+            <cena>349.00</cena>
+            <typKonstrukcji>Nauszne zamknięte</typKonstrukcji>
+            <średnicaMembrany>50</średnicaMembrany>
+            <pasmoPrzenoszeniaSłuchawek>
+                <minimum>13</minimum>
+                <maximum>27000</maximum>
+            </pasmoPrzenoszeniaSłuchawek>
+            <impedancjaSłuchawek>65</impedancjaSłuchawek>
+            <czułośćSłuchawek>98</czułośćSłuchawek>
+            <wbudowanyMikrofon>Tak</wbudowanyMikrofon>
+            <kolor>Czarno-czerwony</kolor>
+            <długośćKabla>1.3</długośćKabla>
+        </przedmiot>
+        <przedmiot>
+            <nazwa>SteelSeries Arctis 3</nazwa>
+            <cena>259.00</cena>
+            <typKonstrukcji>Nauszne zamknięte</typKonstrukcji>
+            <średnicaMembrany>40</średnicaMembrany>
+            <pasmoPrzenoszeniaSłuchawek>
+                <minimum>20</minimum>
+                <maximum>22000</maximum>
+            </pasmoPrzenoszeniaSłuchawek>
+            <impedancjaSłuchawek>32</impedancjaSłuchawek>
+            <czułośćSłuchawek>98</czułośćSłuchawek>
+            <wbudowanyMikrofon>Tak</wbudowanyMikrofon>
+            <kolor>Niebieski</kolor>
+            <długośćKabla>3.0</długośćKabla>
+        </przedmiot>
+        <przedmiot>
+            <nazwa>Corsair HS50 Stereo Gaming Headset</nazwa>
+            <cena>249.00</cena>
+            <typKonstrukcji>Nauszne półotwarte</typKonstrukcji>
+            <średnicaMembrany>50</średnicaMembrany>
+            <pasmoPrzenoszeniaSłuchawek>
+                <minimum>20</minimum>
+                <maximum>20000</maximum>
+            </pasmoPrzenoszeniaSłuchawek>
+            <impedancjaSłuchawek>32</impedancjaSłuchawek>
+            <czułośćSłuchawek>111</czułośćSłuchawek>
+            <wbudowanyMikrofon>Tak</wbudowanyMikrofon>
+            <kolor>Czarno-niebieski</kolor>
+            <długośćKabla>1.8</długośćKabla>
+        </przedmiot>
+        <przedmiot>
+            <nazwa>Lioncast LX20</nazwa>
+            <cena>109.00</cena>
+            <typKonstrukcji>Nauszne zamknięte</typKonstrukcji>
+            <średnicaMembrany>50</średnicaMembrany>
+            <pasmoPrzenoszeniaSłuchawek>
+                <minimum>20</minimum>
+                <maximum>20000</maximum>
+            </pasmoPrzenoszeniaSłuchawek>
+            <impedancjaSłuchawek>32</impedancjaSłuchawek>
+            <czułośćSłuchawek>105</czułośćSłuchawek>
+            <wbudowanyMikrofon>Tak</wbudowanyMikrofon>
+            <kolor>Czarny</kolor>
+            <długośćKabla>1.4</długośćKabla>
+        </przedmiot>
+        <przedmiot>
+            <nazwa>Superlux HD669</nazwa>
+            <cena>129.00</cena>
+            <typKonstrukcji>Nauszne zamknięte</typKonstrukcji>
+            <średnicaMembrany>50</średnicaMembrany>
+            <pasmoPrzenoszeniaSłuchawek>
+                <minimum>10</minimum>
+                <maximum>30000</maximum>
+            </pasmoPrzenoszeniaSłuchawek>
+            <impedancjaSłuchawek>56</impedancjaSłuchawek>
+            <czułośćSłuchawek>98</czułośćSłuchawek>
+            <wbudowanyMikrofon>Nie</wbudowanyMikrofon>
+            <kolor>Czarny</kolor>
+            <długośćKabla>3.0</długośćKabla>
+        </przedmiot>
+        <przedmiot>
+            <nazwa>Superlux HD681</nazwa>
+            <cena>89.00</cena>
+            <typKonstrukcji>Nauszne półotwarte</typKonstrukcji>
+            <średnicaMembrany>40</średnicaMembrany>
+            <pasmoPrzenoszeniaSłuchawek>
+                <minimum>10</minimum>
+                <maximum>30000</maximum>
+            </pasmoPrzenoszeniaSłuchawek>
+            <impedancjaSłuchawek>32</impedancjaSłuchawek>
+            <czułośćSłuchawek>98</czułośćSłuchawek>
+            <wbudowanyMikrofon>Nie</wbudowanyMikrofon>
+            <kolor>Czarno-czerwony</kolor>
+            <długośćKabla>2.5</długośćKabla>
+        </przedmiot>
+        <przedmiot>
+            <nazwa>Philips SHP2500/10</nazwa>
+            <cena>69.00</cena>
+            <typKonstrukcji>Nauszne zamknięte</typKonstrukcji>
+            <średnicaMembrany>40</średnicaMembrany>
+            <pasmoPrzenoszeniaSłuchawek>
+                <minimum>9</minimum>
+                <maximum>23000</maximum>
+            </pasmoPrzenoszeniaSłuchawek>
+            <impedancjaSłuchawek>32</impedancjaSłuchawek>
+            <czułośćSłuchawek>95</czułośćSłuchawek>
+            <wbudowanyMikrofon>Nie</wbudowanyMikrofon>
+            <kolor>Srebrny</kolor>
+            <długośćKabla>6.0</długośćKabla>
+        </przedmiot>
+        <przedmiot>
+            <nazwa>JBL T500</nazwa>
+            <cena>109.00</cena>
+            <typKonstrukcji>Nauszne zamknięte</typKonstrukcji>
+            <średnicaMembrany>32</średnicaMembrany>
+            <pasmoPrzenoszeniaSłuchawek>
+                <minimum>20</minimum>
+                <maximum>20000</maximum>
+            </pasmoPrzenoszeniaSłuchawek>
+            <impedancjaSłuchawek>32</impedancjaSłuchawek>
+            <czułośćSłuchawek>91</czułośćSłuchawek>
+            <wbudowanyMikrofon>Tak</wbudowanyMikrofon>
+            <kolor>Czarny</kolor>
+            <długośćKabla>1.2</długośćKabla>
+        </przedmiot>
+        <przedmiot>
+            <nazwa>Pioneer SE-M521</nazwa>
+            <cena>109.00</cena>
+            <typKonstrukcji>Nauszne zamknięte</typKonstrukcji>
+            <średnicaMembrany>40</średnicaMembrany>
+            <pasmoPrzenoszeniaSłuchawek>
+                <minimum>10</minimum>
+                <maximum>40000</maximum>
+            </pasmoPrzenoszeniaSłuchawek>
+            <impedancjaSłuchawek>32</impedancjaSłuchawek>
+            <czułośćSłuchawek>97</czułośćSłuchawek>
+            <wbudowanyMikrofon>Nie</wbudowanyMikrofon>
+            <kolor>Czarny</kolor>
+            <długośćKabla>3.5</długośćKabla>
+        </przedmiot>
+        <przedmiot>
+            <nazwa>HyperX Cloud II</nazwa>
+            <cena>359.00</cena>
+            <typKonstrukcji>Nauszne zamknięte</typKonstrukcji>
+            <średnicaMembrany>53</średnicaMembrany>
+            <pasmoPrzenoszeniaSłuchawek>
+                <minimum>15</minimum>
+                <maximum>25000</maximum>
+            </pasmoPrzenoszeniaSłuchawek>
+            <impedancjaSłuchawek>60</impedancjaSłuchawek>
+            <czułośćSłuchawek>98</czułośćSłuchawek>
+            <wbudowanyMikrofon>Tak</wbudowanyMikrofon>
+            <kolor>Czarno-czerwony</kolor>
+            <długośćKabla>1.0</długośćKabla>
+        </przedmiot>
+        <przedmiot>
+            <nazwa>HyperX Cloud Stinger Core</nazwa>
+            <cena>169.00</cena>
+            <typKonstrukcji>Nauszne zamknięte</typKonstrukcji>
+            <średnicaMembrany>40</średnicaMembrany>
+            <pasmoPrzenoszeniaSłuchawek>
+                <minimum>20</minimum>
+                <maximum>20000</maximum>
+            </pasmoPrzenoszeniaSłuchawek>
+            <impedancjaSłuchawek>16</impedancjaSłuchawek>
+            <czułośćSłuchawek>99</czułośćSłuchawek>
+            <wbudowanyMikrofon>Tak</wbudowanyMikrofon>
+            <kolor>Czarny</kolor>
+            <długośćKabla>1.3</długośćKabla>
+        </przedmiot>
+        <przedmiot>
+            <nazwa>SpeedLink MAXTER Gaming Headset</nazwa>
+            <cena>99.00</cena>
+            <typKonstrukcji>Nauszne zamknięte</typKonstrukcji>
+            <średnicaMembrany>50</średnicaMembrany>
+            <pasmoPrzenoszeniaSłuchawek>
+                <minimum>20</minimum>
+                <maximum>20000</maximum>
+            </pasmoPrzenoszeniaSłuchawek>
+            <impedancjaSłuchawek>32</impedancjaSłuchawek>
+            <czułośćSłuchawek>110</czułośćSłuchawek>
+            <wbudowanyMikrofon>Tak</wbudowanyMikrofon>
+            <kolor>Czarny</kolor>
+            <długośćKabla>2.2</długośćKabla>
+        </przedmiot>
+        <przedmiot>
+            <nazwa>HP Omen 800</nazwa>
+            <cena>299.00</cena>
+            <typKonstrukcji>Nauszne zamknięte</typKonstrukcji>
+            <średnicaMembrany>53</średnicaMembrany>
+            <pasmoPrzenoszeniaSłuchawek>
+                <minimum>20</minimum>
+                <maximum>20000</maximum>
+            </pasmoPrzenoszeniaSłuchawek>
+            <impedancjaSłuchawek>32</impedancjaSłuchawek>
+            <czułośćSłuchawek>95</czułośćSłuchawek>
+            <wbudowanyMikrofon>Tak</wbudowanyMikrofon>
+            <kolor>Czarny</kolor>
+            <długośćKabla>1.7</długośćKabla>
+        </przedmiot>
+        <przedmiot>
+            <nazwa>Creative Sound BlasterX H3</nazwa>
+            <cena>149.00</cena>
+            <typKonstrukcji>Nauszne zamknięte</typKonstrukcji>
+            <średnicaMembrany>40</średnicaMembrany>
+            <pasmoPrzenoszeniaSłuchawek>
+                <minimum>20</minimum>
+                <maximum>20000</maximum>
+            </pasmoPrzenoszeniaSłuchawek>
+            <impedancjaSłuchawek>32</impedancjaSłuchawek>
+            <czułośćSłuchawek>118</czułośćSłuchawek>
+            <wbudowanyMikrofon>Tak</wbudowanyMikrofon>
+            <kolor>Czarny</kolor>
+            <długośćKabla>1.2</długośćKabla>
+        </przedmiot>
+        <przedmiot>
+            <nazwa>Superlux HD681 EVO MKII</nazwa>
+            <cena>129.00</cena>
+            <typKonstrukcji>Nauszne półotwarte</typKonstrukcji>
+            <średnicaMembrany>50</średnicaMembrany>
+            <pasmoPrzenoszeniaSłuchawek>
+                <minimum>10</minimum>
+                <maximum>30000</maximum>
+            </pasmoPrzenoszeniaSłuchawek>
+            <impedancjaSłuchawek>32</impedancjaSłuchawek>
+            <czułośćSłuchawek>98</czułośćSłuchawek>
+            <wbudowanyMikrofon>Nie</wbudowanyMikrofon>
+            <kolor>Czarny</kolor>
+            <długośćKabla>1.0</długośćKabla>
+        </przedmiot>
+        <przedmiot>
+            <nazwa>Audio-Technica ATH-M40X</nazwa>
+            <cena>369.00</cena>
+            <typKonstrukcji>Nauszne zamknięte</typKonstrukcji>
+            <średnicaMembrany>40</średnicaMembrany>
+            <pasmoPrzenoszeniaSłuchawek>
+                <minimum>15</minimum>
+                <maximum>24000</maximum>
+            </pasmoPrzenoszeniaSłuchawek>
+            <impedancjaSłuchawek>35</impedancjaSłuchawek>
+            <czułośćSłuchawek>98</czułośćSłuchawek>
+            <wbudowanyMikrofon>Nie</wbudowanyMikrofon>
+            <kolor>Czarny</kolor>
+            <długośćKabla>1.2</długośćKabla>
+        </przedmiot>
+        <przedmiot>
+            <nazwa>Razer Electra V2</nazwa>
+            <cena>239.00</cena>
+            <typKonstrukcji>Nauszne zamknięte</typKonstrukcji>
+            <średnicaMembrany>40</średnicaMembrany>
+            <pasmoPrzenoszeniaSłuchawek>
+                <minimum>20</minimum>
+                <maximum>20000</maximum>
+            </pasmoPrzenoszeniaSłuchawek>
+            <impedancjaSłuchawek>32</impedancjaSłuchawek>
+            <czułośćSłuchawek>105</czułośćSłuchawek>
+            <wbudowanyMikrofon>Tak</wbudowanyMikrofon>
+            <kolor>Czarny</kolor>
+            <długośćKabla>1.3</długośćKabla>
+        </przedmiot>
+        <przedmiot>
+            <nazwa>Patriot Viper V360 Virtual 7.1</nazwa>
+            <cena>119.00</cena>
+            <typKonstrukcji>Nauszne półotwarte</typKonstrukcji>
+            <średnicaMembrany>40</średnicaMembrany>
+            <pasmoPrzenoszeniaSłuchawek>
+                <minimum>20</minimum>
+                <maximum>20000</maximum>
+            </pasmoPrzenoszeniaSłuchawek>
+            <impedancjaSłuchawek>32</impedancjaSłuchawek>
+            <czułośćSłuchawek>97</czułośćSłuchawek>
+            <wbudowanyMikrofon>Tak</wbudowanyMikrofon>
+            <kolor>Czarny</kolor>
+            <długośćKabla>2.2</długośćKabla>
+        </przedmiot>
+        <przedmiot>
+            <nazwa>Marshall Major III</nazwa>
+            <cena>249.00</cena>
+            <typKonstrukcji>Nauszne zamknięte</typKonstrukcji>
+            <średnicaMembrany>40</średnicaMembrany>
+            <pasmoPrzenoszeniaSłuchawek>
+                <minimum>20</minimum>
+                <maximum>20000</maximum>
+            </pasmoPrzenoszeniaSłuchawek>
+            <impedancjaSłuchawek>32</impedancjaSłuchawek>
+            <czułośćSłuchawek>99</czułośćSłuchawek>
+            <wbudowanyMikrofon>Tak</wbudowanyMikrofon>
+            <kolor>Brązowy</kolor>
+            <długośćKabla>0.0</długośćKabla>
+        </przedmiot>
+        <przedmiot>
+            <nazwa>Logitech G430 Surround Sound Gaming Headset</nazwa>
+            <cena>295.00</cena>
+            <typKonstrukcji>Nauszne zamknięte</typKonstrukcji>
+            <średnicaMembrany>40</średnicaMembrany>
+            <pasmoPrzenoszeniaSłuchawek>
+                <minimum>20</minimum>
+                <maximum>20000</maximum>
+            </pasmoPrzenoszeniaSłuchawek>
+            <impedancjaSłuchawek>32</impedancjaSłuchawek>
+            <czułośćSłuchawek>90</czułośćSłuchawek>
+            <wbudowanyMikrofon>Tak</wbudowanyMikrofon>
+            <kolor>Czarno-niebieski</kolor>
+            <długośćKabla>2.3</długośćKabla>
+        </przedmiot>
+    </listaPrzedmiotów>
 </zawartość>
