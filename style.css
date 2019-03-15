@@ -1,6 +1,8 @@
 zawartość
 {
-	background-color: #172e54;
+	background-image: url("https://jooinn.com/images/blue-background-pattern-1.jpg");
+	background-repeat: repeat;
+	transparent: 0.5;
 }
 
 daneDokumentu
@@ -9,6 +11,7 @@ daneDokumentu
 	color: #9e999e;	
 	display: block;
 	background-color: black;
+	margin-top: 20px;
 	margin-bottom: 20px;
 	margin-left: 20px;
 	margin-right: 20px;
@@ -101,11 +104,11 @@ przedmiot
 	font-size:20px;
 	display: block;
 	background-color: black;
-	margin-bottom: 20px;
+	margin-bottom: 30px;
 	margin-left: 20px;
 	margin-right: 20px;
 	border-color: #9e999e;
-	border-width: 4px;
+	border-width: 6px;
 	border-style: solid;
 }
 
