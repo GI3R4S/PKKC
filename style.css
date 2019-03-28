@@ -112,6 +112,20 @@ przedmiot
 	border-style: solid;
 }
 
+przedmiot::before
+{
+	padding-top: 0px;
+	color: #d30202;
+	font-family: Algerian;
+	font-weight:bolder;
+	font-size:30px;
+	position: relative;
+	top: 38px;
+	left: 30px;
+	content: "ID: " attr(przedmotID);
+}
+
+
 nazwa
 {
 	color: #d30202;
