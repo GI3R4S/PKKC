@@ -9,7 +9,7 @@
 <!ELEMENT dataModyfikacji (#PCDATA)>
 <!ELEMENT autorzy (autor+)>
 <!ELEMENT autor (#PCDATA)>
-<!ELEMENT listaPrzedmiotów (przedmiot+)>
+<!ELEMENT listaPrzedmiotów (przedmiot*)>
 <!ELEMENT przedmiot (nazwa,cena,typKonstrukcji,średnicaMembrany,pasmoPrzenoszeniaSłuchawek,impedancjaSłuchawek,czułośćSłuchawek,wbudowanyMikrofon,kolor,długośćKabla)>
 <!ATTLIST przedmiot przedmotID CDATA #REQUIRED>
 <!ELEMENT nazwa (#PCDATA)>
