@@ -99,6 +99,47 @@ dataModyfikacji::before
 	content: "Data modyfikacji\a";
 }
 
+markiTytuł
+{
+	color: deeppink;
+	display: block;
+	text-align: center;
+	font-family: Algerian;
+	font-weight:bold;
+	font-size:60px;
+}
+
+marki
+{
+	font-size:20px;
+	background-color: black;
+	margin-bottom: 30px;
+	margin-left: 20px;
+	margin-right: 20px;
+	border-color: rebeccapurple;
+	border-width: 6px;
+	border-style: ridge;
+
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+marka
+{
+	color: #9e999e;
+	margin-left: 28px;
+	padding-top: 2px;
+	padding-bottom:2px;
+	padding-left: 10px;
+	padding-right: 10px;
+	border-bottom-width: 4px;
+
+	margin: 0 auto;
+	display: inline-block;
+	overflow: hidden;
+}
 przedmiot
 {
 	font-size:20px;
