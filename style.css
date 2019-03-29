@@ -140,6 +140,7 @@ marka
 	display: inline-block;
 	overflow: hidden;
 }
+
 przedmiot
 {
 	font-size:20px;
@@ -151,6 +152,11 @@ przedmiot
 	border-color: #9e999e;
 	border-width: 6px;
 	border-style: solid;
+}
+
+przedmiot:nth-child(3n)
+{
+	border-color: yellow;
 }
 
 przedmiot::before
@@ -204,7 +210,15 @@ cena::before
 	left:4%;
 	font-style: normal;
 	font-weight: bold;
+	color: #9e999e;
 	content: "Cena ";
+}
+
+cena[promocja="TAK"]
+{
+	font-style: normal;
+	font-weight: bold;
+	color: green;
 }
 
 cena::after
@@ -212,7 +226,8 @@ cena::after
 	position:absolute;
 	right:2%;
 	font-style: normal;
-	font-weight: bold;
+	font-weight: normal;
+	color: #9e999e;
 	content: "Promocja: " attr(promocja);
 }
 
