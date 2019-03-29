@@ -210,7 +210,6 @@ cena::before
 	left:4%;
 	font-style: normal;
 	font-weight: bold;
-	color: #9e999e;
 	content: "Cena ";
 }
 
@@ -223,12 +222,11 @@ cena[promocja="TAK"]
 
 cena::after
 {
+	white-space: pre;
 	position:absolute;
-	right:2%;
-	font-style: normal;
+	font-style: italic;
 	font-weight: normal;
-	color: #9e999e;
-	content: "Promocja: " attr(promocja);
+	content: " " attr(waluta) "                                                                                                             Promocja: " attr(promocja);
 }
 
 typKonstrukcji::before
