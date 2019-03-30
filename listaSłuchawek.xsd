@@ -25,9 +25,10 @@
         </xs:sequence>
     </xs:complexType>
     <xs:complexType name="autorzyType">
-        <xs:sequence>
-            <xs:element type="autorType" name="autor" maxOccurs="unbounded" minOccurs="0"/>
-        </xs:sequence>
+        <xs:choice>
+            <xs:element type="autorType" name="autor" maxOccurs="0" minOccurs="0"/>
+            <xs:element type="autorType" name="autor" maxOccurs="2" minOccurs="2"/>
+        </xs:choice>
     </xs:complexType>
     <xs:complexType name="daneDokumentuType">
         <xs:sequence>
@@ -49,31 +50,34 @@
             </xs:element>
         </xs:sequence>
     </xs:complexType>
+    <xs:attributeGroup name="markaAttrs">
+        <xs:attribute type="xs:ID" name="id_marki" use="required">
+            <xs:simpleType>
+                <xs:restriction base="xs:string">
+                    <xs:pattern value="^[a-zA-Z]+"></xs:pattern>
+                </xs:restriction>
+            </xs:simpleType>
+        </xs:attribute>
+        <xs:attribute type="xs:string" name="krajPochodzenia" use="optional">
+            <xs:simpleType>
+                <xs:restriction base="xs:string">
+                    <xs:pattern value="^[a-zA-Z]+"></xs:pattern>
+                </xs:restriction>
+            </xs:simpleType>
+        </xs:attribute>
+        <xs:attribute type="xs:integer" name="rokPowstania" use="optional">
+            <xs:simpleType>
+                <xs:restriction base="xs:date">
+                    <xs:minInclusive value="0"/>
+                    <xs:maxInclusive value="2019"/>
+                </xs:restriction>
+            </xs:simpleType>
+        </xs:attribute>
+    </xs:attributeGroup>
     <xs:complexType name="markaType">
         <xs:simpleContent>
             <xs:extension base="xs:string">
-                <xs:attribute type="xs:ID" name="id_marki" use="optional">
-                    <xs:simpleType>
-                        <xs:restriction base="xs:string">
-                            <xs:pattern value="^[a-zA-Z]+"></xs:pattern>
-                        </xs:restriction>
-                    </xs:simpleType>
-                </xs:attribute>
-                <xs:attribute type="xs:string" name="krajPochodzenia" use="optional">
-                    <xs:simpleType>
-                        <xs:restriction base="xs:string">
-                            <xs:pattern value="^[a-zA-Z]+"></xs:pattern>
-                        </xs:restriction>
-                    </xs:simpleType>
-                </xs:attribute>
-                <xs:attribute type="xs:integer" name="rokPowstania" use="optional">
-                    <xs:simpleType>
-                        <xs:restriction base="xs:date">
-                            <xs:minInclusive value="0"/>
-                            <xs:maxInclusive value="2019"/>
-                        </xs:restriction>
-                    </xs:simpleType>
-                </xs:attribute>
+                <xs:attributeGroup ref="markaAttrs"/>
             </xs:extension>
         </xs:simpleContent>
     </xs:complexType>
@@ -150,7 +154,13 @@
             </xs:extension>
         </xs:simpleContent>
     </xs:complexType>
-    <xs:complexType name="przedmiotType">
+    <xs:simpleType name="PrzedmiotIDType">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="^H\d+$"/>
+        </xs:restriction>
+
+    </xs:simpleType>
+    <xs:group name="elementyPrzedmiotów">
         <xs:sequence>
             <xs:element type="xs:string" name="nazwa"/>
             <xs:element type="cenaType" name="cena"/>
@@ -177,7 +187,10 @@
             <xs:element type="xs:string" name="kolor"/>
             <xs:element type="długośćKablaType" name="długośćKabla"/>
         </xs:sequence>
-        <xs:attribute type="xs:string" name="przedmotID" use="optional"/>
+    </xs:group>
+    <xs:complexType name="przedmiotType">
+        <xs:group ref="elementyPrzedmiotów"/>
+        <xs:attribute type="PrzedmiotIDType" name="przedmotID" use="optional"/>
         <xs:attribute type="xs:string" name="markaID" use="optional"/>
     </xs:complexType>
     <xs:complexType name="listaPrzedmiotówType">
@@ -193,4 +206,14 @@
             <xs:element type="listaPrzedmiotówType" name="listaPrzedmiotów"/>
         </xs:sequence>
     </xs:complexType>
+    <xs:element name="xD">
+        <xs:key name="klucz">
+            <xs:selector xpath="markiType/markaType"></xs:selector>
+            <xs:field xpath="@id_marki"></xs:field>
+        </xs:key>
+        <xs:keyref name="referencja" refer="klucz">
+            <xs:selector xpath="listaPrzedmiotówType/przedmiotType"></xs:selector>
+            <xs:field xpath="@type"></xs:field>
+        </xs:keyref>
+    </xs:element>
 </xs:schema>
