@@ -1,51 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/css" href="style.css"?>
 
-<!DOCTYPE zawartość [
-        <!ELEMENT zawartość (daneDokumentu,markiTytuł,marki,listaPrzedmiotów)>
-        <!ELEMENT daneDokumentu (opisDokumentu,autorzy,dataUtworzenia,dataModyfikacji)>
-        <!ELEMENT opisDokumentu (#PCDATA)>
-        <!ELEMENT dataUtworzenia (#PCDATA)>
-        <!ELEMENT dataModyfikacji (#PCDATA)>
-        <!ELEMENT autorzy (autor+)>
-        <!ELEMENT autor (imie,  nazwisko)>
-        <!ELEMENT imie (#PCDATA)>
-        <!ELEMENT nazwisko (#PCDATA)>
-        <!ELEMENT markiTytuł (#PCDATA)>
-        <!ELEMENT marki (marka*)>
-        <!ELEMENT marka (#PCDATA)>
-        <!ATTLIST marka
-                id_marki ID #REQUIRED
-                krajPochodzenia CDATA #REQUIRED
-                rokPowstania CDATA #REQUIRED
-                >
-        <!ELEMENT listaPrzedmiotów (przedmiot*)>
-        <!ELEMENT przedmiot (nazwa,cena,typKonstrukcji,średnicaMembrany,pasmoPrzenoszeniaSłuchawek,impedancjaSłuchawek,czułośćSłuchawek,wbudowanyMikrofon,kolor,długośćKabla)>
-        <!ATTLIST przedmiot
-                przedmotID ID #IMPLIED
-                markaID    IDREF #IMPLIED>
-        <!ELEMENT nazwa (#PCDATA)>
-        <!ELEMENT cena (#PCDATA)>
-        <!ATTLIST cena waluta CDATA "zł">
-        <!ATTLIST cena promocja (TAK|NIE) "NIE">
-        <!ELEMENT typKonstrukcji (#PCDATA)>
-        <!ELEMENT średnicaMembrany (#PCDATA)>
-        <!ATTLIST średnicaMembrany jednostka CDATA "mm">
-        <!ELEMENT impedancjaSłuchawek (#PCDATA)>
-        <!ATTLIST impedancjaSłuchawek jednostka CDATA "Ω">
-        <!ELEMENT czułośćSłuchawek (#PCDATA)>
-        <!ATTLIST czułośćSłuchawek jednostka CDATA "dB">
-        <!ELEMENT wbudowanyMikrofon (#PCDATA)>
-        <!ELEMENT kolor (#PCDATA)>
-        <!ELEMENT długośćKabla (#PCDATA)>
-        <!ATTLIST długośćKabla jednostka CDATA "m">
-        <!ELEMENT pasmoPrzenoszeniaSłuchawek (minimum,maximum)>
-        <!ELEMENT minimum (#PCDATA)>
-        <!ATTLIST minimum jednostka CDATA "kHz">
-        <!ELEMENT maximum (#PCDATA)>
-        <!ATTLIST maximum jednostka CDATA "kHz">
-        ]>
-
 <zawartość>
     <daneDokumentu>
         <opisDokumentu>
