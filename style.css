@@ -251,7 +251,7 @@ typKonstrukcji::before
 średnicaMembrany::after
 {
 	font-style: italic;
-	content: " mm";
+	content: " " attr(jednostka);
 }
 
 minimum::before
@@ -267,7 +267,7 @@ minimum::before
 minimum::after
 {
 	font-style: italic;
-	content: " kHz";
+	content: " " attr(jednostka);
 }
 maximum::before
 {
@@ -282,7 +282,7 @@ maximum::before
 maximum::after
 {
 	font-style: italic;
-	content: " kHz";
+	content: " " attr(jednostka);
 }
 
 impedancjaSłuchawek::before
@@ -310,7 +310,7 @@ czułośćSłuchawek::before
 
 czułośćSłuchawek::after
 {
-	content: " dB";
+	content: " " attr(jednostka);
 }
 
 wbudowanyMikrofon::before
@@ -342,5 +342,5 @@ długośćKabla::before
 
 długośćKabla::after
 {
-	content: " m";
+	content: " " attr(jednostka);
 }

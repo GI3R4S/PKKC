@@ -29,22 +29,27 @@
         <!ATTLIST cena waluta CDATA "zł">
         <!ATTLIST cena promocja (TAK|NIE) "NIE">
         <!ELEMENT typKonstrukcji (#PCDATA)>
-        <!ATTLIST typKonstrukcji typRodzicID CDATA #IMPLIED>
         <!ELEMENT średnicaMembrany (#PCDATA)>
+        <!ATTLIST średnicaMembrany jednostka CDATA "mm">
         <!ELEMENT impedancjaSłuchawek (#PCDATA)>
+        <!ATTLIST impedancjaSłuchawek jednostka CDATA "Ω">
         <!ELEMENT czułośćSłuchawek (#PCDATA)>
+        <!ATTLIST czułośćSłuchawek jednostka CDATA "dB">
         <!ELEMENT wbudowanyMikrofon (#PCDATA)>
         <!ELEMENT kolor (#PCDATA)>
         <!ELEMENT długośćKabla (#PCDATA)>
+        <!ATTLIST długośćKabla jednostka CDATA "m">
         <!ELEMENT pasmoPrzenoszeniaSłuchawek (minimum,maximum)>
         <!ELEMENT minimum (#PCDATA)>
+        <!ATTLIST minimum jednostka CDATA "kHz">
         <!ELEMENT maximum (#PCDATA)>
+        <!ATTLIST maximum jednostka CDATA "kHz">
         ]>
 
 <zawartość>
     <daneDokumentu>
         <opisDokumentu>
-            Dokument ten zawiera podstawowe informacje na temat 29 najpopularniejszych zestawów słuchawkowych dostępnych
+            Dokument ten zawiera podstawowe informacje na temat najpopularniejszych zestawów słuchawkowych dostępnych
             w sklepie internetowym
         </opisDokumentu>
         <autorzy>
