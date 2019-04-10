@@ -3,7 +3,16 @@
             targetNamespace="https://www.w3schools.com"
             xmlns="https://www.w3schools.com"
             elementFormDefault="qualified">
-    <xs:element name="zawartość" type="zawartośćType"/>
+    <xs:element name="zawartość" type="zawartośćType">
+        <xs:key name="klucz">
+            <xs:selector xpath="marki/marka"></xs:selector>
+            <xs:field xpath="@id_marki"></xs:field>
+        </xs:key>
+        <xs:keyref name="referencja" refer="klucz">
+            <xs:selector xpath="listaPrzedmiotów/przedmiot"></xs:selector>
+            <xs:field xpath="@type"></xs:field>
+        </xs:keyref>
+    </xs:element>
     <xs:complexType name="autorType">
         <xs:sequence>
             <xs:element name="imie">
@@ -208,14 +217,4 @@
             <xs:element type="listaPrzedmiotówType" name="listaPrzedmiotów"/>
         </xs:sequence>
     </xs:complexType>
-    <xs:element name="xD">
-        <xs:key name="klucz">
-            <xs:selector xpath="markiType/markaType"></xs:selector>
-            <xs:field xpath="@id_marki"></xs:field>
-        </xs:key>
-        <xs:keyref name="referencja" refer="klucz">
-            <xs:selector xpath="listaPrzedmiotówType/przedmiotType"></xs:selector>
-            <xs:field xpath="@type"></xs:field>
-        </xs:keyref>
-    </xs:element>
 </xs:schema>
