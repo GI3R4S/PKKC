@@ -96,7 +96,7 @@
     <xs:complexType name="cenaType">
         <xs:simpleContent>
             <xs:extension base="PositiveFloat">
-                <xs:attribute type="xs:string" name="promocja" use="optional" default="NIE">
+                <xs:attribute type="xs:string" name="promocja" use="required">
                     <xs:simpleType>
                         <xs:restriction base="xs:string">
                             <xs:enumeration value="TAK"/>
@@ -104,28 +104,28 @@
                         </xs:restriction>
                     </xs:simpleType>
                 </xs:attribute>
-                <xs:attribute type="xs:string" name="waluta" use="optional" default="zł"/>
+                <xs:attribute type="xs:string" name="waluta" use="required"/>
             </xs:extension>
         </xs:simpleContent>
     </xs:complexType>
     <xs:complexType name="średnicaMembranyType">
         <xs:simpleContent>
             <xs:extension base="PositiveFloat">
-                <xs:attribute type="xs:string" name="jednostka" use="optional" default="mm"/>
+                <xs:attribute type="xs:string" name="jednostka" use="required"/>
             </xs:extension>
         </xs:simpleContent>
     </xs:complexType>
     <xs:complexType name="minimumType">
         <xs:simpleContent>
             <xs:extension base="xs:positiveInteger">
-                <xs:attribute type="xs:string" name="jednostka" use="optional" default="kHz"/>
+                <xs:attribute type="xs:string" name="jednostka" use="required"/>
             </xs:extension>
         </xs:simpleContent>
     </xs:complexType>
     <xs:complexType name="maximumType">
         <xs:simpleContent>
             <xs:extension base="xs:positiveInteger">
-                <xs:attribute type="xs:string" name="jednostka" use="optional" default="kHz"/>
+                <xs:attribute type="xs:string" name="jednostka" use="required"/>
             </xs:extension>
         </xs:simpleContent>
     </xs:complexType>
@@ -138,21 +138,21 @@
     <xs:complexType name="impedancjaSłuchawekType">
         <xs:simpleContent>
             <xs:extension base="xs:positiveInteger">
-                <xs:attribute type="xs:string" name="jednostka" use="optional"/>
+                <xs:attribute type="xs:string" name="jednostka" use="required"/>
             </xs:extension>
         </xs:simpleContent>
     </xs:complexType>
     <xs:complexType name="czułośćSłuchawekType">
         <xs:simpleContent>
             <xs:extension base="xs:positiveInteger">
-                <xs:attribute type="xs:string" name="jednostka" use="optional"/>
+                <xs:attribute type="xs:string" name="jednostka" use="required"/>
             </xs:extension>
         </xs:simpleContent>
     </xs:complexType>
     <xs:complexType name="długośćKablaType">
         <xs:simpleContent>
             <xs:extension base="PositiveFloat">
-                <xs:attribute type="xs:string" name="jednostka" use="optional"/>
+                <xs:attribute type="xs:string" name="jednostka" use="required"/>
             </xs:extension>
         </xs:simpleContent>
     </xs:complexType>
