@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/css" href="style.css"?>
 
-<zawartość>
+
+<zawartość
+        xmlns="https://www.w3schools.com"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="https://www.w3schools.com/xml listaSłuchawek.xsd">
     <daneDokumentu>
         <opisDokumentu>
             Dokument ten zawiera podstawowe informacje na temat najpopularniejszych zestawów słuchawkowych dostępnych
@@ -17,8 +21,8 @@
                 <nazwisko>Kwapisz</nazwisko>
             </autor>
         </autorzy>
-        <dataUtworzenia>08.03.2019</dataUtworzenia>
-        <dataModyfikacji>10.03.2019</dataModyfikacji>
+        <dataUtworzenia>2019-03-08</dataUtworzenia>
+        <dataModyfikacji>2019-03-10</dataModyfikacji>
     </daneDokumentu>
     <markiTytuł>Posiadane marki</markiTytuł>
     <marki>

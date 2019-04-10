@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified"
-           xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+            targetNamespace="https://www.w3schools.com"
+            xmlns="https://www.w3schools.com"
+            elementFormDefault="qualified">
     <xs:element name="zawartość" type="zawartośćType"/>
     <xs:complexType name="autorType">
         <xs:sequence>
             <xs:element name="imie">
                 <xs:simpleType>
                     <xs:restriction base="xs:string">
-                        <xs:pattern value="[a-zA-Z]+}"/>
+                        <xs:pattern value="[a-zA-Z]+"/>
                         <xs:minLength value="2"/>
                         <xs:maxLength value="20"/>
                     </xs:restriction>
@@ -54,20 +56,20 @@
         <xs:attribute type="xs:ID" name="id_marki" use="required">
             <xs:simpleType>
                 <xs:restriction base="xs:string">
-                    <xs:pattern value="^[a-zA-Z]+"></xs:pattern>
+                    <xs:pattern value="[a-zA-Z]+"></xs:pattern>
                 </xs:restriction>
             </xs:simpleType>
         </xs:attribute>
         <xs:attribute type="xs:string" name="krajPochodzenia" use="optional">
             <xs:simpleType>
                 <xs:restriction base="xs:string">
-                    <xs:pattern value="^[a-zA-Z]+"></xs:pattern>
+                    <xs:pattern value="[a-zA-Z]+"></xs:pattern>
                 </xs:restriction>
             </xs:simpleType>
         </xs:attribute>
         <xs:attribute type="xs:integer" name="rokPowstania" use="optional">
             <xs:simpleType>
-                <xs:restriction base="xs:date">
+                <xs:restriction base="xs:int">
                     <xs:minInclusive value="0"/>
                     <xs:maxInclusive value="2019"/>
                 </xs:restriction>
@@ -156,7 +158,7 @@
     </xs:complexType>
     <xs:simpleType name="PrzedmiotIDType">
         <xs:restriction base="xs:string">
-            <xs:pattern value="^H\d+$"/>
+            <xs:pattern value="H[\d]+"/>
         </xs:restriction>
 
     </xs:simpleType>
