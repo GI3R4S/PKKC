@@ -3,9 +3,9 @@
 
 
 <zawartość
-        xmlns="https://www.w3schools.com"
+        xmlns="DGMK_NAMESPACE"
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        xsi:schemaLocation="https://www.w3schools.com/xml listaSłuchawek.xsd">
+        xsi:schemaLocation="DGMK_NAMESPACE listaSłuchawek.xsd">
     <daneDokumentu>
         <opisDokumentu>
             Dokument ten zawiera podstawowe informacje na temat najpopularniejszych zestawów słuchawkowych dostępnych
@@ -13,7 +13,7 @@
         </opisDokumentu>
         <autorzy>
             <autor>
-                <imie>Dawid</imie>
+                <imie>Dawid Janusz</imie>
                 <nazwisko>Gierowski</nazwisko>
             </autor>
             <autor>

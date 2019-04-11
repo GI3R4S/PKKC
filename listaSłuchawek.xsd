@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
-            targetNamespace="https://www.w3schools.com"
-            xmlns="https://www.w3schools.com"
+<xs:schema  xmlns:xs="http://www.w3.org/2001/XMLSchema"
+            targetNamespace="DGMK_NAMESPACE"
+            xmlns="DGMK_NAMESPACE"
             elementFormDefault="qualified">
     <xs:element name="zawartość" type="zawartośćType">
         <xs:key name="klucz">
@@ -18,7 +18,7 @@
             <xs:element name="imie">
                 <xs:simpleType>
                     <xs:restriction base="xs:string">
-                        <xs:pattern value="[a-zA-Z]+"/>
+                        <xs:pattern value="([A-Z][a-z]+ *)*"/>
                         <xs:minLength value="2"/>
                         <xs:maxLength value="20"/>
                     </xs:restriction>
@@ -27,7 +27,7 @@
             <xs:element name="nazwisko">
                 <xs:simpleType>
                     <xs:restriction base="xs:string">
-                        <xs:pattern value="[a-zA-Z]+"/>
+                        <xs:pattern value="([A-Z][a-z]+\-*)*"/>
                         <xs:minLength value="2"/>
                         <xs:maxLength value="20"/>
                     </xs:restriction>
@@ -65,7 +65,7 @@
         <xs:attribute name="id_marki" use="required">
             <xs:simpleType>
                 <xs:restriction base="xs:string">
-                    <xs:pattern value="[a-zA-Z]+"/>
+                    <xs:pattern value="(\S*\s*)*"/>
                 </xs:restriction>
             </xs:simpleType>
         </xs:attribute>
