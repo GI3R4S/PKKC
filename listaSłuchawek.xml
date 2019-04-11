@@ -27,6 +27,7 @@
     <markiTytuł>Posiadane marki</markiTytuł>
     <marki>
         <marka id_marki="razer" krajPochodzenia="USA" rokPowstania="1977">Razer</marka>
+        <marka id_marki="razer" krajPochodzenia="USA" rokPowstania="1977">Razer</marka>
         <marka id_marki="isk" krajPochodzenia="Meksyk" rokPowstania="1999">ISK</marka>
         <marka id_marki="steelseries" krajPochodzenia="USA" rokPowstania="1997">SteelSeries</marka>
         <marka id_marki="creative" krajPochodzenia="UK" rokPowstania="1978">Creative</marka>

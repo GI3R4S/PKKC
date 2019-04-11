@@ -5,20 +5,16 @@
             elementFormDefault="qualified">
     <xs:element name="zawartość" type="zawartośćType">
         <xs:key name="klucz">
-            <xs:selector xpath="marki/marka"/>
-            <xs:field xpath="id_marki"/>
+            <xs:selector xpath="marki"/>
+            <xs:field xpath="marka"/>
         </xs:key>
-        <xs:keyref name="referencja" refer="klucz">
-            <xs:selector xpath="listaPrzedmiotów/przedmiot"/>
-            <xs:field xpath="@type"/>
-        </xs:keyref>
     </xs:element>
     <xs:complexType name="autorType">
         <xs:sequence>
             <xs:element name="imie">
                 <xs:simpleType>
                     <xs:restriction base="xs:string">
-                        <xs:pattern value="([A-Z][a-z]+ *)*"/>
+                        <xs:pattern value="([A-Z][a-z]+\ ?)*"/>
                         <xs:minLength value="2"/>
                         <xs:maxLength value="20"/>
                     </xs:restriction>
@@ -27,7 +23,7 @@
             <xs:element name="nazwisko">
                 <xs:simpleType>
                     <xs:restriction base="xs:string">
-                        <xs:pattern value="([A-Z][a-z]+\-*)*"/>
+                        <xs:pattern value="([A-Z][a-z]+\-?)*"/>
                         <xs:minLength value="2"/>
                         <xs:maxLength value="20"/>
                     </xs:restriction>
