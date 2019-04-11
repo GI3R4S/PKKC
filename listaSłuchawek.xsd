@@ -5,12 +5,12 @@
             elementFormDefault="qualified">
     <xs:element name="zawartość" type="zawartośćType">
         <xs:key name="klucz">
-            <xs:selector xpath="marki/marka"></xs:selector>
-            <xs:field xpath="@id_marki"></xs:field>
+            <xs:selector xpath="marki/marka"/>
+            <xs:field xpath="id_marki"/>
         </xs:key>
         <xs:keyref name="referencja" refer="klucz">
-            <xs:selector xpath="listaPrzedmiotów/przedmiot"></xs:selector>
-            <xs:field xpath="@type"></xs:field>
+            <xs:selector xpath="listaPrzedmiotów/przedmiot"/>
+            <xs:field xpath="@type"/>
         </xs:keyref>
     </xs:element>
     <xs:complexType name="autorType">
@@ -27,7 +27,7 @@
             <xs:element name="nazwisko">
                 <xs:simpleType>
                     <xs:restriction base="xs:string">
-                        <xs:pattern value="[a-zA-Z]+}"/>
+                        <xs:pattern value="[a-zA-Z]+"/>
                         <xs:minLength value="2"/>
                         <xs:maxLength value="20"/>
                     </xs:restriction>
@@ -48,35 +48,35 @@
             <xs:element name="dataUtworzenia">
                 <xs:simpleType>
                     <xs:restriction base="xs:date">
-                        <xs:pattern value="[0-9]{4}-[0-9]{2}-[0-9]{2}"></xs:pattern>
+                        <xs:pattern value="[0-9]{4}-[0-9]{2}-[0-9]{2}"/>
                     </xs:restriction>
                 </xs:simpleType>
             </xs:element>
             <xs:element name="dataModyfikacji">
                 <xs:simpleType>
                     <xs:restriction base="xs:date">
-                        <xs:pattern value="[0-9]{4}-[0-9]{2}-[0-9]{2}"></xs:pattern>
+                        <xs:pattern value="[0-9]{4}-[0-9]{2}-[0-9]{2}"/>
                     </xs:restriction>
                 </xs:simpleType>
             </xs:element>
         </xs:sequence>
     </xs:complexType>
     <xs:attributeGroup name="markaAttrs">
-        <xs:attribute type="xs:ID" name="id_marki" use="required">
+        <xs:attribute name="id_marki" use="required">
             <xs:simpleType>
                 <xs:restriction base="xs:string">
-                    <xs:pattern value="[a-zA-Z]+"></xs:pattern>
+                    <xs:pattern value="[a-zA-Z]+"/>
                 </xs:restriction>
             </xs:simpleType>
         </xs:attribute>
-        <xs:attribute type="xs:string" name="krajPochodzenia" use="optional">
+        <xs:attribute name="krajPochodzenia" use="optional">
             <xs:simpleType>
                 <xs:restriction base="xs:string">
-                    <xs:pattern value="[a-zA-Z]+"></xs:pattern>
+                    <xs:pattern value="[a-zA-Z]+"/>
                 </xs:restriction>
             </xs:simpleType>
         </xs:attribute>
-        <xs:attribute type="xs:integer" name="rokPowstania" use="optional">
+        <xs:attribute name="rokPowstania" use="optional">
             <xs:simpleType>
                 <xs:restriction base="xs:int">
                     <xs:minInclusive value="0"/>
@@ -98,14 +98,14 @@
         </xs:sequence>
     </xs:complexType>
     <xs:simpleType name="PositiveFloat">
-        <xs:restriction>
-            <xs:minExclusive value="0"/>
+        <xs:restriction base="xs:float">
+            <xs:minInclusive value="0"/>
         </xs:restriction>
     </xs:simpleType>
     <xs:complexType name="cenaType">
         <xs:simpleContent>
             <xs:extension base="PositiveFloat">
-                <xs:attribute type="xs:string" name="promocja" use="required">
+                <xs:attribute name="promocja" use="required">
                     <xs:simpleType>
                         <xs:restriction base="xs:string">
                             <xs:enumeration value="TAK"/>
