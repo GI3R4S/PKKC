@@ -5,9 +5,13 @@
             elementFormDefault="qualified">
     <xs:element name="zawartość" type="zawartośćType">
         <xs:key name="klucz">
-            <xs:selector xpath="marki"/>
-            <xs:field xpath="marka"/>
+            <xs:selector xpath="marki/marka"/>
+            <xs:field xpath="@id_marki"/>
         </xs:key>
+        <xs:keyref name="referencja" refer="klucz">
+            <xs:selector xpath="listaPrzedmiotów/przedmiot"/>
+            <xs:field xpath="@marka_id"/>
+        </xs:keyref>
     </xs:element>
     <xs:complexType name="autorType">
         <xs:sequence>
