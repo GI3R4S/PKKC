@@ -10,7 +10,7 @@
         </xs:key>
         <xs:keyref name="referencja" refer="klucz">
             <xs:selector xpath="listaPrzedmiotów/przedmiot"/>
-            <xs:field xpath="@marka_id"/>
+            <xs:field xpath="@markaID"/>
         </xs:keyref>
     </xs:element>
     <xs:complexType name="autorType">
