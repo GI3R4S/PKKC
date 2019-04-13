@@ -13,8 +13,7 @@
         </opisDokumentu>
         <autorzy>
             <autor>
-                <imie>Dawid Janusz</imie>
-                <nazwisko>Gierowski</nazwisko>
+                <pseudonim>GI3R4S</pseudonim>
             </autor>
             <autor>
                 <imie>Marcin</imie>
@@ -46,7 +45,7 @@
     </marki>
 
     <listaPrzedmiotów>
-        <przedmiot przedmotID="H1" markaID="razer">
+        <przedmiot przedmiotID="H1" markaID="razer">
             <nazwa>Razer Kraken Essential</nazwa>
             <cena waluta="zł" promocja="NIE">199.00</cena>
             <typKonstrukcji>Nauszne półotwarte</typKonstrukcji>
@@ -61,7 +60,7 @@
             <kolor>Czarny</kolor>
             <długośćKabla jednostka="m">1.3</długośćKabla>
         </przedmiot>
-        <przedmiot przedmotID="H2" markaID="isk">
+        <przedmiot przedmiotID="H2" markaID="isk">
             <nazwa>ISK HD9999</nazwa>
             <cena waluta="zł" promocja="NIE">274.00</cena>
             <typKonstrukcji>Nauszne zamknięte</typKonstrukcji>
@@ -76,7 +75,7 @@
             <kolor>Czarno-złoty</kolor>
             <długośćKabla jednostka="m">1.5</długośćKabla>
         </przedmiot>
-        <przedmiot przedmotID="H3" markaID="steelseries">
+        <przedmiot przedmiotID="H3" markaID="steelseries">
             <nazwa>SteelSeries Arctis 5</nazwa>
             <cena waluta="zł" promocja="TAK">359.00</cena>
             <typKonstrukcji>Nauszne zamknięte</typKonstrukcji>
@@ -91,7 +90,7 @@
             <kolor>Czarny</kolor>
             <długośćKabla jednostka="m">3.0</długośćKabla>
         </przedmiot>
-        <przedmiot przedmotID="H4" markaID="steelseries">
+        <przedmiot przedmiotID="H4" markaID="steelseries">
             <nazwa>SteelSeries Arctis 3</nazwa>
             <cena waluta="zł" promocja="NIE">259.00</cena>
             <typKonstrukcji>Nauszne zamknięte</typKonstrukcji>
@@ -106,7 +105,7 @@
             <kolor>Czarny</kolor>
             <długośćKabla jednostka="m">3.0</długośćKabla>
         </przedmiot>
-        <przedmiot przedmotID="H5" markaID="creative">
+        <przedmiot przedmiotID="H5" markaID="creative">
             <nazwa>Creative Sound Blaster Blaze</nazwa>
             <cena waluta="zł" promocja="TAK">99.00</cena>
             <typKonstrukcji>Nauszne zamknięte</typKonstrukcji>
@@ -121,7 +120,7 @@
             <kolor>Czarny</kolor>
             <długośćKabla jednostka="m">2.5</długośćKabla>
         </przedmiot>
-        <przedmiot przedmotID="H6" markaID="creative">
+        <przedmiot przedmiotID="H6" markaID="creative">
             <nazwa>Creative Aurvana Live!</nazwa>
             <cena waluta="zł" promocja="NIE">199.00</cena>
             <typKonstrukcji>Nauszne zamknięte</typKonstrukcji>
@@ -136,7 +135,7 @@
             <kolor>Czarny</kolor>
             <długośćKabla jednostka="m">1.2</długośćKabla>
         </przedmiot>
-        <przedmiot przedmotID="H7" markaID="steelseries">
+        <przedmiot przedmiotID="H7" markaID="steelseries">
             <nazwa>SteelSeries Arctis 3</nazwa>
             <cena waluta="zł" promocja="NIE">259.00</cena>
             <typKonstrukcji>Nauszne zamknięte</typKonstrukcji>
@@ -151,7 +150,7 @@
             <kolor>Biały</kolor>
             <długośćKabla jednostka="m">3.0</długośćKabla>
         </przedmiot>
-        <przedmiot przedmotID="H8" markaID="hyperx">
+        <przedmiot przedmiotID="H8" markaID="hyperx">
             <nazwa>HyperX Cloud Alpha</nazwa>
             <cena waluta="zł" promocja="NIE">349.00</cena>
             <typKonstrukcji>Nauszne zamknięte</typKonstrukcji>
@@ -166,7 +165,7 @@
             <kolor>Czarno-czerwony</kolor>
             <długośćKabla jednostka="m">1.3</długośćKabla>
         </przedmiot>
-        <przedmiot przedmotID="H9" markaID="steelseries">
+        <przedmiot przedmiotID="H9" markaID="steelseries">
             <nazwa>SteelSeries Arctis 3</nazwa>
             <cena waluta="zł" promocja="TAK">259.00</cena>
             <typKonstrukcji>Nauszne zamknięte</typKonstrukcji>
@@ -181,7 +180,7 @@
             <kolor>Niebieski</kolor>
             <długośćKabla jednostka="m">3.0</długośćKabla>
         </przedmiot>
-        <przedmiot przedmotID="H10" markaID="corsair">
+        <przedmiot przedmiotID="H10" markaID="corsair">
             <nazwa>Corsair HS50 Stereo Gaming Headset</nazwa>
             <cena waluta="zł" promocja="NIE">249.00</cena>
             <typKonstrukcji>Nauszne półotwarte</typKonstrukcji>
@@ -196,7 +195,7 @@
             <kolor>Czarno-niebieski</kolor>
             <długośćKabla jednostka="m">1.8</długośćKabla>
         </przedmiot>
-        <przedmiot przedmotID="H11" markaID="lioncast">
+        <przedmiot przedmiotID="H11" markaID="lioncast">
             <nazwa>Lioncast LX20</nazwa>
             <cena waluta="zł" promocja="NIE">109.00</cena>
             <typKonstrukcji>Nauszne zamknięte</typKonstrukcji>
@@ -211,7 +210,7 @@
             <kolor>Czarny</kolor>
             <długośćKabla jednostka="m">1.35</długośćKabla>
         </przedmiot>
-        <przedmiot przedmotID="H12" markaID="lioncast">
+        <przedmiot przedmiotID="H12" markaID="lioncast">
             <nazwa>Superlux HD669</nazwa>
             <cena waluta="zł" promocja="NIE">129.00</cena>
             <typKonstrukcji>Nauszne zamknięte</typKonstrukcji>
@@ -226,7 +225,7 @@
             <kolor>Czarny</kolor>
             <długośćKabla jednostka="m">3.0</długośćKabla>
         </przedmiot>
-        <przedmiot przedmotID="H13" markaID="superlux">
+        <przedmiot przedmiotID="H13" markaID="superlux">
             <nazwa>Superlux HD681</nazwa>
             <cena waluta="zł" promocja="NIE">89.00</cena>
             <typKonstrukcji>Nauszne półotwarte</typKonstrukcji>
@@ -241,7 +240,7 @@
             <kolor>Czarno-czerwony</kolor>
             <długośćKabla jednostka="m">2.5</długośćKabla>
         </przedmiot>
-        <przedmiot przedmotID="H14" markaID="philips">
+        <przedmiot przedmiotID="H14" markaID="philips">
             <nazwa>Philips SHP2500/10</nazwa>
             <cena waluta="zł" promocja="NIE">69.00</cena>
             <typKonstrukcji>Nauszne zamknięte</typKonstrukcji>
@@ -256,7 +255,7 @@
             <kolor>Srebrny</kolor>
             <długośćKabla jednostka="m">6.0</długośćKabla>
         </przedmiot>
-        <przedmiot przedmotID="H15" markaID="jbl">
+        <przedmiot przedmiotID="H15" markaID="jbl">
             <nazwa>JBL T500</nazwa>
             <cena waluta="zł" promocja="TAK">109.00</cena>
             <typKonstrukcji>Nauszne zamknięte</typKonstrukcji>
@@ -271,7 +270,7 @@
             <kolor>Czarny</kolor>
             <długośćKabla jednostka="m">1.19</długośćKabla>
         </przedmiot>
-        <przedmiot przedmotID="H16" markaID="pioneer">
+        <przedmiot przedmiotID="H16" markaID="pioneer">
             <nazwa>Pioneer SE-M521</nazwa>
             <cena waluta="zł" promocja="NIE">109.00</cena>
             <typKonstrukcji>Nauszne zamknięte</typKonstrukcji>
@@ -286,7 +285,7 @@
             <kolor>Czarny</kolor>
             <długośćKabla jednostka="m">3.5</długośćKabla>
         </przedmiot>
-        <przedmiot przedmotID="H17" markaID="hyperx">
+        <przedmiot przedmiotID="H17" markaID="hyperx">
             <nazwa>HyperX Cloud II</nazwa>
             <cena waluta="zł" promocja="NIE">359.00</cena>
             <typKonstrukcji>Nauszne zamknięte</typKonstrukcji>
@@ -301,7 +300,7 @@
             <kolor>Czarno-czerwony</kolor>
             <długośćKabla jednostka="m">1.0</długośćKabla>
         </przedmiot>
-        <przedmiot przedmotID="H18" markaID="hyperx">
+        <przedmiot przedmiotID="H18" markaID="hyperx">
             <nazwa>HyperX Cloud Stinger Core</nazwa>
             <cena waluta="zł" promocja="NIE">169.00</cena>
             <typKonstrukcji>Nauszne zamknięte</typKonstrukcji>
@@ -316,7 +315,7 @@
             <kolor>Czarny</kolor>
             <długośćKabla jednostka="m">1.3</długośćKabla>
         </przedmiot>
-        <przedmiot przedmotID="H19" markaID="speedlink">
+        <przedmiot przedmiotID="H19" markaID="speedlink">
             <nazwa>SpeedLink MAXTER Gaming Headset</nazwa>
             <cena waluta="zł" promocja="NIE">99.00</cena>
             <typKonstrukcji>Nauszne zamknięte</typKonstrukcji>
@@ -331,7 +330,7 @@
             <kolor>Czarny</kolor>
             <długośćKabla jednostka="m">2.2</długośćKabla>
         </przedmiot>
-        <przedmiot przedmotID="H20" markaID="hp">
+        <przedmiot przedmiotID="H20" markaID="hp">
             <nazwa>HP Omen 800</nazwa>
             <cena waluta="zł" promocja="NIE">299.00</cena>
             <typKonstrukcji>Nauszne zamknięte</typKonstrukcji>
@@ -346,7 +345,7 @@
             <kolor>Czarny</kolor>
             <długośćKabla jednostka="m">1.7</długośćKabla>
         </przedmiot>
-        <przedmiot przedmotID="H21" markaID="creative">
+        <przedmiot przedmiotID="H21" markaID="creative">
             <nazwa>Creative Sound BlasterX H3</nazwa>
             <cena waluta="zł" promocja="NIE">149.00</cena>
             <typKonstrukcji>Nauszne zamknięte</typKonstrukcji>
@@ -361,7 +360,7 @@
             <kolor>Czarny</kolor>
             <długośćKabla jednostka="m">1.2</długośćKabla>
         </przedmiot>
-        <przedmiot przedmotID="H22" markaID="superlux">
+        <przedmiot przedmiotID="H22" markaID="superlux">
             <nazwa>Superlux HD681 EVO MKII</nazwa>
             <cena waluta="zł" promocja="NIE">129.00</cena>
             <typKonstrukcji>Nauszne półotwarte</typKonstrukcji>
@@ -376,7 +375,7 @@
             <kolor>Czarny</kolor>
             <długośćKabla jednostka="m">1.0</długośćKabla>
         </przedmiot>
-        <przedmiot przedmotID="H23" markaID="audiotechnica">
+        <przedmiot przedmiotID="H23" markaID="audiotechnica">
             <nazwa>Audio-Technica ATH-M40X</nazwa>
             <cena waluta="zł" promocja="NIE">369.00</cena>
             <typKonstrukcji>Nauszne zamknięte</typKonstrukcji>
@@ -391,7 +390,7 @@
             <kolor>Czarny</kolor>
             <długośćKabla jednostka="m">1.2</długośćKabla>
         </przedmiot>
-        <przedmiot przedmotID="H24" markaID="razer">
+        <przedmiot przedmiotID="H24" markaID="razer">
             <nazwa>Razer Electra V2</nazwa>
             <cena waluta="zł" promocja="TAK">239.00</cena>
             <typKonstrukcji>Nauszne zamknięte</typKonstrukcji>
@@ -406,7 +405,7 @@
             <kolor>Czarny</kolor>
             <długośćKabla jednostka="m">1.3</długośćKabla>
         </przedmiot>
-        <przedmiot przedmotID="H25" markaID="patriot">
+        <przedmiot przedmiotID="H25" markaID="patriot">
             <nazwa>Patriot Viper V360 Virtual 7.1</nazwa>
             <cena waluta="zł" promocja="NIE">119.00</cena>
             <typKonstrukcji>Nauszne półotwarte</typKonstrukcji>
@@ -421,7 +420,7 @@
             <kolor>Czarny</kolor>
             <długośćKabla jednostka="m">2.2</długośćKabla>
         </przedmiot>
-        <przedmiot przedmotID="H26" markaID="marshall">
+        <przedmiot przedmiotID="H26" markaID="marshall">
             <nazwa>Marshall Major III</nazwa>
             <cena waluta="zł" promocja="NIE">249.00</cena>
             <typKonstrukcji>Nauszne zamknięte</typKonstrukcji>
@@ -436,7 +435,7 @@
             <kolor>Brązowy</kolor>
             <długośćKabla jednostka="m">0</długośćKabla>
         </przedmiot>
-        <przedmiot przedmotID="H27" markaID="logitech">
+        <przedmiot przedmiotID="H27" markaID="logitech">
             <nazwa>Logitech G430 Surround Sound Gaming Headset</nazwa>
             <cena waluta="zł" promocja="NIE">295.00</cena>
             <typKonstrukcji>Nauszne zamknięte</typKonstrukcji>

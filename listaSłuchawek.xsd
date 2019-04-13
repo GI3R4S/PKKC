@@ -1,89 +1,79 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xs:schema  xmlns:xs="http://www.w3.org/2001/XMLSchema"
-            targetNamespace="DGMK_NAMESPACE"
-            xmlns="DGMK_NAMESPACE"
-            elementFormDefault="qualified">
-    <xs:element name="zawartość" type="zawartośćType">
-        <xs:key name="klucz">
-            <xs:selector xpath="marki/marka"/>
-            <xs:field xpath="@id_marki"/>
-        </xs:key>
-        <xs:keyref name="referencja" refer="klucz">
-            <xs:selector xpath="listaPrzedmiotów/przedmiot"/>
-            <xs:field xpath="@markaID"/>
-        </xs:keyref>
-    </xs:element>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           targetNamespace="DGMK_NAMESPACE"
+           xmlns="DGMK_NAMESPACE"
+           xmlns:DGMK="DGMK_NAMESPACE"
+           elementFormDefault="qualified">
+
+    <xs:simpleType name="imieType">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="([A-Z][\D]+\ ?)*"/>
+            <xs:minLength value="2"/>
+            <xs:maxLength value="20"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="nazwiskoType">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="([A-Z][a-z]+\-?)*"/>
+            <xs:minLength value="2"/>
+            <xs:maxLength value="20"/>
+        </xs:restriction>
+    </xs:simpleType>
     <xs:complexType name="autorType">
-        <xs:sequence>
-            <xs:element name="imie">
-                <xs:simpleType>
-                    <xs:restriction base="xs:string">
-                        <xs:pattern value="([A-Z][a-z]+\ ?)*"/>
-                        <xs:minLength value="2"/>
-                        <xs:maxLength value="20"/>
-                    </xs:restriction>
-                </xs:simpleType>
-            </xs:element>
-            <xs:element name="nazwisko">
-                <xs:simpleType>
-                    <xs:restriction base="xs:string">
-                        <xs:pattern value="([A-Z][a-z]+\-?)*"/>
-                        <xs:minLength value="2"/>
-                        <xs:maxLength value="20"/>
-                    </xs:restriction>
-                </xs:simpleType>
-            </xs:element>
-        </xs:sequence>
+        <xs:choice>
+            <xs:sequence>
+                <xs:element name="imie" type="DGMK:imieType"/>
+                <xs:element name="nazwisko" type="DGMK:nazwiskoType"/>
+            </xs:sequence>
+            <xs:element name="pseudonim" type="xs:string"/>
+        </xs:choice>
     </xs:complexType>
     <xs:complexType name="autorzyType">
         <xs:choice>
-            <xs:element type="autorType" name="autor" maxOccurs="0" minOccurs="0"/>
+            <xs:element type="autorType" name="autor" maxOccurs="2" minOccurs="2"/>
             <xs:element type="autorType" name="autor" maxOccurs="2" minOccurs="2"/>
         </xs:choice>
     </xs:complexType>
+    <xs:simpleType name="dataUtworzeniaType">
+        <xs:restriction base="xs:date">
+            <xs:pattern value="[0-9]{4}-[0-9]{2}-[0-9]{2}"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="dataModyfikacjiType">
+        <xs:restriction base="xs:date">
+            <xs:pattern value="[0-9]{4}-[0-9]{2}-[0-9]{2}"/>
+        </xs:restriction>
+    </xs:simpleType>
     <xs:complexType name="daneDokumentuType">
         <xs:sequence>
-            <xs:element type="xs:string" name="opisDokumentu"/>
-            <xs:element type="autorzyType" name="autorzy"/>
-            <xs:element name="dataUtworzenia">
-                <xs:simpleType>
-                    <xs:restriction base="xs:date">
-                        <xs:pattern value="[0-9]{4}-[0-9]{2}-[0-9]{2}"/>
-                    </xs:restriction>
-                </xs:simpleType>
-            </xs:element>
-            <xs:element name="dataModyfikacji">
-                <xs:simpleType>
-                    <xs:restriction base="xs:date">
-                        <xs:pattern value="[0-9]{4}-[0-9]{2}-[0-9]{2}"/>
-                    </xs:restriction>
-                </xs:simpleType>
-            </xs:element>
+            <xs:element name="opisDokumentu" type="xs:string"/>
+            <xs:element name="autorzy" type="DGMK:autorzyType"/>
+            <xs:element name="dataUtworzenia" type="DGMK:dataUtworzeniaType"/>
+            <xs:element name="dataModyfikacji" type="DGMK:dataModyfikacjiType"/>
         </xs:sequence>
     </xs:complexType>
+
+
+    <xs:simpleType name="idMarkiType">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="(\S*\s*)*"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="krajPochodzeniaType">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[a-zA-Z]+"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="rokPowstaniaType">
+        <xs:restriction base="xs:int">
+            <xs:minInclusive value="0"/>
+            <xs:maxInclusive value="2019"/>
+        </xs:restriction>
+    </xs:simpleType>
     <xs:attributeGroup name="markaAttrs">
-        <xs:attribute name="id_marki" use="required">
-            <xs:simpleType>
-                <xs:restriction base="xs:string">
-                    <xs:pattern value="(\S*\s*)*"/>
-                </xs:restriction>
-            </xs:simpleType>
-        </xs:attribute>
-        <xs:attribute name="krajPochodzenia" use="optional">
-            <xs:simpleType>
-                <xs:restriction base="xs:string">
-                    <xs:pattern value="[a-zA-Z]+"/>
-                </xs:restriction>
-            </xs:simpleType>
-        </xs:attribute>
-        <xs:attribute name="rokPowstania" use="optional">
-            <xs:simpleType>
-                <xs:restriction base="xs:int">
-                    <xs:minInclusive value="0"/>
-                    <xs:maxInclusive value="2019"/>
-                </xs:restriction>
-            </xs:simpleType>
-        </xs:attribute>
+        <xs:attribute name="id_marki" type="DGMK:idMarkiType" use="required"/>
+        <xs:attribute name="krajPochodzenia" type="DGMK:krajPochodzeniaType" use="optional"/>
+        <xs:attribute name="rokPowstania" type="DGMK:rokPowstaniaType" use="optional"/>
     </xs:attributeGroup>
     <xs:complexType name="markaType">
         <xs:simpleContent>
@@ -94,9 +84,10 @@
     </xs:complexType>
     <xs:complexType name="markiType">
         <xs:sequence>
-            <xs:element type="markaType" name="marka" maxOccurs="unbounded" minOccurs="0"/>
+            <xs:element type="DGMK:markaType" name="marka" maxOccurs="unbounded" minOccurs="0"/>
         </xs:sequence>
     </xs:complexType>
+
     <xs:simpleType name="PositiveFloat">
         <xs:restriction base="xs:float">
             <xs:minInclusive value="0"/>
@@ -105,18 +96,17 @@
     <xs:complexType name="cenaType">
         <xs:simpleContent>
             <xs:extension base="PositiveFloat">
-                <xs:attribute name="promocja" use="required">
-                    <xs:simpleType>
-                        <xs:restriction base="xs:string">
-                            <xs:enumeration value="TAK"/>
-                            <xs:enumeration value="NIE"/>
-                        </xs:restriction>
-                    </xs:simpleType>
-                </xs:attribute>
+                <xs:attribute name="promocja" use="required" type="DGMK:promocjaType"/>
                 <xs:attribute type="xs:string" name="waluta" use="required"/>
             </xs:extension>
         </xs:simpleContent>
     </xs:complexType>
+    <xs:simpleType name="promocjaType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="TAK"/>
+            <xs:enumeration value="NIE"/>
+        </xs:restriction>
+    </xs:simpleType>
     <xs:complexType name="średnicaMembranyType">
         <xs:simpleContent>
             <xs:extension base="PositiveFloat">
@@ -140,8 +130,8 @@
     </xs:complexType>
     <xs:complexType name="pasmoPrzenoszeniaSłuchawekType">
         <xs:sequence>
-            <xs:element type="minimumType" name="minimum"/>
-            <xs:element type="maximumType" name="maximum"/>
+            <xs:element type="DGMK:minimumType" name="minimum"/>
+            <xs:element type="DGMK:maximumType" name="maximum"/>
         </xs:sequence>
     </xs:complexType>
     <xs:complexType name="impedancjaSłuchawekType">
@@ -169,52 +159,64 @@
         <xs:restriction base="xs:string">
             <xs:pattern value="H[\d]+"/>
         </xs:restriction>
-
+    </xs:simpleType>
+    <xs:simpleType name="typKonstrukcjiType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Nauszne półotwarte"/>
+            <xs:enumeration value="Nauszne zamknięte"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="mikrofonType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Tak"/>
+            <xs:enumeration value="Nie"/>
+        </xs:restriction>
     </xs:simpleType>
     <xs:group name="elementyPrzedmiotów">
-        <xs:sequence>
+    <xs:sequence>
             <xs:element type="xs:string" name="nazwa"/>
-            <xs:element type="cenaType" name="cena"/>
-            <xs:element name="typKonstrukcji">
-                <xs:simpleType>
-                    <xs:restriction base="xs:string">
-                        <xs:enumeration value="Nauszne półotwarte"/>
-                        <xs:enumeration value="Nauszne zamknięte"/>
-                    </xs:restriction>
-                </xs:simpleType>
-            </xs:element>
-            <xs:element type="średnicaMembranyType" name="średnicaMembrany"/>
-            <xs:element type="pasmoPrzenoszeniaSłuchawekType" name="pasmoPrzenoszeniaSłuchawek"/>
-            <xs:element type="impedancjaSłuchawekType" name="impedancjaSłuchawek"/>
-            <xs:element type="czułośćSłuchawekType" name="czułośćSłuchawek"/>
-            <xs:element name="wbudowanyMikrofon" default="Nie">
-                <xs:simpleType>
-                    <xs:restriction base="xs:string">
-                        <xs:enumeration value="Tak"/>
-                        <xs:enumeration value="Nie"/>
-                    </xs:restriction>
-                </xs:simpleType>
-            </xs:element>
+            <xs:element type="DGMK:cenaType" name="cena"/>
+            <xs:element type="DGMK:typKonstrukcjiType" name="typKonstrukcji"/>
+            <xs:element type="DGMK:średnicaMembranyType" name="średnicaMembrany"/>
+            <xs:element type="DGMK:pasmoPrzenoszeniaSłuchawekType" name="pasmoPrzenoszeniaSłuchawek"/>
+            <xs:element type="DGMK:impedancjaSłuchawekType" name="impedancjaSłuchawek"/>
+            <xs:element type="DGMK:czułośćSłuchawekType" name="czułośćSłuchawek"/>
+            <xs:element type="DGMK:mikrofonType" name="wbudowanyMikrofon" default="Nie"/>
             <xs:element type="xs:string" name="kolor"/>
-            <xs:element type="długośćKablaType" name="długośćKabla"/>
+            <xs:element type="DGMK:długośćKablaType" name="długośćKabla"/>
         </xs:sequence>
     </xs:group>
     <xs:complexType name="przedmiotType">
         <xs:group ref="elementyPrzedmiotów"/>
-        <xs:attribute type="PrzedmiotIDType" name="przedmotID" use="optional"/>
+        <xs:attribute type="DGMK:PrzedmiotIDType" name="przedmiotID" use="optional"/>
         <xs:attribute type="xs:string" name="markaID" use="optional"/>
     </xs:complexType>
     <xs:complexType name="listaPrzedmiotówType">
         <xs:sequence>
-            <xs:element type="przedmiotType" name="przedmiot" maxOccurs="unbounded" minOccurs="0"/>
+            <xs:element type="DGMK:przedmiotType" name="przedmiot" maxOccurs="unbounded" minOccurs="0"/>
         </xs:sequence>
     </xs:complexType>
     <xs:complexType name="zawartośćType">
         <xs:sequence>
-            <xs:element type="daneDokumentuType" name="daneDokumentu"/>
+            <xs:element type="DGMK:daneDokumentuType" name="daneDokumentu"/>
             <xs:element type="xs:string" name="markiTytuł"/>
-            <xs:element type="markiType" name="marki"/>
-            <xs:element type="listaPrzedmiotówType" name="listaPrzedmiotów"/>
+            <xs:element type="DGMK:markiType" name="marki"/>
+            <xs:element type="DGMK:listaPrzedmiotówType" name="listaPrzedmiotów"/>
         </xs:sequence>
     </xs:complexType>
+
+    <xs:element name="zawartość" type="DGMK:zawartośćType">
+           <xs:key name="markaKey">
+               <xs:selector xpath="DGMK:marki/DGMK:marka"/>
+               <xs:field xpath="@id_marki"/>
+           </xs:key>
+            <xs:key name="przedmiotKey">
+                <xs:selector xpath="DGMK:listaPrzedmiotów/DGMK:przedmiot"/>
+                <xs:field xpath="@przedmiotID"/>
+            </xs:key>
+           <xs:keyref name="referencja" refer="markaKey">
+               <xs:selector xpath="DGMK:listaPrzedmiotów/DGMK:przedmiot"/>
+               <xs:field xpath="@markaID"/>
+           </xs:keyref>
+    </xs:element>
 </xs:schema>
