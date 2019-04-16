@@ -29,10 +29,9 @@
         </xs:choice>
     </xs:complexType>
     <xs:complexType name="autorzyType">
-        <xs:choice>
+        <xs:sequence>
             <xs:element type="autorType" name="autor" maxOccurs="2" minOccurs="2"/>
-            <xs:element type="autorType" name="autor" maxOccurs="2" minOccurs="2"/>
-        </xs:choice>
+        </xs:sequence>
     </xs:complexType>
     <xs:simpleType name="dataUtworzeniaType">
         <xs:restriction base="xs:date">
