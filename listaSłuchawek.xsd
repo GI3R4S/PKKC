@@ -55,12 +55,12 @@
 
     <xs:simpleType name="idMarkiType">
         <xs:restriction base="xs:string">
-            <xs:pattern value="(\S*\s*)*"/>
+            <xs:pattern value=".+"/>
         </xs:restriction>
     </xs:simpleType>
     <xs:simpleType name="krajPochodzeniaType">
         <xs:restriction base="xs:string">
-            <xs:pattern value="[a-zA-Z]+"/>
+            <xs:pattern value="(([A-Z][a-z]+\ ?)+)|([A-Z]{2,})"/>
         </xs:restriction>
     </xs:simpleType>
     <xs:simpleType name="rokPowstaniaType">
