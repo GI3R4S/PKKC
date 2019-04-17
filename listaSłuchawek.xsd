@@ -7,14 +7,20 @@
 
     <xs:simpleType name="imieType">
         <xs:restriction base="xs:string">
-            <xs:pattern value="([A-Z][a-z]+\ ?){1,2}"/>
+            <xs:pattern value="([A-Z][a-z]+)|([A-Z][a-z]+\ [A-Z][a-z]+)"/>
             <xs:minLength value="2"/>
             <xs:maxLength value="20"/>
         </xs:restriction>
     </xs:simpleType>
     <xs:simpleType name="nazwiskoType">
         <xs:restriction base="xs:string">
-            <xs:pattern value="([A-Z][a-z]+\-?){1,2}"/>
+            <xs:pattern value="([A-Z][a-z]+)|([A-Z][a-z]+\ [A-Z][a-z]+)|([A-Z][a-z]+\-[A-Z][a-z]+)"/>
+            <xs:minLength value="2"/>
+            <xs:maxLength value="20"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="pseudonimType">
+        <xs:restriction>
             <xs:minLength value="2"/>
             <xs:maxLength value="20"/>
         </xs:restriction>
@@ -25,12 +31,12 @@
                 <xs:element name="imie" type="DGMK:imieType"/>
                 <xs:element name="nazwisko" type="DGMK:nazwiskoType"/>
             </xs:sequence>
-            <xs:element name="pseudonim" type="xs:string"/>
+            <xs:element name="pseudonim" type="DGMK:pseudonimType"/>
         </xs:choice>
     </xs:complexType>
     <xs:complexType name="autorzyType">
         <xs:sequence>
-            <xs:element type="autorType" name="autor" maxOccurs="2" minOccurs="2"/>
+            <xs:element name="autor" type="autorType"  maxOccurs="2" minOccurs="2"/>
         </xs:sequence>
     </xs:complexType>
     <xs:simpleType name="dataUtworzeniaType">
@@ -83,7 +89,7 @@
     </xs:complexType>
     <xs:complexType name="markiType">
         <xs:sequence>
-            <xs:element type="DGMK:markaType" name="marka" maxOccurs="unbounded" minOccurs="0"/>
+            <xs:element name="marka" type="DGMK:markaType" maxOccurs="unbounded" minOccurs="0"/>
         </xs:sequence>
     </xs:complexType>
 
@@ -92,11 +98,18 @@
             <xs:minInclusive value="0"/>
         </xs:restriction>
     </xs:simpleType>
+    <xs:simpleType name="cenaWalutaType">
+        <xs:restriction>
+            <xs:enumeration value="zł"/>
+            <xs:enumeration value="$"/>
+            <xs:enumeration value="€"/>
+        </xs:restriction>
+    </xs:simpleType>
     <xs:complexType name="cenaType">
         <xs:simpleContent>
             <xs:extension base="PositiveFloat">
                 <xs:attribute name="promocja" use="required" type="DGMK:promocjaType"/>
-                <xs:attribute type="xs:string" name="waluta" use="required"/>
+                <xs:attribute name="waluta" type="DGMK:cenaWalutaType"  use="required"/>
             </xs:extension>
         </xs:simpleContent>
     </xs:complexType>
@@ -106,51 +119,72 @@
             <xs:enumeration value="NIE"/>
         </xs:restriction>
     </xs:simpleType>
+    <xs:simpleType name="średnicaMembranyJednostkaType">
+        <xs:restriction>
+            <xs:enumeration value="mm"/>
+            <xs:enumeration value="cm"/>
+            <xs:enumeration value="dm"/>
+        </xs:restriction>
+    </xs:simpleType>
     <xs:complexType name="średnicaMembranyType">
         <xs:simpleContent>
             <xs:extension base="PositiveFloat">
-                <xs:attribute type="xs:string" name="jednostka" use="required"/>
+                <xs:attribute name="jednostka" type="DGMK:średnicaMembranyJednostkaType"  use="required"/>
             </xs:extension>
         </xs:simpleContent>
     </xs:complexType>
+    <xs:simpleType name="pasmoPrzenoszeniaJednostkaType">
+        <xs:restriction>
+            <xs:enumeration value="kHz"/>
+            <xs:enumeration value="mHz"/>
+            <xs:enumeration value="Hz"/>
+        </xs:restriction>
+    </xs:simpleType>
     <xs:complexType name="minimumType">
         <xs:simpleContent>
             <xs:extension base="xs:positiveInteger">
-                <xs:attribute type="xs:string" name="jednostka" use="required"/>
+                <xs:attribute name="jednostka" type="DGMK:pasmoPrzenoszeniaJednostkaType"  use="required"/>
             </xs:extension>
         </xs:simpleContent>
     </xs:complexType>
     <xs:complexType name="maximumType">
         <xs:simpleContent>
             <xs:extension base="xs:positiveInteger">
-                <xs:attribute type="xs:string" name="jednostka" use="required"/>
+                <xs:attribute name="jednostka" type="DGMK:pasmoPrzenoszeniaJednostkaType"  use="required"/>
             </xs:extension>
         </xs:simpleContent>
     </xs:complexType>
     <xs:complexType name="pasmoPrzenoszeniaSłuchawekType">
         <xs:sequence>
-            <xs:element type="DGMK:minimumType" name="minimum"/>
-            <xs:element type="DGMK:maximumType" name="maximum"/>
+            <xs:element name="minimum" type="DGMK:minimumType" />
+            <xs:element name="maximum" type="DGMK:maximumType" />
         </xs:sequence>
     </xs:complexType>
     <xs:complexType name="impedancjaSłuchawekType">
         <xs:simpleContent>
             <xs:extension base="xs:positiveInteger">
-                <xs:attribute type="xs:string" name="jednostka" use="required"/>
+                <xs:attribute name="jednostka" type="xs:string" use="required"/>
             </xs:extension>
         </xs:simpleContent>
     </xs:complexType>
     <xs:complexType name="czułośćSłuchawekType">
         <xs:simpleContent>
             <xs:extension base="xs:positiveInteger">
-                <xs:attribute type="xs:string" name="jednostka" use="required"/>
+                <xs:attribute name="jednostka" type="xs:string"  use="required"/>
             </xs:extension>
         </xs:simpleContent>
     </xs:complexType>
+    <xs:simpleType name="długośćKablaJednostkaType">
+        <xs:restriction>
+            <xs:enumeration value="m"/>
+            <xs:enumeration value="cm"/>
+            <xs:enumeration value="dm"/>
+        </xs:restriction>
+    </xs:simpleType>
     <xs:complexType name="długośćKablaType">
         <xs:simpleContent>
             <xs:extension base="PositiveFloat">
-                <xs:attribute type="xs:string" name="jednostka" use="required"/>
+                <xs:attribute name="jednostka" type="długośćKablaJednostkaType" use="required"/>
             </xs:extension>
         </xs:simpleContent>
     </xs:complexType>
@@ -173,34 +207,34 @@
     </xs:simpleType>
     <xs:group name="elementyPrzedmiotów">
     <xs:sequence>
-            <xs:element type="xs:string" name="nazwa"/>
-            <xs:element type="DGMK:cenaType" name="cena"/>
-            <xs:element type="DGMK:typKonstrukcjiType" name="typKonstrukcji"/>
-            <xs:element type="DGMK:średnicaMembranyType" name="średnicaMembrany"/>
-            <xs:element type="DGMK:pasmoPrzenoszeniaSłuchawekType" name="pasmoPrzenoszeniaSłuchawek"/>
-            <xs:element type="DGMK:impedancjaSłuchawekType" name="impedancjaSłuchawek"/>
-            <xs:element type="DGMK:czułośćSłuchawekType" name="czułośćSłuchawek"/>
-            <xs:element type="DGMK:mikrofonType" name="wbudowanyMikrofon" default="Nie"/>
-            <xs:element type="xs:string" name="kolor"/>
-            <xs:element type="DGMK:długośćKablaType" name="długośćKabla"/>
+            <xs:element name="nazwa" type="xs:string" />
+            <xs:element name="cena" type="DGMK:cenaType" />
+            <xs:element name="typKonstrukcji" type="DGMK:typKonstrukcjiType" />
+            <xs:element name="średnicaMembrany" type="DGMK:średnicaMembranyType" />
+            <xs:element name="pasmoPrzenoszeniaSłuchawek" type="DGMK:pasmoPrzenoszeniaSłuchawekType" />
+            <xs:element name="impedancjaSłuchawek" type="DGMK:impedancjaSłuchawekType" />
+            <xs:element name="czułośćSłuchawek" type="DGMK:czułośćSłuchawekType" />
+            <xs:element name="wbudowanyMikrofon" type="DGMK:mikrofonType"  default="Nie"/>
+            <xs:element name="kolor" type="xs:string" />
+            <xs:element name="długośćKabla" type="DGMK:długośćKablaType" />
         </xs:sequence>
     </xs:group>
     <xs:complexType name="przedmiotType">
         <xs:group ref="elementyPrzedmiotów"/>
-        <xs:attribute type="DGMK:PrzedmiotIDType" name="przedmiotID" use="optional"/>
-        <xs:attribute type="xs:string" name="markaID" use="optional"/>
+        <xs:attribute name="przedmiotID" type="DGMK:PrzedmiotIDType" use="optional"/>
+        <xs:attribute name="markaID" type="xs:string" use="optional"/>
     </xs:complexType>
     <xs:complexType name="listaPrzedmiotówType">
         <xs:sequence>
-            <xs:element type="DGMK:przedmiotType" name="przedmiot" maxOccurs="unbounded" minOccurs="0"/>
+            <xs:element name="przedmiot" type="DGMK:przedmiotType" maxOccurs="unbounded" minOccurs="0"/>
         </xs:sequence>
     </xs:complexType>
     <xs:complexType name="zawartośćType">
         <xs:sequence>
-            <xs:element type="DGMK:daneDokumentuType" name="daneDokumentu"/>
-            <xs:element type="xs:string" name="markiTytuł"/>
-            <xs:element type="DGMK:markiType" name="marki"/>
-            <xs:element type="DGMK:listaPrzedmiotówType" name="listaPrzedmiotów"/>
+            <xs:element name="daneDokumentu" type="DGMK:daneDokumentuType"/>
+            <xs:element name="markiTytuł" type="xs:string" />
+            <xs:element name="marki" type="DGMK:markiType" />
+            <xs:element name="listaPrzedmiotów" type="DGMK:listaPrzedmiotówType" />
         </xs:sequence>
     </xs:complexType>
 
