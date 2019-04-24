@@ -55,23 +55,23 @@
                     </BezPromocji>
                 </Promocja>
                 <ProduktyMarek>
-                    <Razer><xsl:value-of select="count(/zawartość/listaPrzedmiotów/przedmiot[@markaID='razer'])"/></Razer>
-                    <ISK><xsl:value-of select="count(/zawartość/listaPrzedmiotów/przedmiot[@markaID='isk'])"/></ISK>
-                    <SteelSeries><xsl:value-of select="count(/zawartość/listaPrzedmiotów/przedmiot[@markaID='steelseries'])"/></SteelSeries>
-                    <Creative><xsl:value-of select="count(/zawartość/listaPrzedmiotów/przedmiot[@markaID='creative'])"/></Creative>
-                    <Hyperx><xsl:value-of select="count(/zawartość/listaPrzedmiotów/przedmiot[@markaID='hyperx'])"/></Hyperx>
-                    <Corsair><xsl:value-of select="count(/zawartość/listaPrzedmiotów/przedmiot[@markaID='corsair'])"/></Corsair>
-                    <Lioncast><xsl:value-of select="count(/zawartość/listaPrzedmiotów/przedmiot[@markaID='lioncast'])"/></Lioncast>
-                    <SuperLux><xsl:value-of select="count(/zawartość/listaPrzedmiotów/przedmiot[@markaID='superlux'])"/></SuperLux>
-                    <Philips><xsl:value-of select="count(/zawartość/listaPrzedmiotów/przedmiot[@markaID='philips'])"/></Philips>
-                    <JBL><xsl:value-of select="count(/zawartość/listaPrzedmiotów/przedmiot[@markaID='jbl'])"/></JBL>
-                    <Pioneer><xsl:value-of select="count(/zawartość/listaPrzedmiotów/przedmiot[@markaID='pioneer'])"/></Pioneer>
-                    <SpeedLink><xsl:value-of select="count(/zawartość/listaPrzedmiotów/przedmiot[@markaID='speedlink'])"/></SpeedLink>
-                    <HP><xsl:value-of select="count(/zawartość/listaPrzedmiotów/przedmiot[@markaID='hp'])"/></HP>
-                    <AudioTechnica><xsl:value-of select="count(/zawartość/listaPrzedmiotów/przedmiot[@markaID='audiotechnica'])"/></AudioTechnica>
-                    <Marshall><xsl:value-of select="count(/zawartość/listaPrzedmiotów/przedmiot[@markaID='marshall'])"/></Marshall>
-                    <Patriot><xsl:value-of select="count(/zawartość/listaPrzedmiotów/przedmiot[@markaID='patriot'])"/></Patriot>
-                    <Logitech><xsl:value-of select="count(/zawartość/listaPrzedmiotów/przedmiot[@markaID='logitech'])"/></Logitech>
+                    <ProduktyMarki NazwaMarki="Razer"><xsl:value-of select="count(/zawartość/listaPrzedmiotów/przedmiot[@markaID='razer'])"/></ProduktyMarki>
+                    <ProduktyMarki NazwaMarki="ISK"><xsl:value-of select="count(/zawartość/listaPrzedmiotów/przedmiot[@markaID='isk'])"/></ProduktyMarki>
+                    <ProduktyMarki NazwaMarki="SteelSeries"><xsl:value-of select="count(/zawartość/listaPrzedmiotów/przedmiot[@markaID='steelseries'])"/></ProduktyMarki>
+                    <ProduktyMarki NazwaMarki="Creative"><xsl:value-of select="count(/zawartość/listaPrzedmiotów/przedmiot[@markaID='creative'])"/></ProduktyMarki>
+                    <ProduktyMarki NazwaMarki="Hyperx"><xsl:value-of select="count(/zawartość/listaPrzedmiotów/przedmiot[@markaID='hyperx'])"/></ProduktyMarki>
+                    <ProduktyMarki NazwaMarki="Corsair"><xsl:value-of select="count(/zawartość/listaPrzedmiotów/przedmiot[@markaID='corsair'])"/></ProduktyMarki>
+                    <ProduktyMarki NazwaMarki="Lioncast"><xsl:value-of select="count(/zawartość/listaPrzedmiotów/przedmiot[@markaID='lioncast'])"/></ProduktyMarki>
+                    <ProduktyMarki NazwaMarki="SuperLux"><xsl:value-of select="count(/zawartość/listaPrzedmiotów/przedmiot[@markaID='superlux'])"/></ProduktyMarki>
+                    <ProduktyMarki NazwaMarki="Philips"><xsl:value-of select="count(/zawartość/listaPrzedmiotów/przedmiot[@markaID='philips'])"/></ProduktyMarki>
+                    <ProduktyMarki NazwaMarki="JBL"><xsl:value-of select="count(/zawartość/listaPrzedmiotów/przedmiot[@markaID='jbl'])"/></ProduktyMarki>
+                    <ProduktyMarki NazwaMarki="Pioneer"><xsl:value-of select="count(/zawartość/listaPrzedmiotów/przedmiot[@markaID='pioneer'])"/></ProduktyMarki>
+                    <ProduktyMarki NazwaMarki="SpeedLink"><xsl:value-of select="count(/zawartość/listaPrzedmiotów/przedmiot[@markaID='speedlink'])"/></ProduktyMarki>
+                    <ProduktyMarki NazwaMarki="HP"><xsl:value-of select="count(/zawartość/listaPrzedmiotów/przedmiot[@markaID='hp'])"/></ProduktyMarki>
+                    <ProduktyMarki NazwaMarki="AudioTechnica"><xsl:value-of select="count(/zawartość/listaPrzedmiotów/przedmiot[@markaID='audiotechnica'])"/></ProduktyMarki>
+                    <ProduktyMarki NazwaMarki="Marshall"><xsl:value-of select="count(/zawartość/listaPrzedmiotów/przedmiot[@markaID='marshall'])"/></ProduktyMarki>
+                    <ProduktyMarki NazwaMarki="Patriot"><xsl:value-of select="count(/zawartość/listaPrzedmiotów/przedmiot[@markaID='patriot'])"/></ProduktyMarki>
+                    <ProduktyMarki NazwaMarki="Logitech"><xsl:value-of select="count(/zawartość/listaPrzedmiotów/przedmiot[@markaID='logitech'])"/></ProduktyMarki>
                 </ProduktyMarek>
                 <DługośćKabla>
                     <Krótkie><xsl:value-of select="count(/zawartość/listaPrzedmiotów/przedmiot[długośćKabla&lt;'1.5'])"/></Krótkie>
@@ -82,7 +82,7 @@
     </xsl:template>
 
     <xsl:template match="/zawartość/listaPrzedmiotów/przedmiot[cena/@promocja='TAK']">
-        <xsl:element name="słuchawki">
+        <xsl:element name="Słuchawki">
             <xsl:element name="Nazwa">
                 <xsl:value-of select="nazwa"/>
             </xsl:element>
