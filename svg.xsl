@@ -82,6 +82,35 @@
                     }]]>
             </script>
 
+            <script type="text/ecmascript">
+                <![CDATA[
+                    function onClickShowHideButton(evt) {
+                        var numbers = document.getElementById("marki");
+                        if(numbers.getAttribute("visibility") == "hidden")
+                        {
+                            numbers.setAttribute("visibility", "visible");
+                            numbers = document.getElementById("waluta");
+                            numbers.setAttribute("visibility", "visible");
+                            numbers = document.getElementById("typKonstrukcji");
+                            numbers.setAttribute("visibility", "visible");
+                            numbers = document.getElementById("promocja");
+                            numbers.setAttribute("visibility", "visible");
+                        }
+                        else
+                        {
+                            numbers.setAttribute("visibility", "hidden");
+                            numbers = document.getElementById("waluta");
+                            numbers.setAttribute("visibility", "hidden");
+                            numbers = document.getElementById("typKonstrukcji");
+                            numbers.setAttribute("visibility", "hidden");
+                            numbers = document.getElementById("promocja");
+                            numbers.setAttribute("visibility", "hidden");
+                        }
+                    }]]>
+            </script>
+
+
+
             <svg:text x="50%" y="20" font-size="24" fill="black" font-weight="bold" text-anchor="middle">
                 Sklep ze słuchawkami statystyki
             </svg:text>
@@ -91,9 +120,11 @@
     </xsl:template>
 
     <xsl:template match="/root/Podsumowanie">
-        <svg:text id="typKonstrukcjiText" x="120" y="68" font-size="18" fill="black" font-weight="bold" text-anchor="middle" onmouseover="onMouseOverNameTypKonstrukcji(evt)"
+        <svg:text id="typKonstrukcjiText" y="68" font-size="18" fill="black" font-weight="bold" text-anchor="middle"
+                  onmouseover="onMouseOverNameTypKonstrukcji(evt)"
                   onmouseout="onMouseOutNameTypKonstrukcji(evt)"
         >Typ konstrukcji
+            <svg:animate attributeName="x" from="0" to="120" dur="3s" fill="freeze"/>
         </svg:text>
         <svg:g id="typKonstrukcji" visibility="hidden">
             <svg:rect x="8" y="90" height="160" width="200" fill="none" stroke="black" stroke-width="4"/>
@@ -118,21 +149,21 @@
                 </xsl:attribute>
                 <xsl:value-of select="/root/Podsumowanie/TypKonstrukcji/Półotwarte"/>
             </xsl:element>
-            <svg:rect>
+            <svg:rect stroke-dashoffset="0">
                 <xsl:attribute name="x">
                     <xsl:variable name="poz" select="0"/>
-                    <xsl:value-of select="50 + (100 * $poz)"/>
+                    <xsl:value-of select="50 + (100 * $poz)"/>px
                 </xsl:attribute>
                 <xsl:attribute name="y">
                     <xsl:variable name="ile" select="/root/Podsumowanie/TypKonstrukcji/Półotwarte"/>
-                    <xsl:value-of select="220 - $ile * 5"/>
+                    <xsl:value-of select="220 - $ile * 5"/>px
                 </xsl:attribute>
                 <xsl:attribute name="width">
-                    10
+                    10px
                 </xsl:attribute>
                 <xsl:attribute name="height">
                     <xsl:variable name="ile" select="/root/Podsumowanie/TypKonstrukcji/Półotwarte"/>
-                    <xsl:value-of select="$ile * 5"/>
+                    <xsl:value-of select="$ile * 5"/>px
                 </xsl:attribute>
                 <xsl:attribute name="style">
                     fill:black
@@ -177,10 +208,12 @@
             </svg:rect>
         </svg:g>
 
-        <svg:text id="walutaText" x="400" y="68" font-size="18" fill="black" font-weight="bold" text-anchor="middle" onmouseover="onMouseOverNameWaluta(evt)"
+        <svg:text id="walutaText"  y="68" font-size="18" fill="black" font-weight="bold" text-anchor="middle"
+                  onmouseover="onMouseOverNameWaluta(evt)"
                   onmouseout="onMouseOutNameWaluta(evt)">Waluta
+            <svg:animate attributeName="x" from="280" to="400" dur="3s" fill="freeze"/>
         </svg:text>
-        <svg:g id="waluta" visibility="hidden" >
+        <svg:g id="waluta" visibility="hidden">
             <svg:rect x="260" y="90" height="160" width="280" fill="none" stroke="black" stroke-width="4"/>
             <svg:text x="300" y="240" font-size="16" fill="black" font-weight="bold" text-anchor="middle">Złotówki
             </svg:text>
@@ -301,8 +334,10 @@
             </svg:rect>
         </svg:g>
 
-        <svg:text id="promocjaText" x="750" y="68" font-size="18" fill="black" font-weight="bold" text-anchor="middle" onmouseover="onMouseOverNamePromocja(evt)"
+        <svg:text id="promocjaText" y="68" font-size="18" fill="black" font-weight="bold" text-anchor="middle"
+                  onmouseover="onMouseOverNamePromocja(evt)"
                   onmouseout="onMouseOutNamePromocja(evt)">Promocja
+            <svg:animate attributeName="x" from="630" to="750" dur="3s" fill="freeze"/>
         </svg:text>
         <svg:g id="promocja" visibility="hidden">
             <svg:rect x="650" y="90" height="160" width="200" fill="none" stroke="black" stroke-width="4"/>
@@ -386,26 +421,38 @@
             </svg:rect>
         </svg:g>
 
-        <svg:text id="markiText" x="450" y="290" font-size="18" fill="black" font-weight="bold" text-anchor="middle" onmouseover="onMouseOverNameMarki(evt)"
+        <svg:text id="markiText"  y="290" font-size="18" fill="black" font-weight="bold" text-anchor="middle"
+                  onmouseover="onMouseOverNameMarki(evt)"
                   onmouseout="onMouseOutNameMarki(evt)">Marki
+            <svg:animate attributeName="x" from="330" to="450" dur="3s" fill="freeze"/>
         </svg:text>
+
+        <svg:g id="showHideButton" onclick="onClickShowHideButton(evt)" cursor="pointer">
+            <svg:rect x="700" y="270" width="80" height="20" fill="yellow" stroke="black"/>
+            <svg:text x="710" y="284" fill="black" font-size="16" >Widoczne</svg:text>
+        </svg:g>
+
+        <a xlink:href="https://edu.p.lodz.pl/" target="_blank">
+            <svg:g cursor="pointer">
+                <svg:rect x="792" y="270" width="80" height="20" fill="yellow" stroke="black"/>
+                <svg:text x="804" y="284" fill="black" font-size="16">WIKAMP</svg:text>
+            </svg:g>
+        </a>
+
         <svg:g id="marki" visibility="hidden">
             <svg:rect x="4" y="296" height="280" width="932" fill="none" stroke="black" stroke-width="4"/>
             <xsl:for-each select="/root/Podsumowanie/ProduktyMarek/ProduktyMarki">
                 <xsl:variable name="i" select="position()"/>
-                <xsl:element name="svg:text">
+                <svg:text y="560px">
                     <xsl:attribute name="x">
                         <xsl:value-of select="5 + 56 * $i - 56"/>
-                    </xsl:attribute>
-                    <xsl:attribute name="y">
-                        570
                     </xsl:attribute>
                     <xsl:attribute name="font-size">9</xsl:attribute>
                     <xsl:attribute name="fill">black</xsl:attribute>
                     <xsl:attribute name="font-weight">bold</xsl:attribute>
                     <xsl:attribute name="text-anchor">left</xsl:attribute>
                     <xsl:value-of select="./@NazwaMarki"/>
-                </xsl:element>
+                </svg:text>>
 
                 <xsl:element name="svg:text">
                     <xsl:attribute name="x">
