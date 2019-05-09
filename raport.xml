@@ -1,4 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?><root>
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
     <SłuchawkiWPromocji>
         <Słuchawki>
             <Nazwa>Creative Sound Blaster Blaze</Nazwa>
@@ -216,16 +217,16 @@
             <ProduktyMarki NazwaMarki="ISK">1</ProduktyMarki>
             <ProduktyMarki NazwaMarki="SteelSeries">4</ProduktyMarki>
             <ProduktyMarki NazwaMarki="Creative">3</ProduktyMarki>
-            <ProduktyMarki NazwaMarki="Hyperx">3</ProduktyMarki>
+            <ProduktyMarki NazwaMarki="HyperX">3</ProduktyMarki>
             <ProduktyMarki NazwaMarki="Corsair">1</ProduktyMarki>
             <ProduktyMarki NazwaMarki="Lioncast">2</ProduktyMarki>
-            <ProduktyMarki NazwaMarki="SuperLux">2</ProduktyMarki>
+            <ProduktyMarki NazwaMarki="Superlux">2</ProduktyMarki>
             <ProduktyMarki NazwaMarki="Philips">1</ProduktyMarki>
             <ProduktyMarki NazwaMarki="JBL">1</ProduktyMarki>
             <ProduktyMarki NazwaMarki="Pioneer">1</ProduktyMarki>
             <ProduktyMarki NazwaMarki="SpeedLink">1</ProduktyMarki>
             <ProduktyMarki NazwaMarki="HP">1</ProduktyMarki>
-            <ProduktyMarki NazwaMarki="AudioTechnica">1</ProduktyMarki>
+            <ProduktyMarki NazwaMarki="Audio-Technica">1</ProduktyMarki>
             <ProduktyMarki NazwaMarki="Marshall">1</ProduktyMarki>
             <ProduktyMarki NazwaMarki="Patriot">1</ProduktyMarki>
             <ProduktyMarki NazwaMarki="Logitech">1</ProduktyMarki>
@@ -234,5 +235,6 @@
             <Krótkie>12</Krótkie>
             <Długie>15</Długie>
         </DługośćKabla>
+        <DataWygenerowania>2019-05-09T18:03:38.53Z</DataWygenerowania>
     </Podsumowanie>
 </root>

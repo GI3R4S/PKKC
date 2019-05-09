@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xsl:stylesheet version="1.0"
+<xsl:stylesheet version="2.0"
                 xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
                 xmlns:date="http://exslt.org/dates-and-times" xmlns:xs="http://www.w3.org/1999/XSL/Transform"
                 extension-element-prefixes="date">
@@ -55,28 +55,30 @@
                     </BezPromocji>
                 </Promocja>
                 <ProduktyMarek>
-                    <ProduktyMarki NazwaMarki="Razer"><xsl:value-of select="count(/zawartość/listaPrzedmiotów/przedmiot[@markaID='razer'])"/></ProduktyMarki>
-                    <ProduktyMarki NazwaMarki="ISK"><xsl:value-of select="count(/zawartość/listaPrzedmiotów/przedmiot[@markaID='isk'])"/></ProduktyMarki>
-                    <ProduktyMarki NazwaMarki="SteelSeries"><xsl:value-of select="count(/zawartość/listaPrzedmiotów/przedmiot[@markaID='steelseries'])"/></ProduktyMarki>
-                    <ProduktyMarki NazwaMarki="Creative"><xsl:value-of select="count(/zawartość/listaPrzedmiotów/przedmiot[@markaID='creative'])"/></ProduktyMarki>
-                    <ProduktyMarki NazwaMarki="Hyperx"><xsl:value-of select="count(/zawartość/listaPrzedmiotów/przedmiot[@markaID='hyperx'])"/></ProduktyMarki>
-                    <ProduktyMarki NazwaMarki="Corsair"><xsl:value-of select="count(/zawartość/listaPrzedmiotów/przedmiot[@markaID='corsair'])"/></ProduktyMarki>
-                    <ProduktyMarki NazwaMarki="Lioncast"><xsl:value-of select="count(/zawartość/listaPrzedmiotów/przedmiot[@markaID='lioncast'])"/></ProduktyMarki>
-                    <ProduktyMarki NazwaMarki="SuperLux"><xsl:value-of select="count(/zawartość/listaPrzedmiotów/przedmiot[@markaID='superlux'])"/></ProduktyMarki>
-                    <ProduktyMarki NazwaMarki="Philips"><xsl:value-of select="count(/zawartość/listaPrzedmiotów/przedmiot[@markaID='philips'])"/></ProduktyMarki>
-                    <ProduktyMarki NazwaMarki="JBL"><xsl:value-of select="count(/zawartość/listaPrzedmiotów/przedmiot[@markaID='jbl'])"/></ProduktyMarki>
-                    <ProduktyMarki NazwaMarki="Pioneer"><xsl:value-of select="count(/zawartość/listaPrzedmiotów/przedmiot[@markaID='pioneer'])"/></ProduktyMarki>
-                    <ProduktyMarki NazwaMarki="SpeedLink"><xsl:value-of select="count(/zawartość/listaPrzedmiotów/przedmiot[@markaID='speedlink'])"/></ProduktyMarki>
-                    <ProduktyMarki NazwaMarki="HP"><xsl:value-of select="count(/zawartość/listaPrzedmiotów/przedmiot[@markaID='hp'])"/></ProduktyMarki>
-                    <ProduktyMarki NazwaMarki="AudioTechnica"><xsl:value-of select="count(/zawartość/listaPrzedmiotów/przedmiot[@markaID='audiotechnica'])"/></ProduktyMarki>
-                    <ProduktyMarki NazwaMarki="Marshall"><xsl:value-of select="count(/zawartość/listaPrzedmiotów/przedmiot[@markaID='marshall'])"/></ProduktyMarki>
-                    <ProduktyMarki NazwaMarki="Patriot"><xsl:value-of select="count(/zawartość/listaPrzedmiotów/przedmiot[@markaID='patriot'])"/></ProduktyMarki>
-                    <ProduktyMarki NazwaMarki="Logitech"><xsl:value-of select="count(/zawartość/listaPrzedmiotów/przedmiot[@markaID='logitech'])"/></ProduktyMarki>
+                    <xsl:for-each select="/zawartość/marki/marka">
+                        <xsl:element name="ProduktyMarki">
+                            <xsl:attribute name="NazwaMarki">
+                                <xsl:value-of select="./."/>
+                            </xsl:attribute>
+                            <xsl:variable name="id_marki">
+                                <xsl:value-of select="./@id_marki"/>
+                            </xsl:variable>
+                            <xsl:value-of select="count(/zawartość/listaPrzedmiotów/przedmiot[@markaID=$id_marki])"/>
+                        </xsl:element>
+                    </xsl:for-each>
                 </ProduktyMarek>
                 <DługośćKabla>
-                    <Krótkie><xsl:value-of select="count(/zawartość/listaPrzedmiotów/przedmiot[długośćKabla&lt;'1.5'])"/></Krótkie>
-                    <Długie><xsl:value-of select="count(/zawartość/listaPrzedmiotów/przedmiot) - count(/zawartość/listaPrzedmiotów/przedmiot[długośćKabla&lt;'1.5'])"/></Długie>
+                    <Krótkie>
+                        <xsl:value-of select="count(/zawartość/listaPrzedmiotów/przedmiot[długośćKabla&lt;'1.5'])"/>
+                    </Krótkie>
+                    <Długie>
+                        <xsl:value-of
+                                select="count(/zawartość/listaPrzedmiotów/przedmiot) - count(/zawartość/listaPrzedmiotów/przedmiot[długośćKabla&lt;'1.5'])"/>
+                    </Długie>
                 </DługośćKabla>
+                <DataWygenerowania>
+                    <xsl:value-of select="current-dateTime()"/>
+                </DataWygenerowania>
             </Podsumowanie>
         </xsl:element>
     </xsl:template>

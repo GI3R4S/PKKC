@@ -7,7 +7,6 @@
 
     <xsl:template match="/">
         <xsl:element name="html">
-            <xsl:copy-of select="document('')/xsl:stylesheet/namespace::*[not(local-name() = 'xsl')]"/>
             <xsl:attribute name="xml:lang">pl</xsl:attribute>
             <xsl:attribute name="lang">pl</xsl:attribute>
 
@@ -42,6 +41,29 @@
             </xsl:element>
 
             <xsl:element name="body">
+
+                <xsl:element name="a">
+                    <xsl:attribute name="href">
+                        <xsl:text>#promocjeID</xsl:text>
+                    </xsl:attribute>
+                    <xsl:text>Promocje</xsl:text>
+                </xsl:element>
+                <xsl:element name="br"/>
+                <xsl:element name="a">
+                    <xsl:attribute name="href">
+                        <xsl:text>#niePromocjeID</xsl:text>
+                    </xsl:attribute>
+                    <xsl:text>Bez promocji</xsl:text>
+                </xsl:element>
+                <xsl:element name="br"/>
+                <xsl:element name="a">
+                    <xsl:attribute name="href">
+                        <xsl:text>#podsumowanieID</xsl:text>
+                    </xsl:attribute>
+                    <xsl:text>Podsumowanie</xsl:text>
+                </xsl:element>
+                <xsl:element name="br"/>
+
                 <xsl:apply-templates select="/root/SłuchawkiWPromocji"/>
                 <xsl:apply-templates select="/root/SłuchawkiBezPromocji"/>
                 <xsl:apply-templates select="/root/Podsumowanie"/>
@@ -51,8 +73,8 @@
 
     <xsl:template match="/root/SłuchawkiWPromocji">
         <xsl:element name="div">
-            <xsl:attribute name="class">
-                <xsl:text>słuchawkiWPromocji</xsl:text>
+            <xsl:attribute name="id">
+                <xsl:text>promocjeID</xsl:text>
             </xsl:attribute>
             <xsl:element name="h1">
                 <xsl:text>Słuchawki w promocji</xsl:text>
@@ -110,6 +132,9 @@
 
     <xsl:template match="/root/SłuchawkiBezPromocji">
         <xsl:element name="div">
+            <xsl:attribute name="id">
+                <xsl:text>niePromocjeID</xsl:text>
+            </xsl:attribute>
             <xsl:element name="h1">
                 <xsl:text>Słuchawki bez promocji</xsl:text>
             </xsl:element>
@@ -160,6 +185,9 @@
 
     <xsl:template match="/root/Podsumowanie">
         <xsl:element name="div">
+            <xsl:attribute name="id">
+                <xsl:text>podsumowanieID</xsl:text>
+            </xsl:attribute>
             <xsl:element name="h1">
                 <xsl:text>Podsumowanie</xsl:text>
             </xsl:element>
@@ -168,11 +196,11 @@
             <xsl:text>Typ konstrukcji</xsl:text>
             <xsl:element name="ul">
                 <xsl:element name="li">
-                    <xsl:text>Półotwarte:   </xsl:text>
+                    <xsl:text>Półotwarte:</xsl:text>
                     <xsl:value-of select="/root/Podsumowanie/TypKonstrukcji/Półotwarte"/>
                 </xsl:element>
                 <xsl:element name="li">
-                    <xsl:text>Zamknięte:    </xsl:text>
+                    <xsl:text>Zamknięte:</xsl:text>
                     <xsl:value-of select="/root/Podsumowanie/TypKonstrukcji/Zamknięte"/>
                 </xsl:element>
             </xsl:element>
@@ -180,15 +208,15 @@
             <xsl:text>Waluta</xsl:text>
             <xsl:element name="ul">
                 <xsl:element name="li">
-                    <xsl:text>Złotówki:   </xsl:text>
+                    <xsl:text>Złotówki:</xsl:text>
                     <xsl:value-of select="/root/Podsumowanie/Waluta/złotówki"/>
                 </xsl:element>
                 <xsl:element name="li">
-                    <xsl:text>Dolary:    </xsl:text>
+                    <xsl:text>Dolary:</xsl:text>
                     <xsl:value-of select="/root/Podsumowanie/Waluta/dolary"/>
                 </xsl:element>
                 <xsl:element name="li">
-                    <xsl:text>Euro:    </xsl:text>
+                    <xsl:text>Euro:</xsl:text>
                     <xsl:value-of select="/root/Podsumowanie/Waluta/euro"/>
                 </xsl:element>
             </xsl:element>
@@ -196,11 +224,11 @@
             <xsl:text>Promocja</xsl:text>
             <xsl:element name="ul">
                 <xsl:element name="li">
-                    <xsl:text>W promocji:   </xsl:text>
+                    <xsl:text>W promocji:</xsl:text>
                     <xsl:value-of select="/root/Podsumowanie/Promocja/WPromocji"/>
                 </xsl:element>
                 <xsl:element name="li">
-                    <xsl:text>Bez promocji:    </xsl:text>
+                    <xsl:text>Bez promocji:</xsl:text>
                     <xsl:value-of select="/root/Podsumowanie/Promocja/BezPromocji"/>
                 </xsl:element>
             </xsl:element>
@@ -210,10 +238,17 @@
                 <xsl:for-each select="/root/Podsumowanie/ProduktyMarek/ProduktyMarki">
                     <xsl:element name="li">
                         <xsl:value-of select="./@NazwaMarki"/>
-                        <xsl:text>:     </xsl:text>
+                        <xsl:text>:</xsl:text>
                         <xsl:value-of select="."/>
                     </xsl:element>
                 </xsl:for-each>
+            </xsl:element>
+            <xsl:element name="div">
+                <xsl:attribute name="align">
+                    <xsl:text>center</xsl:text>
+                </xsl:attribute>
+                <xsl:text>Wygenerowano:</xsl:text>
+                <xsl:value-of select="/root/Podsumowanie/DataWygenerowania"/>
             </xsl:element>
         </xsl:element>
     </xsl:template>
