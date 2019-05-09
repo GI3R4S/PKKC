@@ -42,28 +42,29 @@
 
             <xsl:element name="body">
 
-                <xsl:element name="a">
-                    <xsl:attribute name="href">
-                        <xsl:text>#promocjeID</xsl:text>
-                    </xsl:attribute>
-                    <xsl:text>Promocje</xsl:text>
+                <xsl:element name="div">
+                    <xsl:element name="a">
+                        <xsl:attribute name="href">
+                            <xsl:text>#promocjeID</xsl:text>
+                        </xsl:attribute>
+                        <xsl:text>Promocje</xsl:text>
+                    </xsl:element>
+                    <xsl:element name="br"/>
+                    <xsl:element name="a">
+                        <xsl:attribute name="href">
+                            <xsl:text>#niePromocjeID</xsl:text>
+                        </xsl:attribute>
+                        <xsl:text>Bez promocji</xsl:text>
+                    </xsl:element>
+                    <xsl:element name="br"/>
+                    <xsl:element name="a">
+                        <xsl:attribute name="href">
+                            <xsl:text>#podsumowanieID</xsl:text>
+                        </xsl:attribute>
+                        <xsl:text>Podsumowanie</xsl:text>
+                    </xsl:element>
+                    <xsl:element name="br"/>
                 </xsl:element>
-                <xsl:element name="br"/>
-                <xsl:element name="a">
-                    <xsl:attribute name="href">
-                        <xsl:text>#niePromocjeID</xsl:text>
-                    </xsl:attribute>
-                    <xsl:text>Bez promocji</xsl:text>
-                </xsl:element>
-                <xsl:element name="br"/>
-                <xsl:element name="a">
-                    <xsl:attribute name="href">
-                        <xsl:text>#podsumowanieID</xsl:text>
-                    </xsl:attribute>
-                    <xsl:text>Podsumowanie</xsl:text>
-                </xsl:element>
-                <xsl:element name="br"/>
-
                 <xsl:apply-templates select="/root/SłuchawkiWPromocji"/>
                 <xsl:apply-templates select="/root/SłuchawkiBezPromocji"/>
                 <xsl:apply-templates select="/root/Podsumowanie"/>
@@ -244,9 +245,6 @@
                 </xsl:for-each>
             </xsl:element>
             <xsl:element name="div">
-                <xsl:attribute name="align">
-                    <xsl:text>center</xsl:text>
-                </xsl:attribute>
                 <xsl:text>Wygenerowano:</xsl:text>
                 <xsl:value-of select="/root/Podsumowanie/DataWygenerowania"/>
             </xsl:element>
