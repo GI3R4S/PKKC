@@ -20,7 +20,7 @@
         </xs:restriction>
     </xs:simpleType>
     <xs:simpleType name="pseudonimType">
-        <xs:restriction>
+        <xs:restriction base="xs:string">
             <xs:minLength value="2"/>
             <xs:maxLength value="20"/>
         </xs:restriction>
@@ -99,7 +99,7 @@
         </xs:restriction>
     </xs:simpleType>
     <xs:simpleType name="cenaWalutaType">
-        <xs:restriction>
+        <xs:restriction base="xs:string">
             <xs:enumeration value="zł"/>
             <xs:enumeration value="$"/>
             <xs:enumeration value="€"/>
@@ -120,7 +120,7 @@
         </xs:restriction>
     </xs:simpleType>
     <xs:simpleType name="średnicaMembranyJednostkaType">
-        <xs:restriction>
+        <xs:restriction base="xs:string">
             <xs:enumeration value="mm"/>
             <xs:enumeration value="cm"/>
             <xs:enumeration value="dm"/>
@@ -134,7 +134,7 @@
         </xs:simpleContent>
     </xs:complexType>
     <xs:simpleType name="pasmoPrzenoszeniaJednostkaType">
-        <xs:restriction>
+        <xs:restriction base="xs:string">
             <xs:enumeration value="kHz"/>
             <xs:enumeration value="mHz"/>
             <xs:enumeration value="Hz"/>
@@ -175,7 +175,7 @@
         </xs:simpleContent>
     </xs:complexType>
     <xs:simpleType name="długośćKablaJednostkaType">
-        <xs:restriction>
+        <xs:restriction base="xs:string">
             <xs:enumeration value="m"/>
             <xs:enumeration value="cm"/>
             <xs:enumeration value="dm"/>
