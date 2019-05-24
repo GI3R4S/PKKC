@@ -11,6 +11,6 @@ namespace PKCK_ZAD5.XMLObjectModel
     public class ListaPrzedmiotow
     {
         [XmlElement("przedmiot")]
-        List<Przedmiot> listaPrzedmiotów;
+        public List<Przedmiot> listaPrzedmiotów = new List<Przedmiot>();
     }
 }

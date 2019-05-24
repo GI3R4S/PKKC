@@ -11,8 +11,16 @@ namespace PKCK_ZAD5.XMLObjectModel
     public class SrednicaMembrany
     {
         [XmlText]
-        public int srednicaMembrany;
+        public string srednicaMembrany { get; set; }
         [XmlAttribute("jednostka")]
-        public string jednostka;
+        public string jednostka { get; set; }
+
+        public string AsString
+        {
+            get
+            {
+                return srednicaMembrany.ToString() + " " + jednostka;
+            }
+        }
     }
 }

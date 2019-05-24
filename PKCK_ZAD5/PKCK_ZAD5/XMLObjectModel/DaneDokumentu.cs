@@ -15,8 +15,8 @@ namespace PKCK_ZAD5.XMLObjectModel
         [XmlElement("autorzy")]
         public Autorzy autorzy;
         [XmlElement("dataUtworzenia")]
-        public DateTime dataUtworzenia;
+        public string dataUtworzenia;
         [XmlElement("dataModyfikacji")]
-        public DateTime dataModyfikacji;
+        public string dataModyfikacji;
     }
 }

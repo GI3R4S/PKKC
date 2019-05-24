@@ -43,11 +43,27 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="XMLObjectModel\Autor.cs" />
+    <Compile Include="XMLObjectModel\Autorzy.cs" />
+    <Compile Include="XMLObjectModel\Cena.cs" />
+    <Compile Include="XMLObjectModel\CzuloscSluchawek.cs" />
+    <Compile Include="XMLObjectModel\DaneDokumentu.cs" />
+    <Compile Include="XMLObjectModel\DlugoscKabla.cs" />
+    <Compile Include="XMLObjectModel\ImpedancjaSluchawek.cs" />
+    <Compile Include="XMLObjectModel\ListaPrzedmiotów.cs" />
+    <Compile Include="XMLObjectModel\Marka.cs" />
+    <Compile Include="XMLObjectModel\Marki.cs" />
+    <Compile Include="XMLObjectModel\PasmoPrzenoszeniaSluchawek.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="XMLObjectModel\Przedmiot.cs" />
+    <Compile Include="XMLObjectModel\SrednicaMembrany.cs" />
+    <Compile Include="XMLObjectModel\Zawartosc.cs" />
+    <Compile Include="XMLTools.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

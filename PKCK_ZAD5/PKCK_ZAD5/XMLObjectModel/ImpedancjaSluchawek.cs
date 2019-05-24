@@ -11,8 +11,15 @@ namespace PKCK_ZAD5.XMLObjectModel
     public class ImpedancjaSluchawek
     {
         [XmlText]
-        public string impedancjaSluchawek;
+        public string impedancjaSluchawek { get; set; }
         [XmlAttribute("jednostka")]
-        public string jednostka;
+        public string jednostka { get; set; }
+        public string AsString
+        {
+            get
+            {
+                return impedancjaSluchawek.ToString() + " " + jednostka.ToString();
+            }
+        }
     }
 }

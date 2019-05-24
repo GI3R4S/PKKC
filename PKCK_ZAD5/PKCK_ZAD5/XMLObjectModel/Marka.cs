@@ -11,12 +11,12 @@ namespace PKCK_ZAD5.XMLObjectModel
     public class Marka
     {
         [XmlText]
-        public string marka;
+        public string marka { get; set; }
         [XmlAttribute("id_marki")]
-        public string id_marki;
+        public string id_marki { get; set; }
         [XmlAttribute("krajPochodzenia")]
-        public string krajPochodzenia;
+        public string krajPochodzenia { get; set; }
         [XmlAttribute("rokPowstania")]
-        public int rokPowstania;
+        public int rokPowstania { get; set; }
     }
 }

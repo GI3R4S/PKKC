@@ -11,11 +11,19 @@ namespace PKCK_ZAD5.XMLObjectModel
     public class Cena
     {
         [XmlText]
-        public double cena;
+        public string cena { get; set; }
         [XmlAttribute("waluta")]
-        public string waluta;
+        public string waluta { get; set; }
         [XmlAttribute("promocja")]
-        public string promocja;
+        public string promocja { get; set; }
+
+        public string AsString
+        {
+            get
+            {
+                return cena.ToString() + " " + waluta.ToString();
+            }
+        }
 
     }
 }

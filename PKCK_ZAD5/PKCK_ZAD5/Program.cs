@@ -10,6 +10,8 @@ namespace PKCK_ZAD5
     {
         static void Main(string[] args)
         {
+            var zawartosc = XMLTools.LoadXmlFile("../../listaSłuchawek.xml");
+            XMLTools.SaveToXmlFile("../../listaSłuchawek2.xml", zawartosc);
         }
     }
 }

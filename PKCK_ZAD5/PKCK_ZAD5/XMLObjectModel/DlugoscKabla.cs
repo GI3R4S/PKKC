@@ -11,8 +11,15 @@ namespace PKCK_ZAD5.XMLObjectModel
     public class DlugoscKabla
     {
         [XmlText]
-        public string dlugoscKabla;
+        public string dlugoscKabla { get; set; }
         [XmlAttribute("jednostka")]
-        public string jednostka;
+        public string jednostka { get; set; }
+        public string AsString
+        {
+            get
+            {
+                return dlugoscKabla.ToString() + " " + jednostka.ToString();
+            }
+        }
     }
 }
