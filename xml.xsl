@@ -78,24 +78,7 @@
                 </DługośćKabla>
                 <DataWygenerowania>
                     <xsl:value-of select="current-dateTime()"/>
-                </DataWygenerowania>
-				<ŚredniaCena>
-					<Złotówki>
-						<xsl:value-of select="format-number((sum(/zawartość/listaPrzedmiotów/przedmiot/cena[@waluta='zł'and @promocja='NIE']) 
-												div count(/zawartość/listaPrzedmiotów/przedmiot/cena[@waluta='zł'and @promocja='NIE'])), '#.00')"/>
-					</Złotówki>
-					<Euro>
-						<xsl:value-of select="sum(/zawartość/listaPrzedmiotów/przedmiot/cena[@waluta='€' and @promocja='NIE']) 
-												div count(/zawartość/listaPrzedmiotów/przedmiot/cena[@waluta='€'and @promocja='NIE'])"/>
-					</Euro>
-					<Dolary>
-						<xsl:value-of select="sum(/zawartość/listaPrzedmiotów/przedmiot/cena[@waluta='$'and @promocja='NIE']) 
-												div count(/zawartość/listaPrzedmiotów/przedmiot/cena[@waluta='$'and @promocja='NIE'])"/>
-					</Dolary>
-
-				</ŚredniaCena>
-				
-				
+                </DataWygenerowania>			
             </Podsumowanie>
         </xsl:element>
     </xsl:template>
@@ -120,7 +103,7 @@
             </xsl:element>
             <xsl:variable name="Marka" select="key('MarkiKey', @markaID)"></xsl:variable>
             <xsl:element name="NazwaMarki">
-                <xsl:value-of select="$Marka/@id_marki"/>
+                <xsl:value-of select="$Marka"/>
             </xsl:element>
             <xsl:element name="KrajPochodzenia">
                 <xsl:value-of select="$Marka/@krajPochodzenia"/>
@@ -145,7 +128,7 @@
             </xsl:element>
             <xsl:variable name="Marka" select="key('MarkiKey', @markaID)"></xsl:variable>
             <xsl:element name="NazwaMarki">
-                <xsl:value-of select="$Marka/@id_marki"/>
+                <xsl:value-of select="$Marka"/>
             </xsl:element>
             <xsl:element name="KrajPochodzenia">
                 <xsl:value-of select="$Marka/@krajPochodzenia"/>

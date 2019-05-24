@@ -93,6 +93,9 @@
                     <xsl:element name="th">
                         <xsl:text>AktualnaCena</xsl:text>
                     </xsl:element>
+					<xsl:element name="th">
+                        <xsl:text>Waluta</xsl:text>
+                    </xsl:element>
                     <xsl:element name="th">
                         <xsl:text>NazwaMarki</xsl:text>
                     </xsl:element>
@@ -114,6 +117,9 @@
                         </xsl:element>
                         <xsl:element name="td">
                             <xsl:value-of select="./AktualnaCena"/>
+                        </xsl:element>
+						<xsl:element name="td">
+                            <xsl:value-of select="./AktualnaCena/@Waluta"/>
                         </xsl:element>
                         <xsl:element name="td">
                             <xsl:value-of select="./NazwaMarki"/>
@@ -149,6 +155,9 @@
                     <xsl:element name="th">
                         <xsl:text>AktualnaCena</xsl:text>
                     </xsl:element>
+					<xsl:element name="th">
+                        <xsl:text>Waluta</xsl:text>
+                    </xsl:element>
                     <xsl:element name="th">
                         <xsl:text>NazwaMarki</xsl:text>
                     </xsl:element>
@@ -167,6 +176,9 @@
                         </xsl:element>
                         <xsl:element name="td">
                             <xsl:value-of select="./AktualnaCena"/>
+                        </xsl:element>
+						<xsl:element name="td">
+                            <xsl:value-of select="./AktualnaCena/@Waluta"/>
                         </xsl:element>
                         <xsl:element name="td">
                             <xsl:value-of select="./NazwaMarki"/>
