@@ -79,6 +79,23 @@
                 <DataWygenerowania>
                     <xsl:value-of select="current-dateTime()"/>
                 </DataWygenerowania>
+				<ŚredniaCena>
+					<Złotówki>
+						<xsl:value-of select="format-number((sum(/zawartość/listaPrzedmiotów/przedmiot/cena[@waluta='zł'and @promocja='NIE']) 
+												div count(/zawartość/listaPrzedmiotów/przedmiot/cena[@waluta='zł'and @promocja='NIE'])), '#.00')"/>
+					</Złotówki>
+					<Euro>
+						<xsl:value-of select="sum(/zawartość/listaPrzedmiotów/przedmiot/cena[@waluta='€' and @promocja='NIE']) 
+												div count(/zawartość/listaPrzedmiotów/przedmiot/cena[@waluta='€'and @promocja='NIE'])"/>
+					</Euro>
+					<Dolary>
+						<xsl:value-of select="sum(/zawartość/listaPrzedmiotów/przedmiot/cena[@waluta='$'and @promocja='NIE']) 
+												div count(/zawartość/listaPrzedmiotów/przedmiot/cena[@waluta='$'and @promocja='NIE'])"/>
+					</Dolary>
+
+				</ŚredniaCena>
+				
+				
             </Podsumowanie>
         </xsl:element>
     </xsl:template>
@@ -89,11 +106,17 @@
                 <xsl:value-of select="nazwa"/>
             </xsl:element>
             <xsl:element name="PoprzedniaCena">
-                <xsl:value-of select="concat(cena,' ', cena/@waluta)"/>
+				<xsl:attribute name="Waluta">
+					<xsl:value-of select="cena/@waluta"/>
+				</xsl:attribute>
+                <xsl:value-of select="cena"/>
             </xsl:element>
             <xsl:element name="AktualnaCena">
+				<xsl:attribute name="Waluta">
+					<xsl:value-of select="cena/@waluta"/>
+				</xsl:attribute>
                 <xsl:value-of
-                        select='concat(format-number((cena * ((100 - cena/@rabat) div 100)),"#.00")," ", cena/@waluta)'/>
+                        select='format-number((cena * ((100 - cena/@rabat) div 100)),"#.00")'/>
             </xsl:element>
             <xsl:variable name="Marka" select="key('MarkiKey', @markaID)"></xsl:variable>
             <xsl:element name="NazwaMarki">
@@ -115,7 +138,10 @@
                 <xsl:value-of select="nazwa"/>
             </xsl:element>
             <xsl:element name="AktualnaCena">
-                <xsl:value-of select="concat(cena,' ', cena/@waluta)"/>
+				<xsl:attribute name="Waluta">
+					<xsl:value-of select="cena/@waluta"/>
+				</xsl:attribute>
+                <xsl:value-of select="cena"/>
             </xsl:element>
             <xsl:variable name="Marka" select="key('MarkiKey', @markaID)"></xsl:variable>
             <xsl:element name="NazwaMarki">

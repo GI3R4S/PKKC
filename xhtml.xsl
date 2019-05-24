@@ -41,7 +41,6 @@
             </xsl:element>
 
             <xsl:element name="body">
-
                 <xsl:element name="div">
                     <xsl:element name="a">
                         <xsl:attribute name="href">
