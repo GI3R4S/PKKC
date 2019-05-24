@@ -3,13 +3,16 @@
 			Creative Sound Blaster Blaze
 
 Poprzednia cena:
-	99.00 zł
+	99.00
 
 Aktualna cena:
-	89.10 zł
+	89.10
+
+Waluta:
+	zł
 
 Nazwa marki:
-	creative
+	Creative
 
 Kraj pochodzenia:
 	United Kingdom
@@ -22,13 +25,16 @@ Opis:
 			JBL T500
 
 Poprzednia cena:
-	109.00 €
+	109.00
 
 Aktualna cena:
-	98.10 €
+	98.10
+
+Waluta:
+	€
 
 Nazwa marki:
-	jbl
+	JBL
 
 Kraj pochodzenia:
 	China
@@ -41,13 +47,16 @@ Opis:
 			Razer Electra V2
 
 Poprzednia cena:
-	239.00 zł
+	239.00
 
 Aktualna cena:
-	215.10 zł
+	215.10
+
+Waluta:
+	zł
 
 Nazwa marki:
-	razer
+	Razer
 
 Kraj pochodzenia:
 	USA
@@ -60,13 +69,16 @@ Opis:
 			SteelSeries Arctis 3
 
 Poprzednia cena:
-	259.00 zł
+	259.00
 
 Aktualna cena:
-	233.10 zł
+	233.10
+
+Waluta:
+	zł
 
 Nazwa marki:
-	steelseries
+	SteelSeries
 
 Kraj pochodzenia:
 	USA
@@ -79,13 +91,16 @@ Opis:
 			SteelSeries Arctis 5
 
 Poprzednia cena:
-	359.00 €
+	359.00
 
 Aktualna cena:
-	323.10 €
+	323.10
+
+Waluta:
+	€
 
 Nazwa marki:
-	steelseries
+	SteelSeries
 
 Kraj pochodzenia:
 	USA
@@ -102,10 +117,13 @@ Opis:
 			Audio-Technica ATH-M40X
 
 Aktualna cena:
-	369.00 zł
+	369.00
+
+Waluta:
+	zł
 
 Nazwa marki:
-	audiotechnica
+	Audio-Technica
 
 Kraj pochodzenia:
 	Japan
@@ -118,10 +136,13 @@ Opis:
 			Corsair HS50 Stereo Gaming Headset
 
 Aktualna cena:
-	249.00 €
+	249.00
+
+Waluta:
+	€
 
 Nazwa marki:
-	corsair
+	Corsair
 
 Kraj pochodzenia:
 	Mexico
@@ -134,10 +155,13 @@ Opis:
 			Creative Aurvana Live!
 
 Aktualna cena:
-	199.00 €
+	199.00
+
+Waluta:
+	€
 
 Nazwa marki:
-	creative
+	Creative
 
 Kraj pochodzenia:
 	United Kingdom
@@ -150,10 +174,13 @@ Opis:
 			Creative Sound BlasterX H3
 
 Aktualna cena:
-	149.00 zł
+	149.00
+
+Waluta:
+	zł
 
 Nazwa marki:
-	creative
+	Creative
 
 Kraj pochodzenia:
 	United Kingdom
@@ -166,10 +193,13 @@ Opis:
 			HP Omen 800
 
 Aktualna cena:
-	299.00 zł
+	299.00
+
+Waluta:
+	zł
 
 Nazwa marki:
-	hp
+	HP
 
 Kraj pochodzenia:
 	USA
@@ -182,10 +212,13 @@ Opis:
 			HyperX Cloud Alpha
 
 Aktualna cena:
-	349.00 zł
+	349.00
+
+Waluta:
+	zł
 
 Nazwa marki:
-	hyperx
+	HyperX
 
 Kraj pochodzenia:
 	Germany
@@ -198,10 +231,13 @@ Opis:
 			HyperX Cloud II
 
 Aktualna cena:
-	359.00 zł
+	359.00
+
+Waluta:
+	zł
 
 Nazwa marki:
-	hyperx
+	HyperX
 
 Kraj pochodzenia:
 	Germany
@@ -214,10 +250,13 @@ Opis:
 			HyperX Cloud Stinger Core
 
 Aktualna cena:
-	169.00 €
+	169.00
+
+Waluta:
+	€
 
 Nazwa marki:
-	hyperx
+	HyperX
 
 Kraj pochodzenia:
 	Germany
@@ -230,10 +269,13 @@ Opis:
 			ISK HD9999
 
 Aktualna cena:
-	274.00 zł
+	274.00
+
+Waluta:
+	zł
 
 Nazwa marki:
-	isk
+	ISK
 
 Kraj pochodzenia:
 	Meksyk
@@ -246,10 +288,13 @@ Opis:
 			Lioncast LX20
 
 Aktualna cena:
-	109.00 zł
+	109.00
+
+Waluta:
+	zł
 
 Nazwa marki:
-	lioncast
+	Lioncast
 
 Kraj pochodzenia:
 	Italy
@@ -262,10 +307,13 @@ Opis:
 			Logitech G430 Surround Sound Gaming Headset
 
 Aktualna cena:
-	295.00 zł
+	295.00
+
+Waluta:
+	zł
 
 Nazwa marki:
-	logitech
+	Logitech
 
 Kraj pochodzenia:
 	Germany
@@ -278,10 +326,13 @@ Opis:
 			Marshall Major III
 
 Aktualna cena:
-	249.00 $
+	249.00
+
+Waluta:
+	$
 
 Nazwa marki:
-	marshall
+	Marshall
 
 Kraj pochodzenia:
 	UK
@@ -294,10 +345,13 @@ Opis:
 			Patriot Viper V360 Virtual 7.1
 
 Aktualna cena:
-	119.00 zł
+	119.00
+
+Waluta:
+	zł
 
 Nazwa marki:
-	patriot
+	Patriot
 
 Kraj pochodzenia:
 	USA
@@ -310,10 +364,13 @@ Opis:
 			Philips SHP2500/10
 
 Aktualna cena:
-	69.00 $
+	69.00
+
+Waluta:
+	$
 
 Nazwa marki:
-	philips
+	Philips
 
 Kraj pochodzenia:
 	USA
@@ -326,10 +383,13 @@ Opis:
 			Pioneer SE-M521
 
 Aktualna cena:
-	109.00 zł
+	109.00
+
+Waluta:
+	zł
 
 Nazwa marki:
-	pioneer
+	Pioneer
 
 Kraj pochodzenia:
 	USA
@@ -342,10 +402,13 @@ Opis:
 			Razer Kraken Essential
 
 Aktualna cena:
-	199.00 €
+	199.00
+
+Waluta:
+	€
 
 Nazwa marki:
-	razer
+	Razer
 
 Kraj pochodzenia:
 	USA
@@ -358,10 +421,13 @@ Opis:
 			SpeedLink MAXTER Gaming Headset
 
 Aktualna cena:
-	99.00 $
+	99.00
+
+Waluta:
+	$
 
 Nazwa marki:
-	speedlink
+	SpeedLink
 
 Kraj pochodzenia:
 	Spain
@@ -374,10 +440,13 @@ Opis:
 			SteelSeries Arctis 3
 
 Aktualna cena:
-	259.00 zł
+	259.00
+
+Waluta:
+	zł
 
 Nazwa marki:
-	steelseries
+	SteelSeries
 
 Kraj pochodzenia:
 	USA
@@ -390,10 +459,13 @@ Opis:
 			SteelSeries Arctis 3
 
 Aktualna cena:
-	259.00 zł
+	259.00
+
+Waluta:
+	zł
 
 Nazwa marki:
-	steelseries
+	SteelSeries
 
 Kraj pochodzenia:
 	USA
@@ -406,10 +478,13 @@ Opis:
 			Superlux HD669
 
 Aktualna cena:
-	129.00 zł
+	129.00
+
+Waluta:
+	zł
 
 Nazwa marki:
-	lioncast
+	Lioncast
 
 Kraj pochodzenia:
 	Italy
@@ -422,10 +497,13 @@ Opis:
 			Superlux HD681
 
 Aktualna cena:
-	89.00 zł
+	89.00
+
+Waluta:
+	zł
 
 Nazwa marki:
-	superlux
+	Superlux
 
 Kraj pochodzenia:
 	France
@@ -438,10 +516,13 @@ Opis:
 			Superlux HD681 EVO MKII
 
 Aktualna cena:
-	129.00 €
+	129.00
+
+Waluta:
+	€
 
 Nazwa marki:
-	superlux
+	Superlux
 
 Kraj pochodzenia:
 	France
@@ -480,16 +561,16 @@ Razer: 2
 ISK: 1
 SteelSeries: 4
 Creative: 3
-Hyperx: 3
+HyperX: 3
 Corsair: 1
 Lioncast: 2
-SuperLux: 2
+Superlux: 2
 Philips: 1
 JBL: 1
 Pioneer: 1
 SpeedLink: 1
 HP: 1
-AudioTechnica: 1
+Audio-Technica: 1
 Marshall: 1
 Patriot: 1
 Logitech: 1

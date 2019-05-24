@@ -1,238 +1,240 @@
-<?xml version="1.0" encoding="UTF-8"?><root>
-    <SłuchawkiWPromocji>
-        <Słuchawki>
-            <Nazwa>Creative Sound Blaster Blaze</Nazwa>
-            <PoprzedniaCena>99.00 zł</PoprzedniaCena>
-            <AktualnaCena>89.10 zł</AktualnaCena>
-            <NazwaMarki>creative</NazwaMarki>
-            <KrajPochodzenia>United Kingdom</KrajPochodzenia>
-            <Opis>Słuchawki Creative Sound Blaster Blaze to słuchawki Nauszne zamknięte. Pasmo przenoszenia od 20 kHz do 20000 kHz. Impedancja wynosi 32 Ω, czułość 105dB, koloru Czarny, posiadają kabel długości 2.5 m. Wbudowany mikrofon: Tak</Opis>
-        </Słuchawki>
-        <Słuchawki>
-            <Nazwa>JBL T500</Nazwa>
-            <PoprzedniaCena>109.00 €</PoprzedniaCena>
-            <AktualnaCena>98.10 €</AktualnaCena>
-            <NazwaMarki>jbl</NazwaMarki>
-            <KrajPochodzenia>China</KrajPochodzenia>
-            <Opis>Słuchawki JBL T500 to słuchawki Nauszne zamknięte. Pasmo przenoszenia od 20 kHz do 20000 kHz. Impedancja wynosi 32 Ω, czułość 91dB, koloru Czarny, posiadają kabel długości 1.19 m. Wbudowany mikrofon: Tak</Opis>
-        </Słuchawki>
-        <Słuchawki>
-            <Nazwa>Razer Electra V2</Nazwa>
-            <PoprzedniaCena>239.00 zł</PoprzedniaCena>
-            <AktualnaCena>215.10 zł</AktualnaCena>
-            <NazwaMarki>razer</NazwaMarki>
-            <KrajPochodzenia>USA</KrajPochodzenia>
-            <Opis>Słuchawki Razer Electra V2 to słuchawki Nauszne zamknięte. Pasmo przenoszenia od 20 kHz do 20000 kHz. Impedancja wynosi 32 Ω, czułość 105dB, koloru Czarny, posiadają kabel długości 1.3 m. Wbudowany mikrofon: Tak</Opis>
-        </Słuchawki>
-        <Słuchawki>
-            <Nazwa>SteelSeries Arctis 3</Nazwa>
-            <PoprzedniaCena>259.00 zł</PoprzedniaCena>
-            <AktualnaCena>233.10 zł</AktualnaCena>
-            <NazwaMarki>steelseries</NazwaMarki>
-            <KrajPochodzenia>USA</KrajPochodzenia>
-            <Opis>Słuchawki SteelSeries Arctis 3 to słuchawki Nauszne zamknięte. Pasmo przenoszenia od 20 kHz do 22000 kHz. Impedancja wynosi 32 Ω, czułość 98dB, koloru Niebieski, posiadają kabel długości 3.0 m. Wbudowany mikrofon: Tak</Opis>
-        </Słuchawki>
-        <Słuchawki>
-            <Nazwa>SteelSeries Arctis 5</Nazwa>
-            <PoprzedniaCena>359.00 €</PoprzedniaCena>
-            <AktualnaCena>323.10 €</AktualnaCena>
-            <NazwaMarki>steelseries</NazwaMarki>
-            <KrajPochodzenia>USA</KrajPochodzenia>
-            <Opis>Słuchawki SteelSeries Arctis 5 to słuchawki Nauszne zamknięte. Pasmo przenoszenia od 20 kHz do 22000 kHz. Impedancja wynosi 32 Ω, czułość 98dB, koloru Czarny, posiadają kabel długości 3.0 m. Wbudowany mikrofon: Tak</Opis>
-        </Słuchawki>
-    </SłuchawkiWPromocji>
-    <SłuchawkiBezPromocji>
-        <Słuchawki>
-            <Nazwa>Audio-Technica ATH-M40X</Nazwa>
-            <AktualnaCena>369.00 zł</AktualnaCena>
-            <NazwaMarki>audiotechnica</NazwaMarki>
-            <KrajPochodzenia>Japan</KrajPochodzenia>
-            <Opis>Słuchawki Audio-Technica ATH-M40X to słuchawki Nauszne zamknięte. Pasmo przenoszenia od 15 kHz do 24000 kHz. Impedancja wynosi 35 Ω, czułość 98dB, koloru Czarny, posiadają kabel długości 1.2 m. Wbudowany mikrofon: Nie</Opis>
-        </Słuchawki>
-        <Słuchawki>
-            <Nazwa>Corsair HS50 Stereo Gaming Headset</Nazwa>
-            <AktualnaCena>249.00 €</AktualnaCena>
-            <NazwaMarki>corsair</NazwaMarki>
-            <KrajPochodzenia>Mexico</KrajPochodzenia>
-            <Opis>Słuchawki Corsair HS50 Stereo Gaming Headset to słuchawki Nauszne półotwarte. Pasmo przenoszenia od 20 kHz do 20000 kHz. Impedancja wynosi 32 Ω, czułość 111dB, koloru Czarno-niebieski, posiadają kabel długości 1.8 m. Wbudowany mikrofon: Tak</Opis>
-        </Słuchawki>
-        <Słuchawki>
-            <Nazwa>Creative Aurvana Live!</Nazwa>
-            <AktualnaCena>199.00 €</AktualnaCena>
-            <NazwaMarki>creative</NazwaMarki>
-            <KrajPochodzenia>United Kingdom</KrajPochodzenia>
-            <Opis>Słuchawki Creative Aurvana Live! to słuchawki Nauszne zamknięte. Pasmo przenoszenia od 10 kHz do 30000 kHz. Impedancja wynosi 32 Ω, czułość 103dB, koloru Czarny, posiadają kabel długości 1.2 m. Wbudowany mikrofon: Nie</Opis>
-        </Słuchawki>
-        <Słuchawki>
-            <Nazwa>Creative Sound BlasterX H3</Nazwa>
-            <AktualnaCena>149.00 zł</AktualnaCena>
-            <NazwaMarki>creative</NazwaMarki>
-            <KrajPochodzenia>United Kingdom</KrajPochodzenia>
-            <Opis>Słuchawki Creative Sound BlasterX H3 to słuchawki Nauszne zamknięte. Pasmo przenoszenia od 20 kHz do 20000 kHz. Impedancja wynosi 32 Ω, czułość 118dB, koloru Czarny, posiadają kabel długości 1.2 m. Wbudowany mikrofon: Tak</Opis>
-        </Słuchawki>
-        <Słuchawki>
-            <Nazwa>HP Omen 800</Nazwa>
-            <AktualnaCena>299.00 zł</AktualnaCena>
-            <NazwaMarki>hp</NazwaMarki>
-            <KrajPochodzenia>USA</KrajPochodzenia>
-            <Opis>Słuchawki HP Omen 800 to słuchawki Nauszne zamknięte. Pasmo przenoszenia od 20 kHz do 20000 kHz. Impedancja wynosi 32 Ω, czułość 95dB, koloru Czarny, posiadają kabel długości 1.7 m. Wbudowany mikrofon: Tak</Opis>
-        </Słuchawki>
-        <Słuchawki>
-            <Nazwa>HyperX Cloud Alpha</Nazwa>
-            <AktualnaCena>349.00 zł</AktualnaCena>
-            <NazwaMarki>hyperx</NazwaMarki>
-            <KrajPochodzenia>Germany</KrajPochodzenia>
-            <Opis>Słuchawki HyperX Cloud Alpha to słuchawki Nauszne zamknięte. Pasmo przenoszenia od 13 kHz do 27000 kHz. Impedancja wynosi 65 Ω, czułość 98dB, koloru Czarno-czerwony, posiadają kabel długości 1.3 m. Wbudowany mikrofon: Tak</Opis>
-        </Słuchawki>
-        <Słuchawki>
-            <Nazwa>HyperX Cloud II</Nazwa>
-            <AktualnaCena>359.00 zł</AktualnaCena>
-            <NazwaMarki>hyperx</NazwaMarki>
-            <KrajPochodzenia>Germany</KrajPochodzenia>
-            <Opis>Słuchawki HyperX Cloud II to słuchawki Nauszne zamknięte. Pasmo przenoszenia od 15 kHz do 25000 kHz. Impedancja wynosi 60 Ω, czułość 98dB, koloru Czarno-czerwony, posiadają kabel długości 1.0 m. Wbudowany mikrofon: Tak</Opis>
-        </Słuchawki>
-        <Słuchawki>
-            <Nazwa>HyperX Cloud Stinger Core</Nazwa>
-            <AktualnaCena>169.00 €</AktualnaCena>
-            <NazwaMarki>hyperx</NazwaMarki>
-            <KrajPochodzenia>Germany</KrajPochodzenia>
-            <Opis>Słuchawki HyperX Cloud Stinger Core to słuchawki Nauszne zamknięte. Pasmo przenoszenia od 20 kHz do 20000 kHz. Impedancja wynosi 16 Ω, czułość 99dB, koloru Czarny, posiadają kabel długości 1.3 m. Wbudowany mikrofon: Tak</Opis>
-        </Słuchawki>
-        <Słuchawki>
-            <Nazwa>ISK HD9999</Nazwa>
-            <AktualnaCena>274.00 zł</AktualnaCena>
-            <NazwaMarki>isk</NazwaMarki>
-            <KrajPochodzenia>Meksyk</KrajPochodzenia>
-            <Opis>Słuchawki ISK HD9999 to słuchawki Nauszne zamknięte. Pasmo przenoszenia od 8 kHz do 30000 kHz. Impedancja wynosi 32 Ω, czułość 96dB, koloru Czarno-złoty, posiadają kabel długości 1.5 m. Wbudowany mikrofon: Nie</Opis>
-        </Słuchawki>
-        <Słuchawki>
-            <Nazwa>Lioncast LX20</Nazwa>
-            <AktualnaCena>109.00 zł</AktualnaCena>
-            <NazwaMarki>lioncast</NazwaMarki>
-            <KrajPochodzenia>Italy</KrajPochodzenia>
-            <Opis>Słuchawki Lioncast LX20 to słuchawki Nauszne zamknięte. Pasmo przenoszenia od 20 kHz do 20000 kHz. Impedancja wynosi 32 Ω, czułość 105dB, koloru Czarny, posiadają kabel długości 1.35 m. Wbudowany mikrofon: Tak</Opis>
-        </Słuchawki>
-        <Słuchawki>
-            <Nazwa>Logitech G430 Surround Sound Gaming Headset</Nazwa>
-            <AktualnaCena>295.00 zł</AktualnaCena>
-            <NazwaMarki>logitech</NazwaMarki>
-            <KrajPochodzenia>Germany</KrajPochodzenia>
-            <Opis>Słuchawki Logitech G430 Surround Sound Gaming Headset to słuchawki Nauszne zamknięte. Pasmo przenoszenia od 20 kHz do 20000 kHz. Impedancja wynosi 32 Ω, czułość 90dB, koloru Czarno-niebieski, posiadają kabel długości 2.3 m. Wbudowany mikrofon: Tak</Opis>
-        </Słuchawki>
-        <Słuchawki>
-            <Nazwa>Marshall Major III</Nazwa>
-            <AktualnaCena>249.00 $</AktualnaCena>
-            <NazwaMarki>marshall</NazwaMarki>
-            <KrajPochodzenia>UK</KrajPochodzenia>
-            <Opis>Słuchawki Marshall Major III to słuchawki Nauszne zamknięte. Pasmo przenoszenia od 20 kHz do 20000 kHz. Impedancja wynosi 32 Ω, czułość 99dB, koloru Brązowy, posiadają kabel długości 0 m. Wbudowany mikrofon: Tak</Opis>
-        </Słuchawki>
-        <Słuchawki>
-            <Nazwa>Patriot Viper V360 Virtual 7.1</Nazwa>
-            <AktualnaCena>119.00 zł</AktualnaCena>
-            <NazwaMarki>patriot</NazwaMarki>
-            <KrajPochodzenia>USA</KrajPochodzenia>
-            <Opis>Słuchawki Patriot Viper V360 Virtual 7.1 to słuchawki Nauszne półotwarte. Pasmo przenoszenia od 20 kHz do 20000 kHz. Impedancja wynosi 32 Ω, czułość 97dB, koloru Czarny, posiadają kabel długości 2.2 m. Wbudowany mikrofon: Tak</Opis>
-        </Słuchawki>
-        <Słuchawki>
-            <Nazwa>Philips SHP2500/10</Nazwa>
-            <AktualnaCena>69.00 $</AktualnaCena>
-            <NazwaMarki>philips</NazwaMarki>
-            <KrajPochodzenia>USA</KrajPochodzenia>
-            <Opis>Słuchawki Philips SHP2500/10 to słuchawki Nauszne zamknięte. Pasmo przenoszenia od 9 kHz do 23000 kHz. Impedancja wynosi 32 Ω, czułość 95dB, koloru Srebrny, posiadają kabel długości 6.0 m. Wbudowany mikrofon: Nie</Opis>
-        </Słuchawki>
-        <Słuchawki>
-            <Nazwa>Pioneer SE-M521</Nazwa>
-            <AktualnaCena>109.00 zł</AktualnaCena>
-            <NazwaMarki>pioneer</NazwaMarki>
-            <KrajPochodzenia>USA</KrajPochodzenia>
-            <Opis>Słuchawki Pioneer SE-M521 to słuchawki Nauszne zamknięte. Pasmo przenoszenia od 10 kHz do 40000 kHz. Impedancja wynosi 32 Ω, czułość 97dB, koloru Czarny, posiadają kabel długości 3.5 m. Wbudowany mikrofon: Nie</Opis>
-        </Słuchawki>
-        <Słuchawki>
-            <Nazwa>Razer Kraken Essential</Nazwa>
-            <AktualnaCena>199.00 €</AktualnaCena>
-            <NazwaMarki>razer</NazwaMarki>
-            <KrajPochodzenia>USA</KrajPochodzenia>
-            <Opis>Słuchawki Razer Kraken Essential to słuchawki Nauszne półotwarte. Pasmo przenoszenia od 20 kHz do 20000 kHz. Impedancja wynosi 24 Ω, czułość 105dB, koloru Czarny, posiadają kabel długości 1.3 m. Wbudowany mikrofon: Tak</Opis>
-        </Słuchawki>
-        <Słuchawki>
-            <Nazwa>SpeedLink MAXTER Gaming Headset</Nazwa>
-            <AktualnaCena>99.00 $</AktualnaCena>
-            <NazwaMarki>speedlink</NazwaMarki>
-            <KrajPochodzenia>Spain</KrajPochodzenia>
-            <Opis>Słuchawki SpeedLink MAXTER Gaming Headset to słuchawki Nauszne zamknięte. Pasmo przenoszenia od 20 kHz do 20000 kHz. Impedancja wynosi 32 Ω, czułość 110dB, koloru Czarny, posiadają kabel długości 2.2 m. Wbudowany mikrofon: Tak</Opis>
-        </Słuchawki>
-        <Słuchawki>
-            <Nazwa>SteelSeries Arctis 3</Nazwa>
-            <AktualnaCena>259.00 zł</AktualnaCena>
-            <NazwaMarki>steelseries</NazwaMarki>
-            <KrajPochodzenia>USA</KrajPochodzenia>
-            <Opis>Słuchawki SteelSeries Arctis 3 to słuchawki Nauszne zamknięte. Pasmo przenoszenia od 20 kHz do 22000 kHz. Impedancja wynosi 32 Ω, czułość 98dB, koloru Czarny, posiadają kabel długości 3.0 m. Wbudowany mikrofon: Tak</Opis>
-        </Słuchawki>
-        <Słuchawki>
-            <Nazwa>SteelSeries Arctis 3</Nazwa>
-            <AktualnaCena>259.00 zł</AktualnaCena>
-            <NazwaMarki>steelseries</NazwaMarki>
-            <KrajPochodzenia>USA</KrajPochodzenia>
-            <Opis>Słuchawki SteelSeries Arctis 3 to słuchawki Nauszne zamknięte. Pasmo przenoszenia od 20 kHz do 22000 kHz. Impedancja wynosi 32 Ω, czułość 98dB, koloru Biały, posiadają kabel długości 3.0 m. Wbudowany mikrofon: Tak</Opis>
-        </Słuchawki>
-        <Słuchawki>
-            <Nazwa>Superlux HD669</Nazwa>
-            <AktualnaCena>129.00 zł</AktualnaCena>
-            <NazwaMarki>lioncast</NazwaMarki>
-            <KrajPochodzenia>Italy</KrajPochodzenia>
-            <Opis>Słuchawki Superlux HD669 to słuchawki Nauszne zamknięte. Pasmo przenoszenia od 10 kHz do 30000 kHz. Impedancja wynosi 56 Ω, czułość 98dB, koloru Czarny, posiadają kabel długości 3.0 m. Wbudowany mikrofon: Nie</Opis>
-        </Słuchawki>
-        <Słuchawki>
-            <Nazwa>Superlux HD681</Nazwa>
-            <AktualnaCena>89.00 zł</AktualnaCena>
-            <NazwaMarki>superlux</NazwaMarki>
-            <KrajPochodzenia>France</KrajPochodzenia>
-            <Opis>Słuchawki Superlux HD681 to słuchawki Nauszne półotwarte. Pasmo przenoszenia od 10 kHz do 30000 kHz. Impedancja wynosi 32 Ω, czułość 98dB, koloru Czarno-czerwony, posiadają kabel długości 2.5 m. Wbudowany mikrofon: Nie</Opis>
-        </Słuchawki>
-        <Słuchawki>
-            <Nazwa>Superlux HD681 EVO MKII</Nazwa>
-            <AktualnaCena>129.00 €</AktualnaCena>
-            <NazwaMarki>superlux</NazwaMarki>
-            <KrajPochodzenia>France</KrajPochodzenia>
-            <Opis>Słuchawki Superlux HD681 EVO MKII to słuchawki Nauszne półotwarte. Pasmo przenoszenia od 10 kHz do 30000 kHz. Impedancja wynosi 32 Ω, czułość 98dB, koloru Czarny, posiadają kabel długości 1.0 m. Wbudowany mikrofon: Nie</Opis>
-        </Słuchawki>
-    </SłuchawkiBezPromocji>
-    <Podsumowanie>
-        <TypKonstrukcji>
-            <Półotwarte>5</Półotwarte>
-            <Zamknięte>22</Zamknięte>
-        </TypKonstrukcji>
-        <Waluta>
-            <złotówki>17</złotówki>
-            <dolary>3</dolary>
-            <euro>7</euro>
-        </Waluta>
-        <Promocja>
-            <WPromocji>5</WPromocji>
-            <BezPromocji>22</BezPromocji>
-        </Promocja>
-        <ProduktyMarek>
-            <ProduktyMarki NazwaMarki="Razer">2</ProduktyMarki>
-            <ProduktyMarki NazwaMarki="ISK">1</ProduktyMarki>
-            <ProduktyMarki NazwaMarki="SteelSeries">4</ProduktyMarki>
-            <ProduktyMarki NazwaMarki="Creative">3</ProduktyMarki>
-            <ProduktyMarki NazwaMarki="Hyperx">3</ProduktyMarki>
-            <ProduktyMarki NazwaMarki="Corsair">1</ProduktyMarki>
-            <ProduktyMarki NazwaMarki="Lioncast">2</ProduktyMarki>
-            <ProduktyMarki NazwaMarki="SuperLux">2</ProduktyMarki>
-            <ProduktyMarki NazwaMarki="Philips">1</ProduktyMarki>
-            <ProduktyMarki NazwaMarki="JBL">1</ProduktyMarki>
-            <ProduktyMarki NazwaMarki="Pioneer">1</ProduktyMarki>
-            <ProduktyMarki NazwaMarki="SpeedLink">1</ProduktyMarki>
-            <ProduktyMarki NazwaMarki="HP">1</ProduktyMarki>
-            <ProduktyMarki NazwaMarki="AudioTechnica">1</ProduktyMarki>
-            <ProduktyMarki NazwaMarki="Marshall">1</ProduktyMarki>
-            <ProduktyMarki NazwaMarki="Patriot">1</ProduktyMarki>
-            <ProduktyMarki NazwaMarki="Logitech">1</ProduktyMarki>
-        </ProduktyMarek>
-        <DługośćKabla>
-            <Krótkie>12</Krótkie>
-            <Długie>15</Długie>
-        </DługośćKabla>
-    </Podsumowanie>
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+   <SłuchawkiWPromocji>
+      <Słuchawki>
+         <Nazwa>Creative Sound Blaster Blaze</Nazwa>
+         <PoprzedniaCena Waluta="zł">99.00</PoprzedniaCena>
+         <AktualnaCena Waluta="zł">89.10</AktualnaCena>
+         <NazwaMarki>Creative</NazwaMarki>
+         <KrajPochodzenia>United Kingdom</KrajPochodzenia>
+         <Opis>Słuchawki Creative Sound Blaster Blaze to słuchawki Nauszne zamknięte. Pasmo przenoszenia od 20 kHz do 20000 kHz. Impedancja wynosi 32 Ω, czułość 105dB, koloru Czarny, posiadają kabel długości 2.5 m. Wbudowany mikrofon: Tak</Opis>
+      </Słuchawki>
+      <Słuchawki>
+         <Nazwa>JBL T500</Nazwa>
+         <PoprzedniaCena Waluta="€">109.00</PoprzedniaCena>
+         <AktualnaCena Waluta="€">98.10</AktualnaCena>
+         <NazwaMarki>JBL</NazwaMarki>
+         <KrajPochodzenia>China</KrajPochodzenia>
+         <Opis>Słuchawki JBL T500 to słuchawki Nauszne zamknięte. Pasmo przenoszenia od 20 kHz do 20000 kHz. Impedancja wynosi 32 Ω, czułość 91dB, koloru Czarny, posiadają kabel długości 1.19 m. Wbudowany mikrofon: Tak</Opis>
+      </Słuchawki>
+      <Słuchawki>
+         <Nazwa>Razer Electra V2</Nazwa>
+         <PoprzedniaCena Waluta="zł">239.00</PoprzedniaCena>
+         <AktualnaCena Waluta="zł">215.10</AktualnaCena>
+         <NazwaMarki>Razer</NazwaMarki>
+         <KrajPochodzenia>USA</KrajPochodzenia>
+         <Opis>Słuchawki Razer Electra V2 to słuchawki Nauszne zamknięte. Pasmo przenoszenia od 20 kHz do 20000 kHz. Impedancja wynosi 32 Ω, czułość 105dB, koloru Czarny, posiadają kabel długości 1.3 m. Wbudowany mikrofon: Tak</Opis>
+      </Słuchawki>
+      <Słuchawki>
+         <Nazwa>SteelSeries Arctis 3</Nazwa>
+         <PoprzedniaCena Waluta="zł">259.00</PoprzedniaCena>
+         <AktualnaCena Waluta="zł">233.10</AktualnaCena>
+         <NazwaMarki>SteelSeries</NazwaMarki>
+         <KrajPochodzenia>USA</KrajPochodzenia>
+         <Opis>Słuchawki SteelSeries Arctis 3 to słuchawki Nauszne zamknięte. Pasmo przenoszenia od 20 kHz do 22000 kHz. Impedancja wynosi 32 Ω, czułość 98dB, koloru Niebieski, posiadają kabel długości 3.0 m. Wbudowany mikrofon: Tak</Opis>
+      </Słuchawki>
+      <Słuchawki>
+         <Nazwa>SteelSeries Arctis 5</Nazwa>
+         <PoprzedniaCena Waluta="€">359.00</PoprzedniaCena>
+         <AktualnaCena Waluta="€">323.10</AktualnaCena>
+         <NazwaMarki>SteelSeries</NazwaMarki>
+         <KrajPochodzenia>USA</KrajPochodzenia>
+         <Opis>Słuchawki SteelSeries Arctis 5 to słuchawki Nauszne zamknięte. Pasmo przenoszenia od 20 kHz do 22000 kHz. Impedancja wynosi 32 Ω, czułość 98dB, koloru Czarny, posiadają kabel długości 3.0 m. Wbudowany mikrofon: Tak</Opis>
+      </Słuchawki>
+   </SłuchawkiWPromocji>
+   <SłuchawkiBezPromocji>
+      <Słuchawki>
+         <Nazwa>Audio-Technica ATH-M40X</Nazwa>
+         <AktualnaCena Waluta="zł">369.00</AktualnaCena>
+         <NazwaMarki>Audio-Technica</NazwaMarki>
+         <KrajPochodzenia>Japan</KrajPochodzenia>
+         <Opis>Słuchawki Audio-Technica ATH-M40X to słuchawki Nauszne zamknięte. Pasmo przenoszenia od 15 kHz do 24000 kHz. Impedancja wynosi 35 Ω, czułość 98dB, koloru Czarny, posiadają kabel długości 1.2 m. Wbudowany mikrofon: Nie</Opis>
+      </Słuchawki>
+      <Słuchawki>
+         <Nazwa>Corsair HS50 Stereo Gaming Headset</Nazwa>
+         <AktualnaCena Waluta="€">249.00</AktualnaCena>
+         <NazwaMarki>Corsair</NazwaMarki>
+         <KrajPochodzenia>Mexico</KrajPochodzenia>
+         <Opis>Słuchawki Corsair HS50 Stereo Gaming Headset to słuchawki Nauszne półotwarte. Pasmo przenoszenia od 20 kHz do 20000 kHz. Impedancja wynosi 32 Ω, czułość 111dB, koloru Czarno-niebieski, posiadają kabel długości 1.8 m. Wbudowany mikrofon: Tak</Opis>
+      </Słuchawki>
+      <Słuchawki>
+         <Nazwa>Creative Aurvana Live!</Nazwa>
+         <AktualnaCena Waluta="€">199.00</AktualnaCena>
+         <NazwaMarki>Creative</NazwaMarki>
+         <KrajPochodzenia>United Kingdom</KrajPochodzenia>
+         <Opis>Słuchawki Creative Aurvana Live! to słuchawki Nauszne zamknięte. Pasmo przenoszenia od 10 kHz do 30000 kHz. Impedancja wynosi 32 Ω, czułość 103dB, koloru Czarny, posiadają kabel długości 1.2 m. Wbudowany mikrofon: Nie</Opis>
+      </Słuchawki>
+      <Słuchawki>
+         <Nazwa>Creative Sound BlasterX H3</Nazwa>
+         <AktualnaCena Waluta="zł">149.00</AktualnaCena>
+         <NazwaMarki>Creative</NazwaMarki>
+         <KrajPochodzenia>United Kingdom</KrajPochodzenia>
+         <Opis>Słuchawki Creative Sound BlasterX H3 to słuchawki Nauszne zamknięte. Pasmo przenoszenia od 20 kHz do 20000 kHz. Impedancja wynosi 32 Ω, czułość 118dB, koloru Czarny, posiadają kabel długości 1.2 m. Wbudowany mikrofon: Tak</Opis>
+      </Słuchawki>
+      <Słuchawki>
+         <Nazwa>HP Omen 800</Nazwa>
+         <AktualnaCena Waluta="zł">299.00</AktualnaCena>
+         <NazwaMarki>HP</NazwaMarki>
+         <KrajPochodzenia>USA</KrajPochodzenia>
+         <Opis>Słuchawki HP Omen 800 to słuchawki Nauszne zamknięte. Pasmo przenoszenia od 20 kHz do 20000 kHz. Impedancja wynosi 32 Ω, czułość 95dB, koloru Czarny, posiadają kabel długości 1.7 m. Wbudowany mikrofon: Tak</Opis>
+      </Słuchawki>
+      <Słuchawki>
+         <Nazwa>HyperX Cloud Alpha</Nazwa>
+         <AktualnaCena Waluta="zł">349.00</AktualnaCena>
+         <NazwaMarki>HyperX</NazwaMarki>
+         <KrajPochodzenia>Germany</KrajPochodzenia>
+         <Opis>Słuchawki HyperX Cloud Alpha to słuchawki Nauszne zamknięte. Pasmo przenoszenia od 13 kHz do 27000 kHz. Impedancja wynosi 65 Ω, czułość 98dB, koloru Czarno-czerwony, posiadają kabel długości 1.3 m. Wbudowany mikrofon: Tak</Opis>
+      </Słuchawki>
+      <Słuchawki>
+         <Nazwa>HyperX Cloud II</Nazwa>
+         <AktualnaCena Waluta="zł">359.00</AktualnaCena>
+         <NazwaMarki>HyperX</NazwaMarki>
+         <KrajPochodzenia>Germany</KrajPochodzenia>
+         <Opis>Słuchawki HyperX Cloud II to słuchawki Nauszne zamknięte. Pasmo przenoszenia od 15 kHz do 25000 kHz. Impedancja wynosi 60 Ω, czułość 98dB, koloru Czarno-czerwony, posiadają kabel długości 1.0 m. Wbudowany mikrofon: Tak</Opis>
+      </Słuchawki>
+      <Słuchawki>
+         <Nazwa>HyperX Cloud Stinger Core</Nazwa>
+         <AktualnaCena Waluta="€">169.00</AktualnaCena>
+         <NazwaMarki>HyperX</NazwaMarki>
+         <KrajPochodzenia>Germany</KrajPochodzenia>
+         <Opis>Słuchawki HyperX Cloud Stinger Core to słuchawki Nauszne zamknięte. Pasmo przenoszenia od 20 kHz do 20000 kHz. Impedancja wynosi 16 Ω, czułość 99dB, koloru Czarny, posiadają kabel długości 1.3 m. Wbudowany mikrofon: Tak</Opis>
+      </Słuchawki>
+      <Słuchawki>
+         <Nazwa>ISK HD9999</Nazwa>
+         <AktualnaCena Waluta="zł">274.00</AktualnaCena>
+         <NazwaMarki>ISK</NazwaMarki>
+         <KrajPochodzenia>Meksyk</KrajPochodzenia>
+         <Opis>Słuchawki ISK HD9999 to słuchawki Nauszne zamknięte. Pasmo przenoszenia od 8 kHz do 30000 kHz. Impedancja wynosi 32 Ω, czułość 96dB, koloru Czarno-złoty, posiadają kabel długości 1.5 m. Wbudowany mikrofon: Nie</Opis>
+      </Słuchawki>
+      <Słuchawki>
+         <Nazwa>Lioncast LX20</Nazwa>
+         <AktualnaCena Waluta="zł">109.00</AktualnaCena>
+         <NazwaMarki>Lioncast</NazwaMarki>
+         <KrajPochodzenia>Italy</KrajPochodzenia>
+         <Opis>Słuchawki Lioncast LX20 to słuchawki Nauszne zamknięte. Pasmo przenoszenia od 20 kHz do 20000 kHz. Impedancja wynosi 32 Ω, czułość 105dB, koloru Czarny, posiadają kabel długości 1.35 m. Wbudowany mikrofon: Tak</Opis>
+      </Słuchawki>
+      <Słuchawki>
+         <Nazwa>Logitech G430 Surround Sound Gaming Headset</Nazwa>
+         <AktualnaCena Waluta="zł">295.00</AktualnaCena>
+         <NazwaMarki>Logitech</NazwaMarki>
+         <KrajPochodzenia>Germany</KrajPochodzenia>
+         <Opis>Słuchawki Logitech G430 Surround Sound Gaming Headset to słuchawki Nauszne zamknięte. Pasmo przenoszenia od 20 kHz do 20000 kHz. Impedancja wynosi 32 Ω, czułość 90dB, koloru Czarno-niebieski, posiadają kabel długości 2.3 m. Wbudowany mikrofon: Tak</Opis>
+      </Słuchawki>
+      <Słuchawki>
+         <Nazwa>Marshall Major III</Nazwa>
+         <AktualnaCena Waluta="$">249.00</AktualnaCena>
+         <NazwaMarki>Marshall</NazwaMarki>
+         <KrajPochodzenia>UK</KrajPochodzenia>
+         <Opis>Słuchawki Marshall Major III to słuchawki Nauszne zamknięte. Pasmo przenoszenia od 20 kHz do 20000 kHz. Impedancja wynosi 32 Ω, czułość 99dB, koloru Brązowy, posiadają kabel długości 0 m. Wbudowany mikrofon: Tak</Opis>
+      </Słuchawki>
+      <Słuchawki>
+         <Nazwa>Patriot Viper V360 Virtual 7.1</Nazwa>
+         <AktualnaCena Waluta="zł">119.00</AktualnaCena>
+         <NazwaMarki>Patriot</NazwaMarki>
+         <KrajPochodzenia>USA</KrajPochodzenia>
+         <Opis>Słuchawki Patriot Viper V360 Virtual 7.1 to słuchawki Nauszne półotwarte. Pasmo przenoszenia od 20 kHz do 20000 kHz. Impedancja wynosi 32 Ω, czułość 97dB, koloru Czarny, posiadają kabel długości 2.2 m. Wbudowany mikrofon: Tak</Opis>
+      </Słuchawki>
+      <Słuchawki>
+         <Nazwa>Philips SHP2500/10</Nazwa>
+         <AktualnaCena Waluta="$">69.00</AktualnaCena>
+         <NazwaMarki>Philips</NazwaMarki>
+         <KrajPochodzenia>USA</KrajPochodzenia>
+         <Opis>Słuchawki Philips SHP2500/10 to słuchawki Nauszne zamknięte. Pasmo przenoszenia od 9 kHz do 23000 kHz. Impedancja wynosi 32 Ω, czułość 95dB, koloru Srebrny, posiadają kabel długości 6.0 m. Wbudowany mikrofon: Nie</Opis>
+      </Słuchawki>
+      <Słuchawki>
+         <Nazwa>Pioneer SE-M521</Nazwa>
+         <AktualnaCena Waluta="zł">109.00</AktualnaCena>
+         <NazwaMarki>Pioneer</NazwaMarki>
+         <KrajPochodzenia>USA</KrajPochodzenia>
+         <Opis>Słuchawki Pioneer SE-M521 to słuchawki Nauszne zamknięte. Pasmo przenoszenia od 10 kHz do 40000 kHz. Impedancja wynosi 32 Ω, czułość 97dB, koloru Czarny, posiadają kabel długości 3.5 m. Wbudowany mikrofon: Nie</Opis>
+      </Słuchawki>
+      <Słuchawki>
+         <Nazwa>Razer Kraken Essential</Nazwa>
+         <AktualnaCena Waluta="€">199.00</AktualnaCena>
+         <NazwaMarki>Razer</NazwaMarki>
+         <KrajPochodzenia>USA</KrajPochodzenia>
+         <Opis>Słuchawki Razer Kraken Essential to słuchawki Nauszne półotwarte. Pasmo przenoszenia od 20 kHz do 20000 kHz. Impedancja wynosi 24 Ω, czułość 105dB, koloru Czarny, posiadają kabel długości 1.3 m. Wbudowany mikrofon: Tak</Opis>
+      </Słuchawki>
+      <Słuchawki>
+         <Nazwa>SpeedLink MAXTER Gaming Headset</Nazwa>
+         <AktualnaCena Waluta="$">99.00</AktualnaCena>
+         <NazwaMarki>SpeedLink</NazwaMarki>
+         <KrajPochodzenia>Spain</KrajPochodzenia>
+         <Opis>Słuchawki SpeedLink MAXTER Gaming Headset to słuchawki Nauszne zamknięte. Pasmo przenoszenia od 20 kHz do 20000 kHz. Impedancja wynosi 32 Ω, czułość 110dB, koloru Czarny, posiadają kabel długości 2.2 m. Wbudowany mikrofon: Tak</Opis>
+      </Słuchawki>
+      <Słuchawki>
+         <Nazwa>SteelSeries Arctis 3</Nazwa>
+         <AktualnaCena Waluta="zł">259.00</AktualnaCena>
+         <NazwaMarki>SteelSeries</NazwaMarki>
+         <KrajPochodzenia>USA</KrajPochodzenia>
+         <Opis>Słuchawki SteelSeries Arctis 3 to słuchawki Nauszne zamknięte. Pasmo przenoszenia od 20 kHz do 22000 kHz. Impedancja wynosi 32 Ω, czułość 98dB, koloru Czarny, posiadają kabel długości 3.0 m. Wbudowany mikrofon: Tak</Opis>
+      </Słuchawki>
+      <Słuchawki>
+         <Nazwa>SteelSeries Arctis 3</Nazwa>
+         <AktualnaCena Waluta="zł">259.00</AktualnaCena>
+         <NazwaMarki>SteelSeries</NazwaMarki>
+         <KrajPochodzenia>USA</KrajPochodzenia>
+         <Opis>Słuchawki SteelSeries Arctis 3 to słuchawki Nauszne zamknięte. Pasmo przenoszenia od 20 kHz do 22000 kHz. Impedancja wynosi 32 Ω, czułość 98dB, koloru Biały, posiadają kabel długości 3.0 m. Wbudowany mikrofon: Tak</Opis>
+      </Słuchawki>
+      <Słuchawki>
+         <Nazwa>Superlux HD669</Nazwa>
+         <AktualnaCena Waluta="zł">129.00</AktualnaCena>
+         <NazwaMarki>Lioncast</NazwaMarki>
+         <KrajPochodzenia>Italy</KrajPochodzenia>
+         <Opis>Słuchawki Superlux HD669 to słuchawki Nauszne zamknięte. Pasmo przenoszenia od 10 kHz do 30000 kHz. Impedancja wynosi 56 Ω, czułość 98dB, koloru Czarny, posiadają kabel długości 3.0 m. Wbudowany mikrofon: Nie</Opis>
+      </Słuchawki>
+      <Słuchawki>
+         <Nazwa>Superlux HD681</Nazwa>
+         <AktualnaCena Waluta="zł">89.00</AktualnaCena>
+         <NazwaMarki>Superlux</NazwaMarki>
+         <KrajPochodzenia>France</KrajPochodzenia>
+         <Opis>Słuchawki Superlux HD681 to słuchawki Nauszne półotwarte. Pasmo przenoszenia od 10 kHz do 30000 kHz. Impedancja wynosi 32 Ω, czułość 98dB, koloru Czarno-czerwony, posiadają kabel długości 2.5 m. Wbudowany mikrofon: Nie</Opis>
+      </Słuchawki>
+      <Słuchawki>
+         <Nazwa>Superlux HD681 EVO MKII</Nazwa>
+         <AktualnaCena Waluta="€">129.00</AktualnaCena>
+         <NazwaMarki>Superlux</NazwaMarki>
+         <KrajPochodzenia>France</KrajPochodzenia>
+         <Opis>Słuchawki Superlux HD681 EVO MKII to słuchawki Nauszne półotwarte. Pasmo przenoszenia od 10 kHz do 30000 kHz. Impedancja wynosi 32 Ω, czułość 98dB, koloru Czarny, posiadają kabel długości 1.0 m. Wbudowany mikrofon: Nie</Opis>
+      </Słuchawki>
+   </SłuchawkiBezPromocji>
+   <Podsumowanie>
+      <TypKonstrukcji>
+         <Półotwarte>5</Półotwarte>
+         <Zamknięte>22</Zamknięte>
+      </TypKonstrukcji>
+      <Waluta>
+         <złotówki>17</złotówki>
+         <dolary>3</dolary>
+         <euro>7</euro>
+      </Waluta>
+      <Promocja>
+         <WPromocji>5</WPromocji>
+         <BezPromocji>22</BezPromocji>
+      </Promocja>
+      <ProduktyMarek>
+         <ProduktyMarki NazwaMarki="Razer">2</ProduktyMarki>
+         <ProduktyMarki NazwaMarki="ISK">1</ProduktyMarki>
+         <ProduktyMarki NazwaMarki="SteelSeries">4</ProduktyMarki>
+         <ProduktyMarki NazwaMarki="Creative">3</ProduktyMarki>
+         <ProduktyMarki NazwaMarki="HyperX">3</ProduktyMarki>
+         <ProduktyMarki NazwaMarki="Corsair">1</ProduktyMarki>
+         <ProduktyMarki NazwaMarki="Lioncast">2</ProduktyMarki>
+         <ProduktyMarki NazwaMarki="Superlux">2</ProduktyMarki>
+         <ProduktyMarki NazwaMarki="Philips">1</ProduktyMarki>
+         <ProduktyMarki NazwaMarki="JBL">1</ProduktyMarki>
+         <ProduktyMarki NazwaMarki="Pioneer">1</ProduktyMarki>
+         <ProduktyMarki NazwaMarki="SpeedLink">1</ProduktyMarki>
+         <ProduktyMarki NazwaMarki="HP">1</ProduktyMarki>
+         <ProduktyMarki NazwaMarki="Audio-Technica">1</ProduktyMarki>
+         <ProduktyMarki NazwaMarki="Marshall">1</ProduktyMarki>
+         <ProduktyMarki NazwaMarki="Patriot">1</ProduktyMarki>
+         <ProduktyMarki NazwaMarki="Logitech">1</ProduktyMarki>
+      </ProduktyMarek>
+      <DługośćKabla>
+         <Krótkie>12</Krótkie>
+         <Długie>15</Długie>
+      </DługośćKabla>
+      <DataWygenerowania>2019-05-24T07:52:40.188Z</DataWygenerowania>
+   </Podsumowanie>
 </root>

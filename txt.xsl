@@ -24,6 +24,7 @@
             <xsl:value-of select="concat('&#x9;&#x9;&#x9;', ./Nazwa, '&#xa;&#xa;')"/>
             <xsl:value-of select="concat('Poprzednia cena:&#xa;&#x9;', ./PoprzedniaCena,'&#xa;&#xa;')"/>
             <xsl:value-of select="concat('Aktualna cena:&#xa;&#x9;', ./AktualnaCena,'&#xa;&#xa;')"/>
+            <xsl:value-of select="concat('Waluta:&#xa;&#x9;', ./AktualnaCena/@Waluta,'&#xa;&#xa;')"/>
             <xsl:value-of select="concat('Nazwa marki:&#xa;&#x9;', ./NazwaMarki,'&#xa;&#xa;')"/>
             <xsl:value-of select="concat('Kraj pochodzenia:&#xa;&#x9;', ./KrajPochodzenia,'&#xa;&#xa;')"/>
             <xsl:value-of select="concat('Opis:&#xa;&#x9;', ./Opis,'&#xa;')"/>
@@ -40,6 +41,7 @@
         <xsl:for-each select="/root/SłuchawkiBezPromocji/Słuchawki">
             <xsl:value-of select="concat('&#x9;&#x9;&#x9;', ./Nazwa, '&#xa;&#xa;')"/>
             <xsl:value-of select="concat('Aktualna cena:&#xa;&#x9;', ./AktualnaCena,'&#xa;&#xa;')"/>
+			<xsl:value-of select="concat('Waluta:&#xa;&#x9;', ./AktualnaCena/@Waluta,'&#xa;&#xa;')"/>
             <xsl:value-of select="concat('Nazwa marki:&#xa;&#x9;', ./NazwaMarki,'&#xa;&#xa;')"/>
             <xsl:value-of select="concat('Kraj pochodzenia:&#xa;&#x9;', ./KrajPochodzenia,'&#xa;&#xa;')"/>
             <xsl:value-of select="concat('Opis:&#xa;&#x9;', ./Opis,'&#xa;')"/>

@@ -49,70 +49,77 @@
                 <xsl:text>&#xD;&#xA;</xsl:text>
             </fo:block>
             <fo:block>
-                <fo:table border="solid black" width="100%">
-                    <fo:table-header>
-                        <fo:table-row>
-                            <fo:table-cell border="solid black">
-                                <fo:block font-size="14px" font-weight="bold" text-align="center">Nazwa</fo:block>
-                            </fo:table-cell>
-                            <fo:table-cell border="solid black">
-                                <fo:block font-size="14px" font-weight="bold" text-align="center">Poprzednia cena
-                                </fo:block>
-                            </fo:table-cell>
-                            <fo:table-cell border="solid black">
-                                <fo:block font-size="14px" font-weight="bold" text-align="center">Aktualna cena
-                                </fo:block>
-                            </fo:table-cell>
-                            <fo:table-cell border="solid black">
-                                <fo:block font-size="14px" font-weight="bold" text-align="center">Nazwa marki</fo:block>
-                            </fo:table-cell>
-                            <fo:table-cell border="solid black">
-                                <fo:block font-size="14px" font-weight="bold" text-align="center">Kraj pochodzenia
-                                </fo:block>
-                            </fo:table-cell>
-                            <fo:table-cell border="solid black">
-                                <fo:block font-size="14px" font-weight="bold" text-align="center">Opis</fo:block>
-                            </fo:table-cell>
-                        </fo:table-row>
-                    </fo:table-header>
+				<fo:block-container display-align="center">
+					<fo:table border="solid black" width="100%">
+						<fo:table-header>
+							<fo:table-row>
+								<fo:table-cell border="solid black">
+									<fo:block font-size="14px" font-weight="bold" text-align="center">Nazwa</fo:block>
+								</fo:table-cell>
+								<fo:table-cell border="solid black">
+									<fo:block font-size="14px" font-weight="bold" text-align="center">Poprzednia cena</fo:block>
+								</fo:table-cell>
+								<fo:table-cell border="solid black">
+									<fo:block font-size="14px" font-weight="bold" text-align="center">Aktualna cena</fo:block>
+								</fo:table-cell>
+								<fo:table-cell border="solid black">
+									<fo:block font-size="14px" font-weight="bold" text-align="center">Waluta</fo:block>
+								</fo:table-cell>
+								<fo:table-cell border="solid black">
+									<fo:block font-size="14px" font-weight="bold" text-align="center">Nazwa marki</fo:block>
+								</fo:table-cell>
+								<fo:table-cell border="solid black">
+									<fo:block font-size="14px" font-weight="bold" text-align="center">Kraj pochodzenia</fo:block>
+								</fo:table-cell>
+								<fo:table-cell border="solid black">
+									<fo:block font-size="14px" font-weight="bold" text-align="center">Opis</fo:block>
+								</fo:table-cell>
+							</fo:table-row>
+						</fo:table-header>
 
-                    <fo:table-body>
-                        <xsl:for-each select="/root/SłuchawkiWPromocji/Słuchawki">
-                            <fo:table-row border="solid black">
-                                <fo:table-cell border="solid black">
-                                    <fo:block font-size="14px" text-align="center">
-                                        <xsl:value-of select="./Nazwa"/>
-                                    </fo:block>
-                                </fo:table-cell>
-                                <fo:table-cell border="solid black">
-                                    <fo:block font-size="14px" text-align="center">
-                                        <xsl:value-of select="./PoprzedniaCena"/>
-                                    </fo:block>
-                                </fo:table-cell>
-                                <fo:table-cell border="solid black">
-                                    <fo:block font-size="14px" text-align="center">
-                                        <xsl:value-of select="./AktualnaCena"/>
-                                    </fo:block>
-                                </fo:table-cell>
-                                <fo:table-cell border="solid black">
-                                    <fo:block font-size="14px" text-align="center">
-                                        <xsl:value-of select="./NazwaMarki"/>
-                                    </fo:block>
-                                </fo:table-cell>
-                                <fo:table-cell border="solid black">
-                                    <fo:block font-size="14px" text-align="center">
-                                        <xsl:value-of select="./KrajPochodzenia"/>
-                                    </fo:block>
-                                </fo:table-cell>
-                                <fo:table-cell border="solid black">
-                                    <fo:block text-align="center" font-size="10px">
-                                        <xsl:value-of select="./Opis"/>
-                                    </fo:block>
-                                </fo:table-cell>
-                            </fo:table-row>
-                        </xsl:for-each>
-                    </fo:table-body>
-                </fo:table>
+						<fo:table-body>
+							<xsl:for-each select="/root/SłuchawkiWPromocji/Słuchawki">
+								<fo:table-row border="solid black">
+									<fo:table-cell border="solid black">
+										<fo:block font-size="14px" text-align="center">
+											<xsl:value-of select="./Nazwa"/>
+										</fo:block>
+									</fo:table-cell>
+									<fo:table-cell border="solid black">
+										<fo:block font-size="14px" text-align="center">
+											<xsl:value-of select="./PoprzedniaCena"/>
+										</fo:block>
+									</fo:table-cell>
+									<fo:table-cell border="solid black">
+										<fo:block font-size="14px" text-align="center">
+											<xsl:value-of select="./AktualnaCena"/>
+										</fo:block>
+									</fo:table-cell>
+									<fo:table-cell border="solid black">
+										<fo:block font-size="14px" text-align="center">
+											<xsl:value-of select="./AktualnaCena/@Waluta"/>
+										</fo:block>
+									</fo:table-cell>
+									<fo:table-cell border="solid black">
+										<fo:block font-size="14px" text-align="center">
+											<xsl:value-of select="./NazwaMarki"/>
+										</fo:block>
+									</fo:table-cell>
+									<fo:table-cell border="solid black">
+										<fo:block font-size="14px" text-align="center">
+											<xsl:value-of select="./KrajPochodzenia"/>
+										</fo:block>
+									</fo:table-cell>
+									<fo:table-cell border="solid black">
+										<fo:block text-align="center" font-size="10px">
+											<xsl:value-of select="./Opis"/>
+										</fo:block>
+									</fo:table-cell>
+								</fo:table-row>
+							</xsl:for-each>
+						</fo:table-body>
+					</fo:table>
+				</fo:block-container>
             </fo:block>
         </fo:block>
     </xsl:template>
@@ -124,61 +131,69 @@
                 <xsl:text>&#xD;&#xA;</xsl:text>
             </fo:block>
             <fo:block>
-                <fo:table border="solid black" width="100%">
-                    <fo:table-header>
-                        <fo:table-row>
-                            <fo:table-cell border="solid black">
-                                <fo:block font-size="14px" font-weight="bold" text-align="center">Nazwa</fo:block>
-                            </fo:table-cell>
-                            <fo:table-cell border="solid black">
-                                <fo:block font-size="14px" font-weight="bold" text-align="center">Aktualna cena
-                                </fo:block>
-                            </fo:table-cell>
-                            <fo:table-cell border="solid black">
-                                <fo:block font-size="14px" font-weight="bold" text-align="center">Nazwa marki</fo:block>
-                            </fo:table-cell>
-                            <fo:table-cell border="solid black">
-                                <fo:block font-size="14px" font-weight="bold" text-align="center">Kraj pochodzenia
-                                </fo:block>
-                            </fo:table-cell>
-                            <fo:table-cell border="solid black">
-                                <fo:block font-size="14px" font-weight="bold" text-align="center">Opis</fo:block>
-                            </fo:table-cell>
-                        </fo:table-row>
-                    </fo:table-header>
+                <fo:block-container display-align="center">
+					<fo:table border="solid black" width="100%">
+						<fo:table-header>
+							<fo:table-row>
+								<fo:table-cell border="solid black">
+									<fo:block font-size="14px" font-weight="bold" text-align="center">Nazwa</fo:block>
+								</fo:table-cell>
+								<fo:table-cell border="solid black">
+									<fo:block font-size="14px" font-weight="bold" text-align="center">Aktualna cena</fo:block>
+								</fo:table-cell>
+								<fo:table-cell border="solid black">
+									<fo:block font-size="14px" font-weight="bold" text-align="center">Waluta</fo:block>
+								</fo:table-cell>
+								<fo:table-cell border="solid black">
+									<fo:block font-size="14px" font-weight="bold" text-align="center">Nazwa marki</fo:block>
+								</fo:table-cell>
+								<fo:table-cell border="solid black">
+									<fo:block font-size="14px" font-weight="bold" text-align="center">Kraj pochodzenia</fo:block>
+								</fo:table-cell>
+								<fo:table-cell border="solid black">
+									<fo:block font-size="14px" font-weight="bold" text-align="center">Opis</fo:block>
+								</fo:table-cell>
+							</fo:table-row>
+						</fo:table-header>
 
-                    <fo:table-body>
-                        <xsl:for-each select="/root/SłuchawkiBezPromocji/Słuchawki">
-                            <fo:table-row border="solid black">
-                                <fo:table-cell border="solid black">
-                                    <fo:block font-size="14px" text-align="center">
-                                        <xsl:value-of select="./Nazwa"/>
-                                    </fo:block>
-                                </fo:table-cell>
-                                <fo:table-cell border="solid black">
-                                    <fo:block font-size="14px" text-align="center">
-                                        <xsl:value-of select="./AktualnaCena"/>
-                                    </fo:block>
-                                </fo:table-cell>
-                                <fo:table-cell border="solid black">
-                                    <fo:block font-size="14px" text-align="center">
-                                        <xsl:value-of select="./NazwaMarki"/>
-                                    </fo:block>
-                                </fo:table-cell>
-                                <fo:table-cell border="solid black">
-                                    <fo:block font-size="14px" text-align="center">
-                                        <xsl:value-of select="./KrajPochodzenia"/>
-                                    </fo:block>
-                                </fo:table-cell>
-                                <fo:table-cell border="solid black">
-                                    <fo:block text-align="center" font-size="10px">
-                                        <xsl:value-of select="./Opis"/>
-                                    </fo:block>
-                                </fo:table-cell>
-                            </fo:table-row>
-                        </xsl:for-each>
-                    </fo:table-body>
-                </fo:table>
+						<fo:table-body>
+							<xsl:for-each select="/root/SłuchawkiBezPromocji/Słuchawki">
+								<fo:table-row border="solid black">
+									<fo:table-cell border="solid black">
+										<fo:block font-size="14px" text-align="center">
+											<xsl:value-of select="./Nazwa"/>
+										</fo:block>
+									</fo:table-cell>
+									<fo:table-cell border="solid black">
+										<fo:block font-size="14px" text-align="center">
+											<xsl:value-of select="./AktualnaCena"/>
+										</fo:block>
+									</fo:table-cell>
+									<fo:table-cell border="solid black">
+										<fo:block font-size="14px" text-align="center">
+											<xsl:value-of select="./AktualnaCena/@Waluta"/>
+										</fo:block>
+									</fo:table-cell>
+									<fo:table-cell border="solid black">
+										<fo:block font-size="14px" text-align="center">
+											<xsl:value-of select="./NazwaMarki"/>
+										</fo:block>
+									</fo:table-cell>
+									<fo:table-cell border="solid black">
+										<fo:block font-size="14px" text-align="center">
+											<xsl:value-of select="./KrajPochodzenia"/>
+										</fo:block>
+									</fo:table-cell>
+									<fo:table-cell border="solid black">
+										<fo:block text-align="center" font-size="10px">
+											<xsl:value-of select="./Opis"/>
+										</fo:block>
+									</fo:table-cell>
+								</fo:table-row>
+							</xsl:for-each>
+						</fo:table-body>
+					</fo:table>
+				</fo:block-container>
             </fo:block>
         </fo:block>
     </xsl:template>
