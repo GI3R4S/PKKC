@@ -11,7 +11,7 @@ namespace PKCK_ZAD5.XMLObjectModel
     public class CzuloscSluchawek
     {
         [XmlText]
-        public int czuloscSluchawek { get; set; }
+        public string czuloscSluchawek { get; set; }
         [XmlAttribute("jednostka")]
         public string jednostka { get; set; }
 

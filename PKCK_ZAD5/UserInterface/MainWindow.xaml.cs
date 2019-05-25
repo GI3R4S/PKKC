@@ -28,6 +28,9 @@ namespace UserInterface
         {
             InitializeComponent();
             Button_Add_New.IsEnabled = false;
+            Button_Remove_Item.IsEnabled = false;
+            Button_Edit_Current.IsEnabled = false;
+            Button_Save_XML.IsEnabled = false;
         }
 
         private void Button_Load_XML_Click(object sender, RoutedEventArgs e)
@@ -53,7 +56,7 @@ namespace UserInterface
                 Waluta_CB.Items.Add("€");
                 Waluta_CB.Items.Add("$");
                 Button_Add_New.IsEnabled = true;
-
+                Button_Save_XML.IsEnabled = true;
                 ListView_Marki.UpdateLayout();
             }
 
@@ -69,6 +72,7 @@ namespace UserInterface
             if (result.Value)
             {
                 XMLTools.SaveToXmlFile(saveFileDialog.FileName, Zawartosc);
+                XMLTools.GenerateDocument(saveFileDialog.FileName, "../../../transform/transform.xsl");
             }
         }
 
@@ -92,14 +96,83 @@ namespace UserInterface
 
         private void Button_Add_New_Click(object sender, RoutedEventArgs e)
         {
+            if (Zawartosc.listaPrzedmiotow.listaPrzedmiotów.Select(p => p.przedmiotId).Contains(ID_Przedmiotu_TB.Text))
+            {
+                MessageBox.Show("Przedmiot o podanym ID już istnieje");
+                return;
+            }
+            Przedmiot przedmiotBuilder = BuildItem();
+            ListView_Przedmioty.Items.Add(przedmiotBuilder);
+            Zawartosc.listaPrzedmiotow.listaPrzedmiotów.Add(przedmiotBuilder);
+            ListView_Przedmioty.UpdateLayout();
+        }
+
+        private void ListView_Przedmioty_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            int selectedIndex = ListView_Przedmioty.SelectedIndex;
+            if (selectedIndex != -1)
+            {
+                Button_Remove_Item.IsEnabled = true;
+                Button_Edit_Current.IsEnabled = true;
+                Przedmiot selectectItem = Zawartosc.listaPrzedmiotow.listaPrzedmiotów[selectedIndex];
+
+                ID_Przedmiotu_TB.Text = selectectItem.przedmiotId;
+                ID_Marki_CB.Text = selectectItem.markaId;
+                Impedancja_TB.Text = selectectItem.impedancjaSluchawek.impedancjaSluchawek;
+                Impedancja_Jednostka_TB.Text = selectectItem.impedancjaSluchawek.jednostka;
+                Kolor_TB.Text = selectectItem.kolor;
+                Nazwa_TB.Text = selectectItem.nazwa;
+                Czulosc_TB.Text = selectectItem.czuloscSluchawek.czuloscSluchawek;
+                Czulosc_Jednostka_TB.Text = selectectItem.czuloscSluchawek.jednostka;
+                Pasmo_Od_TB.Text = selectectItem.pasmoPrzenoszeniaSluchawek.minimum.czestotliwosc;
+                Pasmo_Do_TB.Text = selectectItem.pasmoPrzenoszeniaSluchawek.maksimum.czestotliwosc;
+                Pasmo_Jednostka_TB.Text = selectectItem.pasmoPrzenoszeniaSluchawek.minimum.jednostka;
+                Srednica_Membrany_TB.Text = selectectItem.srednicaMembrany.srednicaMembrany;
+                Srednica_Membrany_Jednostka_TB.Text = selectectItem.srednicaMembrany.jednostka;
+                Typ_Konstrukcji_TB.Text = selectectItem.typKonstrucji;
+                Mikrofon_CB.IsChecked = selectectItem.wbudowanyMikrofon == "Tak" ? true : false;
+                Dlugosc_Kabla_TB.Text = selectectItem.dlugoscKabla.dlugoscKabla;
+                Dlugosc_Kabla_Jednostka_TB.Text = selectectItem.dlugoscKabla.jednostka;
+                Cena_TB.Text = selectectItem.cena.cena;
+                Waluta_CB.Text = selectectItem.cena.waluta;
+                Promocja_CB.IsChecked = selectectItem.cena.promocja == "TAK" ? true : false;
+            }
+            else
+            {
+                Button_Remove_Item.IsEnabled = false;
+                Button_Edit_Current.IsEnabled = false;
+            }
+        }
+
+        private void Button_Edit_Current_Click(object sender, RoutedEventArgs e)
+        {
+            int selectedIndex = ListView_Przedmioty.SelectedIndex;
+            if(Zawartosc.listaPrzedmiotow.listaPrzedmiotów.Select(p =>p.przedmiotId).Contains(ID_Przedmiotu_TB.Text))
+            {
+                MessageBox.Show("Przedmiot o podanym ID już istnieje");
+                return;
+            }
+            if(selectedIndex != -1)
+            {
+                Przedmiot przedmiotBuilder = BuildItem();
+                Zawartosc.listaPrzedmiotow.listaPrzedmiotów[selectedIndex] = przedmiotBuilder;
+                ListView_Przedmioty.Items[selectedIndex] = przedmiotBuilder;
+                ListView_Przedmioty.UpdateLayout();
+            }
+        }
+
+        private Przedmiot BuildItem()
+        {
             Przedmiot przedmiotBuilder = new Przedmiot();
 
             przedmiotBuilder.przedmiotId = ID_Przedmiotu_TB.Text;
             przedmiotBuilder.markaId = ID_Marki_CB.Text;
-            przedmiotBuilder.impedancjaSluchawek.impedancjaSluchawek = Impedancja_Jednostka_TB.Text;
+            przedmiotBuilder.impedancjaSluchawek.impedancjaSluchawek = Impedancja_TB.Text;
             przedmiotBuilder.impedancjaSluchawek.jednostka = Impedancja_Jednostka_TB.Text;
             przedmiotBuilder.kolor = Kolor_TB.Text;
             przedmiotBuilder.nazwa = Nazwa_TB.Text;
+            przedmiotBuilder.czuloscSluchawek.czuloscSluchawek = Czulosc_TB.Text;
+            przedmiotBuilder.czuloscSluchawek.jednostka = Czulosc_Jednostka_TB.Text;
             przedmiotBuilder.pasmoPrzenoszeniaSluchawek.minimum.czestotliwosc = Pasmo_Od_TB.Text;
             przedmiotBuilder.pasmoPrzenoszeniaSluchawek.maksimum.czestotliwosc = Pasmo_Do_TB.Text;
             przedmiotBuilder.pasmoPrzenoszeniaSluchawek.minimum.jednostka = Pasmo_Jednostka_TB.Text;
@@ -114,11 +187,7 @@ namespace UserInterface
             przedmiotBuilder.cena.waluta = Waluta_CB.Text;
             przedmiotBuilder.cena.promocja = Promocja_CB.IsChecked.Value ? "TAK" : "NIE";
 
-            ListView_Przedmioty.Items.Add(przedmiotBuilder);
-            Zawartosc.listaPrzedmiotow.listaPrzedmiotów.Add(przedmiotBuilder);
-
-            ListView_Przedmioty.UpdateLayout();
-
+            return przedmiotBuilder;
         }
     }
 }
