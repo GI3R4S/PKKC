@@ -1,122 +1,124 @@
-<?xml version="1.0" encoding="utf-8"?><!DOCTYPE svg:svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
-<svg:svg width="940" height="600" font-family="Calibri" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg"><svg:desc>Sklep ze słuchawkami statystyki</svg:desc><defs><linearGradient id="grad1" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" style="stop-color:rgb(255,240,220);stop-opacity:1"/><stop offset="100%" style="stop-color:rgb(235,220,200);stop-opacity:1"/></linearGradient></defs><svg:rect x="3" y="3" width="934" height="594" fill="url(#grad1)" stroke="black" stroke-width="3"/><script type="text/ecmascript">
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg:svg
+  PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg:svg xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="940" height="600" font-family="Calibri"><svg:desc>Sklep ze słuchawkami statystyki</svg:desc><defs><linearGradient id="grad1" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" style="stop-color:rgb(255,240,220);stop-opacity:1"/><stop offset="100%" style="stop-color:rgb(120,120,130);stop-opacity:1"/></linearGradient></defs><svg:rect x="3" y="3" width="934" height="594" fill="url(#grad1)" stroke="black" stroke-width="3"/><script type="text/ecmascript">
+                
+                    function onMouseOverNameTypKonstrukcji(evt) {
+                        var numbers = document.getElementById("typKonstrukcji");
+                        numbers.setAttribute("visibility", "visible");
+                    }
+            </script><script type="text/ecmascript">
+                
+                    function onMouseOutNameTypKonstrukcji(evt) {
+                        var numbers = document.getElementById("typKonstrukcji");
+                        numbers.setAttribute("visibility", "hidden");
+                    }
+            </script><script type="text/ecmascript">
+                
+                    function onMouseOverNameWaluta(evt) {
+                        var numbers = document.getElementById("waluta");
+                        numbers.setAttribute("visibility", "visible");
+                    }
+            </script><script type="text/ecmascript">
+                
+                    function onMouseOutNameWaluta(evt) {
+                        var numbers = document.getElementById("waluta");
+                        numbers.setAttribute("visibility", "hidden");
+                    }
+            </script><script type="text/ecmascript">
+                
+                    function onMouseOverNamePromocja(evt) {
+                        var numbers = document.getElementById("promocja");
+                        numbers.setAttribute("visibility", "visible");
+                    }
+            </script><script type="text/ecmascript">
+                
+                    function onMouseOutNamePromocja(evt) {
+                        var numbers = document.getElementById("promocja");
+                        numbers.setAttribute("visibility", "hidden");
+                    }
+            </script><script type="text/ecmascript">
+                
+                    function onMouseOverNameMarki(evt) {
+                        var numbers = document.getElementById("marki");
+                        numbers.setAttribute("visibility", "visible");
+                    }
+            </script><script type="text/ecmascript">
+                
+                    function onMouseOutNameMarki(evt) {
+                        var numbers = document.getElementById("marki");
+                        numbers.setAttribute("visibility", "hidden");
+                    }
+            </script><script type="text/ecmascript">
+                
+                    function onClickShowHideButton(evt) {
+                        var numbers = document.getElementById("marki");
+                        if(numbers.getAttribute("visibility") == "hidden")
+                        {
+                            numbers.setAttribute("visibility", "visible");
+                            numbers = document.getElementById("waluta");
+                            numbers.setAttribute("visibility", "visible");
+                            numbers = document.getElementById("typKonstrukcji");
+                            numbers.setAttribute("visibility", "visible");
+                            numbers = document.getElementById("promocja");
+                            numbers.setAttribute("visibility", "visible");
+                        }
+                        else
+                        {
+                            numbers.setAttribute("visibility", "hidden");
+                            numbers = document.getElementById("waluta");
+                            numbers.setAttribute("visibility", "hidden");
+                            numbers = document.getElementById("typKonstrukcji");
+                            numbers.setAttribute("visibility", "hidden");
+                            numbers = document.getElementById("promocja");
+                            numbers.setAttribute("visibility", "hidden");
+                        }
+                    }
+            </script><svg:text x="50%" y="20" font-size="24" fill="black" font-weight="bold" text-anchor="middle">
+                Sklep ze słuchawkami statystyki
+            </svg:text><svg:text id="typKonstrukcjiText" y="68" font-size="18" fill="black" font-weight="bold" text-anchor="middle" onmouseover="onMouseOverNameTypKonstrukcji(evt)" onmouseout="onMouseOutNameTypKonstrukcji(evt)">Typ konstrukcji
+            <svg:animate attributeName="x" from="0" to="120" dur="3s" fill="freeze"/></svg:text><svg:g id="typKonstrukcji" visibility="hidden"><svg:rect x="8" y="90" height="160" width="200" fill="none" stroke="black" stroke-width="4"/><svg:text x="60" y="240" font-size="16" fill="black" font-weight="bold" text-anchor="middle">Półotwarte
+            </svg:text><svg:text x="160" y="240" font-size="16" fill="black" font-weight="bold" text-anchor="middle">Zamknięty
+            </svg:text><svg:text x="50" y="190" fill="black" font-size="16">5</svg:text><svg:rect stroke-dashoffset="0" x="50px&#xA;                " y="195px&#xA;                " width="&#xA;                    10px&#xA;                " height="25px&#xA;                " style="&#xA;                    fill:black&#xA;                "/><svg:text x="150" y="105" fill="black" font-size="16">22</svg:text><svg:rect x="150" y="110" width="&#xA;                    10&#xA;                " height="110" style="&#xA;                    fill:black&#xA;                "/></svg:g><svg:text id="walutaText" y="68" font-size="18" fill="black" font-weight="bold" text-anchor="middle" onmouseover="onMouseOverNameWaluta(evt)" onmouseout="onMouseOutNameWaluta(evt)">Waluta
+            <svg:animate attributeName="x" from="280" to="400" dur="3s" fill="freeze"/></svg:text><svg:g id="waluta" visibility="hidden"><svg:rect x="260" y="90" height="160" width="280" fill="none" stroke="black" stroke-width="4"/><svg:text x="300" y="240" font-size="16" fill="black" font-weight="bold" text-anchor="middle">Złotówki
+            </svg:text><svg:text x="400" y="240" font-size="16" fill="black" font-weight="bold" text-anchor="middle">Dolary
+            </svg:text><svg:text x="500" y="240" font-size="16" fill="black" font-weight="bold" text-anchor="middle">Euro
+            </svg:text><svg:text x="300" y="130" fill="black" font-size="16">17</svg:text><svg:rect x="300" y="135" width="&#xA;                    10&#xA;                " height="85" style="&#xA;                    fill:black&#xA;                "/><svg:text x="400" y="200" fill="black" font-size="16">3</svg:text><svg:rect x="400" y="205" width="&#xA;                    10&#xA;                " height="15" style="&#xA;                    fill:black&#xA;                "/><svg:text x="500" y="180" fill="black" font-size="16">7</svg:text><svg:rect x="500" y="185" width="&#xA;                    10&#xA;                " height="35" style="&#xA;                    fill:black&#xA;                "/></svg:g><svg:text id="promocjaText" y="68" font-size="18" fill="black" font-weight="bold" text-anchor="middle" onmouseover="onMouseOverNamePromocja(evt)" onmouseout="onMouseOutNamePromocja(evt)">Promocja
+            <svg:animate attributeName="x" from="630" to="750" dur="3s" fill="freeze"/></svg:text><svg:g id="promocja" visibility="hidden"><svg:rect x="650" y="90" height="160" width="200" fill="none" stroke="black" stroke-width="4"/><svg:text x="700" y="240" font-size="16" fill="black" font-weight="bold" text-anchor="middle">Promocyjne
+            </svg:text><svg:text x="800" y="240" font-size="16" fill="black" font-weight="bold" text-anchor="middle">Bez promocji
+            </svg:text><svg:text x="700" y="190" fill="black" font-size="16">5</svg:text><svg:rect x="700" y="195" width="&#xA;                    10&#xA;                " height="25" style="&#xA;                    fill:black&#xA;                "/><svg:text x="800" y="105" fill="black" font-size="16">22</svg:text><svg:rect x="800" y="110" width="&#xA;                    10&#xA;                " height="110" style="&#xA;                    fill:black&#xA;                "/></svg:g><svg:text id="markiText" y="290" font-size="18" fill="black" font-weight="bold" text-anchor="middle" onmouseover="onMouseOverNameMarki(evt)" onmouseout="onMouseOutNameMarki(evt)">Marki
+            <svg:animate attributeName="x" from="330" to="450" dur="3s" fill="freeze"/></svg:text><svg:g id="showHideButton" onclick="onClickShowHideButton(evt)" cursor="pointer"><svg:rect x="700" y="270" width="80" height="20" fill="yellow" stroke="black"/><svg:text x="710" y="284" fill="black" font-size="16">Widoczne</svg:text></svg:g><a xlink:href="https://edu.p.lodz.pl/" target="_blank"><svg:g cursor="pointer"><svg:rect x="792" y="270" width="80" height="20" fill="yellow" stroke="black"/><svg:text x="804" y="284" fill="black" font-size="16">WIKAMP</svg:text></svg:g></a><svg:g id="marki" visibility="hidden"><svg:rect x="4" y="296" height="280" width="932" fill="none" stroke="black" stroke-width="4"/><svg:text y="560px" x="5" font-size="9" fill="black" font-weight="bold" text-anchor="left">Razer</svg:text>&gt;
 
-    function onMouseOverNameTypKonstrukcji(evt) {
-    var numbers = document.getElementById("typKonstrukcji");
-    numbers.setAttribute("visibility", "visible");
-    }
-</script><script type="text/ecmascript">
+                <svg:text x="15" y="425" fill="black" font-size="9" text-anchor="middle">2</svg:text><svg:rect x="10" y="430" width="&#xA;                        10&#xA;                    " height="120" style="&#xA;                        fill:black&#xA;                    "/><svg:text y="560px" x="61" font-size="9" fill="black" font-weight="bold" text-anchor="left">ISK</svg:text>&gt;
 
-    function onMouseOutNameTypKonstrukcji(evt) {
-    var numbers = document.getElementById("typKonstrukcji");
-    numbers.setAttribute("visibility", "hidden");
-    }
-</script><script type="text/ecmascript">
+                <svg:text x="71" y="485" fill="black" font-size="9" text-anchor="middle">1</svg:text><svg:rect x="66" y="490" width="&#xA;                        10&#xA;                    " height="60" style="&#xA;                        fill:black&#xA;                    "/><svg:text y="560px" x="117" font-size="9" fill="black" font-weight="bold" text-anchor="left">SteelSeries</svg:text>&gt;
 
-    function onMouseOverNameWaluta(evt) {
-    var numbers = document.getElementById("waluta");
-    numbers.setAttribute("visibility", "visible");
-    }
-</script><script type="text/ecmascript">
+                <svg:text x="127" y="305" fill="black" font-size="9" text-anchor="middle">4</svg:text><svg:rect x="122" y="310" width="&#xA;                        10&#xA;                    " height="240" style="&#xA;                        fill:black&#xA;                    "/><svg:text y="560px" x="173" font-size="9" fill="black" font-weight="bold" text-anchor="left">Creative</svg:text>&gt;
 
-    function onMouseOutNameWaluta(evt) {
-    var numbers = document.getElementById("waluta");
-    numbers.setAttribute("visibility", "hidden");
-    }
-</script><script type="text/ecmascript">
+                <svg:text x="183" y="365" fill="black" font-size="9" text-anchor="middle">3</svg:text><svg:rect x="178" y="370" width="&#xA;                        10&#xA;                    " height="180" style="&#xA;                        fill:black&#xA;                    "/><svg:text y="560px" x="229" font-size="9" fill="black" font-weight="bold" text-anchor="left">HyperX</svg:text>&gt;
 
-    function onMouseOverNamePromocja(evt) {
-    var numbers = document.getElementById("promocja");
-    numbers.setAttribute("visibility", "visible");
-    }
-</script><script type="text/ecmascript">
+                <svg:text x="239" y="365" fill="black" font-size="9" text-anchor="middle">3</svg:text><svg:rect x="234" y="370" width="&#xA;                        10&#xA;                    " height="180" style="&#xA;                        fill:black&#xA;                    "/><svg:text y="560px" x="285" font-size="9" fill="black" font-weight="bold" text-anchor="left">Corsair</svg:text>&gt;
 
-    function onMouseOutNamePromocja(evt) {
-    var numbers = document.getElementById("promocja");
-    numbers.setAttribute("visibility", "hidden");
-    }
-</script><script type="text/ecmascript">
+                <svg:text x="295" y="485" fill="black" font-size="9" text-anchor="middle">1</svg:text><svg:rect x="290" y="490" width="&#xA;                        10&#xA;                    " height="60" style="&#xA;                        fill:black&#xA;                    "/><svg:text y="560px" x="341" font-size="9" fill="black" font-weight="bold" text-anchor="left">Lioncast</svg:text>&gt;
 
-    function onMouseOverNameMarki(evt) {
-    var numbers = document.getElementById("marki");
-    numbers.setAttribute("visibility", "visible");
-    }
-</script><script type="text/ecmascript">
+                <svg:text x="351" y="425" fill="black" font-size="9" text-anchor="middle">2</svg:text><svg:rect x="346" y="430" width="&#xA;                        10&#xA;                    " height="120" style="&#xA;                        fill:black&#xA;                    "/><svg:text y="560px" x="397" font-size="9" fill="black" font-weight="bold" text-anchor="left">Superlux</svg:text>&gt;
 
-    function onMouseOutNameMarki(evt) {
-    var numbers = document.getElementById("marki");
-    numbers.setAttribute("visibility", "hidden");
-    }
-</script><script type="text/ecmascript">
+                <svg:text x="407" y="425" fill="black" font-size="9" text-anchor="middle">2</svg:text><svg:rect x="402" y="430" width="&#xA;                        10&#xA;                    " height="120" style="&#xA;                        fill:black&#xA;                    "/><svg:text y="560px" x="453" font-size="9" fill="black" font-weight="bold" text-anchor="left">Philips</svg:text>&gt;
 
-    function onClickShowHideButton(evt) {
-    var numbers = document.getElementById("marki");
-    if(numbers.getAttribute("visibility") == "hidden")
-    {
-    numbers.setAttribute("visibility", "visible");
-    numbers = document.getElementById("waluta");
-    numbers.setAttribute("visibility", "visible");
-    numbers = document.getElementById("typKonstrukcji");
-    numbers.setAttribute("visibility", "visible");
-    numbers = document.getElementById("promocja");
-    numbers.setAttribute("visibility", "visible");
-    }
-    else
-    {
-    numbers.setAttribute("visibility", "hidden");
-    numbers = document.getElementById("waluta");
-    numbers.setAttribute("visibility", "hidden");
-    numbers = document.getElementById("typKonstrukcji");
-    numbers.setAttribute("visibility", "hidden");
-    numbers = document.getElementById("promocja");
-    numbers.setAttribute("visibility", "hidden");
-    }
-    }
-</script><svg:text x="50%" y="20" font-size="24" fill="black" font-weight="bold" text-anchor="middle">
-    Sklep ze słuchawkami statystyki
-</svg:text><svg:text id="typKonstrukcjiText" y="68" font-size="18" fill="black" font-weight="bold" text-anchor="middle" onmouseover="onMouseOverNameTypKonstrukcji(evt)" onmouseout="onMouseOutNameTypKonstrukcji(evt)">Typ konstrukcji
-    <svg:animate attributeName="x" from="0" to="120" dur="3s" fill="freeze"/></svg:text><svg:g id="typKonstrukcji" visibility="hidden"><svg:rect x="8" y="90" height="160" width="200" fill="none" stroke="black" stroke-width="4"/><svg:text x="60" y="240" font-size="16" fill="black" font-weight="bold" text-anchor="middle">Półotwarte
-</svg:text><svg:text x="160" y="240" font-size="16" fill="black" font-weight="bold" text-anchor="middle">Zamknięty
-</svg:text><svg:text x="50" y="190" fill="black" font-size="16">5</svg:text><svg:rect stroke-dashoffset="0" x="50px&#10;                " y="195px&#10;                " width="&#10;                    10px&#10;                " height="25px&#10;                " style="&#10;                    fill:black&#10;                "/><svg:text x="150" y="105" fill="black" font-size="16">22</svg:text><svg:rect x="150" y="110" width="&#10;                    10&#10;                " height="110" style="&#10;                    fill:black&#10;                "/></svg:g><svg:text id="walutaText" y="68" font-size="18" fill="black" font-weight="bold" text-anchor="middle" onmouseover="onMouseOverNameWaluta(evt)" onmouseout="onMouseOutNameWaluta(evt)">Waluta
-    <svg:animate attributeName="x" from="280" to="400" dur="3s" fill="freeze"/></svg:text><svg:g id="waluta" visibility="hidden"><svg:rect x="260" y="90" height="160" width="280" fill="none" stroke="black" stroke-width="4"/><svg:text x="300" y="240" font-size="16" fill="black" font-weight="bold" text-anchor="middle">Złotówki
-</svg:text><svg:text x="400" y="240" font-size="16" fill="black" font-weight="bold" text-anchor="middle">Dolary
-</svg:text><svg:text x="500" y="240" font-size="16" fill="black" font-weight="bold" text-anchor="middle">Euro
-</svg:text><svg:text x="300" y="130" fill="black" font-size="16">17</svg:text><svg:rect x="300" y="135" width="&#10;                    10&#10;                " height="85" style="&#10;                    fill:black&#10;                "/><svg:text x="400" y="200" fill="black" font-size="16">3</svg:text><svg:rect x="400" y="205" width="&#10;                    10&#10;                " height="15" style="&#10;                    fill:black&#10;                "/><svg:text x="500" y="180" fill="black" font-size="16">7</svg:text><svg:rect x="500" y="185" width="&#10;                    10&#10;                " height="35" style="&#10;                    fill:black&#10;                "/></svg:g><svg:text id="promocjaText" y="68" font-size="18" fill="black" font-weight="bold" text-anchor="middle" onmouseover="onMouseOverNamePromocja(evt)" onmouseout="onMouseOutNamePromocja(evt)">Promocja
-    <svg:animate attributeName="x" from="630" to="750" dur="3s" fill="freeze"/></svg:text><svg:g id="promocja" visibility="hidden"><svg:rect x="650" y="90" height="160" width="200" fill="none" stroke="black" stroke-width="4"/><svg:text x="700" y="240" font-size="16" fill="black" font-weight="bold" text-anchor="middle">Promocyjne
-</svg:text><svg:text x="800" y="240" font-size="16" fill="black" font-weight="bold" text-anchor="middle">Bez promocji
-</svg:text><svg:text x="700" y="190" fill="black" font-size="16">5</svg:text><svg:rect x="700" y="195" width="&#10;                    10&#10;                " height="25" style="&#10;                    fill:black&#10;                "/><svg:text x="800" y="105" fill="black" font-size="16">22</svg:text><svg:rect x="800" y="110" width="&#10;                    10&#10;                " height="110" style="&#10;                    fill:black&#10;                "/></svg:g><svg:text id="markiText" y="290" font-size="18" fill="black" font-weight="bold" text-anchor="middle" onmouseover="onMouseOverNameMarki(evt)" onmouseout="onMouseOutNameMarki(evt)">Marki
-    <svg:animate attributeName="x" from="330" to="450" dur="3s" fill="freeze"/></svg:text><svg:g id="showHideButton" onclick="onClickShowHideButton(evt)" cursor="pointer"><svg:rect x="700" y="270" width="80" height="20" fill="yellow" stroke="black"/><svg:text x="710" y="284" fill="black" font-size="16">Widoczne</svg:text></svg:g><a xlink:href="https://edu.p.lodz.pl/" target="_blank"><svg:g cursor="pointer"><svg:rect x="792" y="270" width="80" height="20" fill="yellow" stroke="black"/><svg:text x="804" y="284" fill="black" font-size="16">WIKAMP</svg:text></svg:g></a><svg:g id="marki" visibility="hidden"><svg:rect x="4" y="296" height="280" width="932" fill="none" stroke="black" stroke-width="4"/><svg:text y="560px" x="5" font-size="9" fill="black" font-weight="bold" text-anchor="left">Razer</svg:text>&gt;
+                <svg:text x="463" y="485" fill="black" font-size="9" text-anchor="middle">1</svg:text><svg:rect x="458" y="490" width="&#xA;                        10&#xA;                    " height="60" style="&#xA;                        fill:black&#xA;                    "/><svg:text y="560px" x="509" font-size="9" fill="black" font-weight="bold" text-anchor="left">JBL</svg:text>&gt;
 
-    <svg:text x="15" y="425" fill="black" font-size="9" text-anchor="middle">2</svg:text><svg:rect x="10" y="430" width="&#10;                        10&#10;                    " height="120" style="&#10;                        fill:black&#10;                    "/><svg:text y="560px" x="61" font-size="9" fill="black" font-weight="bold" text-anchor="left">ISK</svg:text>&gt;
+                <svg:text x="519" y="485" fill="black" font-size="9" text-anchor="middle">1</svg:text><svg:rect x="514" y="490" width="&#xA;                        10&#xA;                    " height="60" style="&#xA;                        fill:black&#xA;                    "/><svg:text y="560px" x="565" font-size="9" fill="black" font-weight="bold" text-anchor="left">Pioneer</svg:text>&gt;
 
-    <svg:text x="71" y="485" fill="black" font-size="9" text-anchor="middle">1</svg:text><svg:rect x="66" y="490" width="&#10;                        10&#10;                    " height="60" style="&#10;                        fill:black&#10;                    "/><svg:text y="560px" x="117" font-size="9" fill="black" font-weight="bold" text-anchor="left">SteelSeries</svg:text>&gt;
+                <svg:text x="575" y="485" fill="black" font-size="9" text-anchor="middle">1</svg:text><svg:rect x="570" y="490" width="&#xA;                        10&#xA;                    " height="60" style="&#xA;                        fill:black&#xA;                    "/><svg:text y="560px" x="621" font-size="9" fill="black" font-weight="bold" text-anchor="left">SpeedLink</svg:text>&gt;
 
-    <svg:text x="127" y="305" fill="black" font-size="9" text-anchor="middle">4</svg:text><svg:rect x="122" y="310" width="&#10;                        10&#10;                    " height="240" style="&#10;                        fill:black&#10;                    "/><svg:text y="560px" x="173" font-size="9" fill="black" font-weight="bold" text-anchor="left">Creative</svg:text>&gt;
+                <svg:text x="631" y="485" fill="black" font-size="9" text-anchor="middle">1</svg:text><svg:rect x="626" y="490" width="&#xA;                        10&#xA;                    " height="60" style="&#xA;                        fill:black&#xA;                    "/><svg:text y="560px" x="677" font-size="9" fill="black" font-weight="bold" text-anchor="left">HP</svg:text>&gt;
 
-    <svg:text x="183" y="365" fill="black" font-size="9" text-anchor="middle">3</svg:text><svg:rect x="178" y="370" width="&#10;                        10&#10;                    " height="180" style="&#10;                        fill:black&#10;                    "/><svg:text y="560px" x="229" font-size="9" fill="black" font-weight="bold" text-anchor="left">Hyperx</svg:text>&gt;
+                <svg:text x="687" y="485" fill="black" font-size="9" text-anchor="middle">1</svg:text><svg:rect x="682" y="490" width="&#xA;                        10&#xA;                    " height="60" style="&#xA;                        fill:black&#xA;                    "/><svg:text y="560px" x="733" font-size="9" fill="black" font-weight="bold" text-anchor="left">Audio-Technica</svg:text>&gt;
 
-    <svg:text x="239" y="365" fill="black" font-size="9" text-anchor="middle">3</svg:text><svg:rect x="234" y="370" width="&#10;                        10&#10;                    " height="180" style="&#10;                        fill:black&#10;                    "/><svg:text y="560px" x="285" font-size="9" fill="black" font-weight="bold" text-anchor="left">Corsair</svg:text>&gt;
+                <svg:text x="743" y="485" fill="black" font-size="9" text-anchor="middle">1</svg:text><svg:rect x="738" y="490" width="&#xA;                        10&#xA;                    " height="60" style="&#xA;                        fill:black&#xA;                    "/><svg:text y="560px" x="789" font-size="9" fill="black" font-weight="bold" text-anchor="left">Marshall</svg:text>&gt;
 
-    <svg:text x="295" y="485" fill="black" font-size="9" text-anchor="middle">1</svg:text><svg:rect x="290" y="490" width="&#10;                        10&#10;                    " height="60" style="&#10;                        fill:black&#10;                    "/><svg:text y="560px" x="341" font-size="9" fill="black" font-weight="bold" text-anchor="left">Lioncast</svg:text>&gt;
+                <svg:text x="799" y="485" fill="black" font-size="9" text-anchor="middle">1</svg:text><svg:rect x="794" y="490" width="&#xA;                        10&#xA;                    " height="60" style="&#xA;                        fill:black&#xA;                    "/><svg:text y="560px" x="845" font-size="9" fill="black" font-weight="bold" text-anchor="left">Patriot</svg:text>&gt;
 
-    <svg:text x="351" y="425" fill="black" font-size="9" text-anchor="middle">2</svg:text><svg:rect x="346" y="430" width="&#10;                        10&#10;                    " height="120" style="&#10;                        fill:black&#10;                    "/><svg:text y="560px" x="397" font-size="9" fill="black" font-weight="bold" text-anchor="left">SuperLux</svg:text>&gt;
+                <svg:text x="855" y="485" fill="black" font-size="9" text-anchor="middle">1</svg:text><svg:rect x="850" y="490" width="&#xA;                        10&#xA;                    " height="60" style="&#xA;                        fill:black&#xA;                    "/><svg:text y="560px" x="901" font-size="9" fill="black" font-weight="bold" text-anchor="left">Logitech</svg:text>&gt;
 
-    <svg:text x="407" y="425" fill="black" font-size="9" text-anchor="middle">2</svg:text><svg:rect x="402" y="430" width="&#10;                        10&#10;                    " height="120" style="&#10;                        fill:black&#10;                    "/><svg:text y="560px" x="453" font-size="9" fill="black" font-weight="bold" text-anchor="left">Philips</svg:text>&gt;
-
-    <svg:text x="463" y="485" fill="black" font-size="9" text-anchor="middle">1</svg:text><svg:rect x="458" y="490" width="&#10;                        10&#10;                    " height="60" style="&#10;                        fill:black&#10;                    "/><svg:text y="560px" x="509" font-size="9" fill="black" font-weight="bold" text-anchor="left">JBL</svg:text>&gt;
-
-    <svg:text x="519" y="485" fill="black" font-size="9" text-anchor="middle">1</svg:text><svg:rect x="514" y="490" width="&#10;                        10&#10;                    " height="60" style="&#10;                        fill:black&#10;                    "/><svg:text y="560px" x="565" font-size="9" fill="black" font-weight="bold" text-anchor="left">Pioneer</svg:text>&gt;
-
-    <svg:text x="575" y="485" fill="black" font-size="9" text-anchor="middle">1</svg:text><svg:rect x="570" y="490" width="&#10;                        10&#10;                    " height="60" style="&#10;                        fill:black&#10;                    "/><svg:text y="560px" x="621" font-size="9" fill="black" font-weight="bold" text-anchor="left">SpeedLink</svg:text>&gt;
-
-    <svg:text x="631" y="485" fill="black" font-size="9" text-anchor="middle">1</svg:text><svg:rect x="626" y="490" width="&#10;                        10&#10;                    " height="60" style="&#10;                        fill:black&#10;                    "/><svg:text y="560px" x="677" font-size="9" fill="black" font-weight="bold" text-anchor="left">HP</svg:text>&gt;
-
-    <svg:text x="687" y="485" fill="black" font-size="9" text-anchor="middle">1</svg:text><svg:rect x="682" y="490" width="&#10;                        10&#10;                    " height="60" style="&#10;                        fill:black&#10;                    "/><svg:text y="560px" x="733" font-size="9" fill="black" font-weight="bold" text-anchor="left">AudioTechnica</svg:text>&gt;
-
-    <svg:text x="743" y="485" fill="black" font-size="9" text-anchor="middle">1</svg:text><svg:rect x="738" y="490" width="&#10;                        10&#10;                    " height="60" style="&#10;                        fill:black&#10;                    "/><svg:text y="560px" x="789" font-size="9" fill="black" font-weight="bold" text-anchor="left">Marshall</svg:text>&gt;
-
-    <svg:text x="799" y="485" fill="black" font-size="9" text-anchor="middle">1</svg:text><svg:rect x="794" y="490" width="&#10;                        10&#10;                    " height="60" style="&#10;                        fill:black&#10;                    "/><svg:text y="560px" x="845" font-size="9" fill="black" font-weight="bold" text-anchor="left">Patriot</svg:text>&gt;
-
-    <svg:text x="855" y="485" fill="black" font-size="9" text-anchor="middle">1</svg:text><svg:rect x="850" y="490" width="&#10;                        10&#10;                    " height="60" style="&#10;                        fill:black&#10;                    "/><svg:text y="560px" x="901" font-size="9" fill="black" font-weight="bold" text-anchor="left">Logitech</svg:text>&gt;
-
-    <svg:text x="911" y="485" fill="black" font-size="9" text-anchor="middle">1</svg:text><svg:rect x="906" y="490" width="&#10;                        10&#10;                    " height="60" style="&#10;                        fill:black&#10;                    "/></svg:g></svg:svg>
+                <svg:text x="911" y="485" fill="black" font-size="9" text-anchor="middle">1</svg:text><svg:rect x="906" y="490" width="&#xA;                        10&#xA;                    " height="60" style="&#xA;                        fill:black&#xA;                    "/></svg:g></svg:svg>
