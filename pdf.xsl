@@ -205,11 +205,11 @@
                 <xsl:text>&#xD;&#xA;</xsl:text>
             </fo:block>
         </fo:block>
-        <fo:block margin-top="10%" font-size="14px" font-weight="bold" text-align="left" font-family="Times New Roman">
+        <fo:block margin-left="5%" margin-top="10%" font-size="14px" font-weight="bold" text-align="left" font-family="Times New Roman">
             <xsl:text>Typ konstrukcji:</xsl:text>
         </fo:block>
 
-        <fo:table width="100%" font-size="12px" text-align="left" font-family="Times New Roman">
+        <fo:table margin-left="5%" width="100%" font-size="12px" text-align="left" font-family="Times New Roman">
             <fo:table-header>
                 <fo:table-row>
                     <fo:table-cell>
@@ -255,11 +255,11 @@
             </fo:table-body>
         </fo:table>
 
-        <fo:block margin-top="10%" font-size="14px" font-weight="bold" text-align="left" font-family="Times New Roman">
+        <fo:block margin-left="5%" margin-top="10%" font-size="14px" font-weight="bold" text-align="left" font-family="Times New Roman">
             <xsl:text>Waluta:</xsl:text>
         </fo:block>
 
-        <fo:table width="100%" font-size="12px" text-align="left" font-family="Times New Roman">
+        <fo:table margin-left="5%" width="100%" font-size="12px" text-align="left" font-family="Times New Roman">
             <fo:table-header>
                 <fo:table-row>
                     <fo:table-cell>
@@ -317,11 +317,11 @@
             </fo:table-body>
         </fo:table>
 
-        <fo:block margin-top="10%" font-size="14px" font-weight="bold" text-align="left" font-family="Times New Roman">
+        <fo:block margin-left="5%" margin-top="10%" font-size="14px" font-weight="bold" text-align="left" font-family="Times New Roman">
             <xsl:text>Promocja:</xsl:text>
         </fo:block>
 
-        <fo:table width="100%" font-size="12px" text-align="left" font-family="Times New Roman">
+        <fo:table margin-left="5%" width="100%" font-size="12px" text-align="left" font-family="Times New Roman">
             <fo:table-header>
                 <fo:table-row>
                     <fo:table-cell>
@@ -367,11 +367,11 @@
             </fo:table-body>
         </fo:table>
 
-        <fo:block margin-top="10%" font-size="14px" font-weight="bold" text-align="left" font-family="Times New Roman">
+        <fo:block margin-left="5%" margin-top="10%" font-size="14px" font-weight="bold" text-align="left" font-family="Times New Roman">
             <xsl:text>Marki:</xsl:text>
         </fo:block>
 
-        <fo:table width="100%" font-size="12px" text-align="left" font-family="Times New Roman">
+        <fo:table margin-left="5%" width="100%" font-size="12px" text-align="left" font-family="Times New Roman">
             <fo:table-header>
                 <fo:table-row>
                     <fo:table-cell>
